@@ -1,0 +1,23 @@
+name: filter
+channels:
+  - conda-forge
+  - bioconda
+dependencies:
+  - bcftools = 1.17
+  - bedtools
+  - biopython
+  - bwa
+  - emboss
+  - fastqc
+  - multiqc
+  - pandas
+  - qualimap
+  - samtools = 1.17
+  - snakemake
+  - snakemake-executor-plugin-slurm
+  - jupyter
+  - pairsnp
+  - matplotlib
+  - kraken2
+  - bracken
+  

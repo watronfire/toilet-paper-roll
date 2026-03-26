@@ -1,0 +1,25 @@
+executor: slurm
+jobs: 16
+jobscript: "jobscript.sh"
+retries: 0
+restart-times: 0
+slurm-requeue: True
+max-status-checks-per-second: 1
+max-jobs-per-timespan: "60/1m"
+use-envmodules: True
+cores: 8
+
+default-resources:
+    mem_mb: 4000
+    runtime: 60
+    partition: "normal"
+    slurm_account: "nm104"
+
+set-resources:
+    alignment_bwa:
+        mem_mb: 16000
+        runtime: 60
+    subsample_reads:
+        runtime: 10
+    kraken2_classify:
+        mem_mb: 16000
