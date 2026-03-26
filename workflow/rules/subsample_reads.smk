@@ -1,4 +1,4 @@
-READS = [1_000, 10_000, 100_000, 1_000_000, 5_000_000, "all"]
+READS = [100_000, 1_000_000, 5_000_000, "all"]
 
 rule subsample_reads:
     input:
@@ -25,8 +25,8 @@ rule calculate_subsampled_depth:
         minimum_base_quality=config["call_variants"]["minimum_base_quality"],
         minimum_mapping_quality=config["call_variants"]["minimum_mapping_quality"],
     output:
-        depth = temp( "intermediates/subsamples/{sample}.{reads}.{trials}.txt" ),
-        coverage = "intermediates/subsampled_coverage/{sample}.{reads}.{trials}.txt"
+        depth = temp( "intermediates/subsamples/{sample}.{reads}.{trial}.txt" ),
+        coverage = "intermediates/subsampled_coverage/{sample}.{reads}.{trial}.txt"
     run:
         import pandas as pd
 
@@ -124,7 +124,7 @@ rule summarize_variants_and_counts:
 
 rule combine_subsampled_coverage:
     input:
-        coverages = expand( "intermediates/subsampled_coverage/{sample}.{reads}.{trials}.txt", sample=SAMPLES, reads=READS, trials=range(3) )
+        coverages = expand( "intermediates/subsampled_coverage/{sample}.{reads}.{trial}.txt", sample=SAMPLES, reads=READS, trial=range(1) )
     output:
         coverage_report = "results/coverage_subsample.csv" 
     shell:

@@ -16,12 +16,12 @@ rule alignment_bwa:
             {params.bwa_params} \
             -t {threads} \
             {input.reference} \
-            {input.reads1} {input.reads2} 2> /dev/null |\
+            {input.reads1} {input.reads2}  |\
         samtools view -Sb - |\
         samtools sort - |\
         samtools addreplacerg \
             -r "ID:{wildcards.sample}" \
-            -o {output.alignment} - 
+            -o {output.alignment} -
         """
 
 
@@ -184,35 +184,23 @@ rule combine_consensus_distances:
         cat {input.distances} > {output.distances}
         """
 
-rule rename_fastq:
-    message: "Generate temporary copy of FASTQ file for {wildcards.sample} to maintain names for QC."
-    input:
-        reads1=lambda wildcards: SAMPLES[wildcards.sample]["read1"]
-    output:
-        renamed_reads=temp( "intermediates/tmp/{sample}.fastq.gz" )
-    shell:
-        """
-        cp {input.reads1} {output.renamed_reads}
-        """
-
-
-rule fastqc:
+rule fastq:
     # We're assuming that R1 is representative of R2. This should generally work and I can't think of a reason where
     # problems would only pop up in one rather than the other.
     message: "Calculate quality control metrics for raw sequencing reads of {wildcards.sample}."
     input:
-        reads1=rules.rename_fastq.output.renamed_reads
+        reads1=lambda wildcards: SAMPLES[wildcards.sample]["read1"],
+        reads2=lambda wildcards: SAMPLES[wildcards.sample]["read2"]
     output:
-        directory=directory( "results/reports/fastqc/{sample}/" ),
+        json_report="results/reports/fastqc/{sample}_fastp.json",
+        html_report="results/reports/fastqc/{sample}_fastp.html",
     threads: 2
     shell:
         """
-        mkdir {output.directory} && \
-        fastqc \
-            --outdir {output.directory} \
-            --threads {threads} \
-            --quiet \
-            {input.reads1}  
+        fastp \
+            -i {input.reads1} -I {input.reads2} \
+            -Q --disable_trim_poly_g --disable_length_filtering \
+            --json {output.json_report} --html {output.html_report} --report_title {wildcards.sample}
         """
 
 
@@ -227,7 +215,7 @@ rule alignment_stats:
         """
         samtools index {input.alignment} && \
         samtools idxstats {input.alignment} > {output.alignment_idxstats} && \
-        samtools stats {input.alignment} > {output.alignment_stats} 
+        samtools stats {input.alignment} > {output.alignment_stats}
         """
 
 
@@ -254,7 +242,7 @@ rule bamqc:
 
 def get_qc_inputs( wildcards ):
     inputs = list()
-    inputs.extend( expand( "results/reports/fastqc/{sample}/",sample=SAMPLES ) )
+    inputs.extend( expand( "results/reports/fastqc/{sample}_fastp.json",sample=SAMPLES ) )
     inputs.extend( expand( "results/reports/samtools/{sample}.stats.txt",sample=SAMPLES ) )
     inputs.extend( expand( "results/reports/samtools/{sample}.idxstats.txt",sample=SAMPLES ) )
     inputs.extend( expand( "results/reports/bamqc/{sample}/",sample=SAMPLES ) )
@@ -278,4 +266,3 @@ rule generate_complete_report:
             --config {params.multiqc_config} \
             results/reports/
         """
-

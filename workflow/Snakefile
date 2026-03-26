@@ -1,25 +1,19 @@
 import pandas as pd
 
-configfile: "configfile.yaml"
-localrules: all, index_reference, generate_complete_report 
-include: "workflow/rules/reference-assembly.smk"
-include: "workflow/rules/denovo.smk"
-include: "workflow/rules/metagenomic.smk"
-include: "workflow/rules/subsample_reads.smk"
+configfile: "resources/configfile.yaml"
+localrules: all, index_reference, generate_complete_report
 
-REFERENCE = "vc_reference.fasta"
+REFERENCE = config["reference"]
 MULTIQC_CONFIG = "multiqc_config.yaml"
 KRAKEN_DB = "/PHShome/nm104/db/k2_standard-8"
 
-samples = pd.read_csv( "samples.csv" )
-samples = samples.loc[samples["sample"]!="D10"]
-SAMPLES = samples.set_index( "sample" )[["read1", "read2"]].to_dict( orient="index" )
+samples = pd.read_csv( config["samples_file"] )
+samples = samples.loc[samples["cell"]!="plate0-D10"]
+SAMPLES = samples.set_index( "cell" )[["read1", "read2"]].to_dict( orient="index" )
 
-labels = pd.read_csv( "/PHShome/nm104/analysis/2025.07.09_fp/lq_sub.csv" )
-labels = labels.loc[~labels["cell"].isin(["D12", "B12", "H12"])]
 ORIGINAL_SAMPLES = dict()
-for sample in labels["sample"].unique():
-    ORIGINAL_SAMPLES[sample] = labels.loc[labels["sample"]==sample,"cell"].to_list()
+for sample, df in samples.groupby( "sample" ):
+    ORIGINAL_SAMPLES[sample] = df["cell"].to_list()
 
 rule all:
     input:
@@ -28,8 +22,8 @@ rule all:
         consensus_distances = "results/reports/consensus_distances.csv",
 #        assembly = expand( "intermediates/illumina/assembly/{sample}.assembly.fasta", sample=SAMPLES )
         coverages = "results/coverage_subsample.csv",
-        kraken_report = "results/reports/kraken2_reports.csv",
-        bracken_report = "results/reports/bracken2_reports.csv",
+        #kraken_report = "results/reports/kraken2_reports.csv",
+        #bracken_report = "results/reports/bracken2_reports.csv",
         variant_report = "results/variants_subsample.csv"
 
 
@@ -46,3 +40,7 @@ rule index_reference:
         bwa index {input.reference}
         """
 
+include: "rules/reference-assembly.smk"
+#include: "rules/denovo.smk"
+include: "rules/metagenomic.smk"
+include: "rules/subsample_reads.smk"
