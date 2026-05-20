@@ -11,7 +11,7 @@ rule subsample_reads:
             shell( """
         cat <(samtools view -H {input.alignment}) <(samtools view {input.alignment} | shuf -n {reads}) |\
         samtools view -b - |\
-        samtools sort - > {output.subalignment}
+        samtools sort -m 4G - > {output.subalignment}
         """ )
         else:
             shell( "cp {input.alignment} {output.subalignment}" )
