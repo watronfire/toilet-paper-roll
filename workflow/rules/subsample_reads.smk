@@ -2,12 +2,12 @@ READS = [100_000, 1_000_000, 5_000_000, "all"]
 
 rule subsample_reads:
     input:
-        alignment = rules.alignment_bwa.output.alignment
+        alignment = rules.filter_minimap.output.alignment
     output:
         subalignment = temp( "intermediates/subsamples/{sample}.{reads}.{trial}.bam" )
     run:
         if wildcards.reads != "all":
-            reads = int( wildcards.reads )        
+            reads = int( wildcards.reads )
             shell( """
         cat <(samtools view -H {input.alignment}) <(samtools view {input.alignment} | shuf -n {reads}) |\
         samtools view -b - |\
@@ -31,11 +31,11 @@ rule calculate_subsampled_depth:
         import pandas as pd
 
         shell( "samtools depth -aa -q {params.minimum_base_quality} -Q {params.minimum_mapping_quality} {input.alignment} > {output.depth}" )
-        
+
         reads = wildcards.reads
         if wildcards.reads == "all":
             reads = shell( "samtools view -c {input.alignment}", read=True ).strip()
-        
+
         df = pd.read_csv( output.depth, sep="\t", header=None, names=["ref", "pos", "depth"] )
         coverage = df.loc[df["depth"]>params.minimum_depth].shape[0] / df.shape[0]
         depth = df["depth"].median()
@@ -126,7 +126,7 @@ rule combine_subsampled_coverage:
     input:
         coverages = expand( "intermediates/subsampled_coverage/{sample}.{reads}.{trial}.txt", sample=SAMPLES, reads=READS, trial=range(1) )
     output:
-        coverage_report = "results/coverage_subsample.csv" 
+        coverage_report = "results/coverage_subsample.csv"
     shell:
         """
         cat {input.coverages} > {output.coverage_report}
@@ -141,4 +141,3 @@ rule combined_subsampled_variants:
         """
         cat {input.summaries} > {output.variant_report}
         """
-

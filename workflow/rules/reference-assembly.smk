@@ -1,27 +1,45 @@
-rule alignment_bwa:
+rule alignment_minimap:
     message: "Mapping reads for {wildcards.sample} to {input.reference} using `bwa mem`."
     input:
         reads1=lambda wildcards: SAMPLES[wildcards.sample]["read1"],
         reads2=lambda wildcards: SAMPLES[wildcards.sample]["read2"],
         reference=REFERENCE,
         reference_index=rules.index_reference.output.reference_index
-    params:
-        bwa_params=config["alignment_bwa"]["bwa_params"]
     output:
-        alignment="intermediates/illumina/merged_aligned_bams/{sample}.sorted.bam"
+        alignment="intermediates/merged_aligned_bams/{sample}.sorted.bam"
     threads: 8
     shell:
         """
-        bwa mem \
-            {params.bwa_params} \
+        minimap2 -ax sr\
             -t {threads} \
             {input.reference} \
             {input.reads1} {input.reads2}  |\
-        samtools view -Sb - |\
+        samtools view -Sb -f2 - |\
         samtools sort -m 8G  - |\
         samtools addreplacerg \
             -r "ID:{wildcards.sample}" \
             -o {output.alignment} -
+        """
+
+rule filter_minimap:
+    input:
+        alignment = rules.alignment_minimap.output.alignment
+    output:
+        init_filter = temp( "intermediates/filtered_bams/{sample}.minimap.filtered.bam" ),
+        name_sorted = temp( "intermediates/filtered_bams/{sample}.minimap.namesorted.bam" ),
+        fixed = temp( "intermediates/filtered_bams/{sample}.minimap.fixed.bam" ),
+        alignment = "intermediates/filtered_bams/{sample}.minimap.bam"
+    params:
+        min_mapq = 30,
+        max_edit = 10,
+        max_divergence = 0.03
+    shell:
+        """
+        samtools view -h -b -q {params.min_mapq} -e '[NM] < {params.max_edit} && [de] < {params.max_divergence}' {input.alignment} > {output.init_filter}
+        samtools sort -m 4G -n {output.init_filter} > {output.name_sorted}
+        samtools fixmate -m {output.name_sorted} {output.fixed}
+        samtools view -b -f2 {output.fixed} | samtools sort -m 4G - > {output.alignment}
+        samtools index {output.alignment}
         """
 
 
@@ -29,20 +47,21 @@ rule alignment_bwa:
 rule generate_low_coverage_mask:
     message: "Create bed file from bam file for {wildcards.sample} indicating sites covered by less than {params.minimum_depth} reads"
     input:
-        alignment=rules.alignment_bwa.output.alignment
+        alignment=rules.filter_minimap.output.alignment
     output:
-        depth=temp( "intermediates/illumina/depth/{sample}.depth" ),
-        depth_mask=temp( "intermediates/illumina/depth/{sample}.depthmask.bed" )
+        depth=temp( "intermediates/depth/{sample}.depth" ),
+        depth_mask=temp( "intermediates/depth/{sample}.depthmask.bed" )
     params:
         minimum_depth=config["coverage_mask"]["required_depth"],
         minimum_base_quality=config["call_variants"]["minimum_base_quality"],
         minimum_mapping_quality=config["call_variants"]["minimum_mapping_quality"],
     shell:
         """
+        samtools view -u -f2 {input.alignment} |\
         samtools depth \
-            -aa {input.alignment} \
             -q {params.minimum_base_quality} \
-            -Q {params.minimum_mapping_quality} |\
+            -Q {params.minimum_mapping_quality} \
+            -aa - |\
         tee {output.depth} |\
         awk \
             -v depth="{params.minimum_depth}" \
@@ -54,7 +73,7 @@ rule generate_low_coverage_mask:
 rule call_variants_from_alignment:
     message: "Call variants from alignment for {wildcards.sample} using bcftools."
     input:
-        alignment=rules.alignment_bwa.output.alignment,
+        alignment=rules.filter_minimap.output.alignment,
         reference=REFERENCE,
         reference_index=rules.index_reference.output.reference_index
     params:
@@ -64,7 +83,7 @@ rule call_variants_from_alignment:
         mpileup_parameters=config["call_variants"]["mpileup_parameters"],
         call_parameters=config["call_variants"]["call_parameters"]
     output:
-        variants="intermediates/illumina/variants/{sample}.bcftools.vcf"
+        variants="intermediates/variants/{sample}.bcftools.vcf"
     threads: 8
     shell:
         """
@@ -74,6 +93,7 @@ rule call_variants_from_alignment:
             -q {params.minimum_mapping_quality} \
             -Q {params.minimum_base_quality} \
             {params.mpileup_parameters} \
+            --ignore-overlaps --skip-indels \
             -f {input.reference} \
             {input.alignment} |\
         bcftools call \
@@ -97,13 +117,13 @@ rule filter_variants:
         minimum_strand_depth=config["filter_variants"]["minimum_strand_depth"],
         minimum_support=config["filter_variants"]["minimum_support"]
     output:
-        filtered_variants="intermediates/illumina/variants/{sample}.bcftools.filt.vcf"
+        filtered_variants="intermediates/variants/{sample}.bcftools.filt.vcf"
     group: "consensus"
     shell:
         """
         bcftools filter \
             --no-version \
-            -i "INFO/AD[1]>{params.minimum_depth} && (INFO/AD[1])/(INFO/AD[0]+INFO/AD[1])>{params.minimum_support} && INFO/ADF[1]>{params.minimum_strand_depth} && INFO/ADR[1]>{params.minimum_strand_depth}" \
+            -i "INFO/AD[1]>={params.minimum_depth} && (INFO/AD[1])/(INFO/AD[0]+INFO/AD[1])>{params.minimum_support} && INFO/ADF[1]>{params.minimum_strand_depth} && INFO/ADR[1]>{params.minimum_strand_depth}" \
             -o {output.filtered_variants} \
             {input.variants}
         """
@@ -115,8 +135,8 @@ rule align_and_normalize_variants:
         reference=REFERENCE,
         reference_index=rules.index_reference.output.reference_index
     output:
-        normalized_variants="intermediates/illumina/variants/{sample}.bcftools.filt.norm.vcf.gz",
-        variant_index="intermediates/illumina/variants/{sample}.bcftools.filt.norm.vcf.gz.csi"
+        normalized_variants="intermediates/variants/{sample}.bcftools.filt.norm.vcf.gz",
+        variant_index="intermediates/variants/{sample}.bcftools.filt.norm.vcf.gz.csi"
     group: "consensus"
     shell:
         """
@@ -207,7 +227,7 @@ rule fastq:
 rule alignment_stats:
     message: "Calculate the number of reads from {wildcards.sample} which map to the reference genome."
     input:
-        alignment="intermediates/illumina/merged_aligned_bams/{sample}.sorted.bam"
+        alignment=rules.filter_minimap.output.alignment
     output:
         alignment_stats="results/reports/samtools/{sample}.stats.txt",
         alignment_idxstats="results/reports/samtools/{sample}.idxstats.txt"
@@ -222,9 +242,9 @@ rule alignment_stats:
 rule bamqc:
     message: "Assess the quality of the reference-based assembly of {wildcards.sample}."
     input:
-        alignment="intermediates/illumina/merged_aligned_bams/{sample}.sorted.bam"
+        alignment=rules.filter_minimap.output.alignment
     output:
-        reheaded_alignment="intermediates/illumina/merged_aligned_bams/{sample}.headed.bam",
+        reheaded_alignment="intermediates/merged_aligned_bams/{sample}.headed.bam",
         report_directory=directory( "results/reports/bamqc/{sample}/" )
     threads: 8
     shell:
