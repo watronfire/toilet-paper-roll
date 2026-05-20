@@ -2,7 +2,7 @@ READS = [100_000, 1_000_000, 5_000_000, "all"]
 
 rule subsample_reads:
     input:
-        alignment = rules.filter_minimap.output.alignment
+        alignment = rules.alignment_minimap.output.alignment
     output:
         subalignment = temp( "intermediates/subsamples/{sample}.{reads}.{trial}.bam" )
     run:
@@ -16,10 +16,30 @@ rule subsample_reads:
         else:
             shell( "cp {input.alignment} {output.subalignment}" )
 
+rule filter_subsampled_reads:
+    input:
+        alignment = rules.subsample_reads.output.subalignment
+    output:
+        init_filter = temp( "intermediates/subsamples/{sample}.{reads}.{trial}.init.bam" ),
+        name_sorted = temp( "intermediates/subsamples/{sample}.{reads}.{trial}.namesorted.bam" ),
+        fixed = temp( "intermediates/subsamples/{sample}.{reads}.{trial}.fixed.bam" ),
+        alignment = "intermediates/subsamples/{sample}.{reads}.{trial}.filtered.bam"
+    params:
+        min_mapq = 30,
+        max_edit = 10,
+        max_divergence = 0.03
+    shell:
+        """
+        samtools view -h -b -f2 -q {params.min_mapq} -e '[NM] < {params.max_edit} && [de] < {params.max_divergence}' {input.alignment} > {output.init_filter}
+        samtools sort -m 4G -n {output.init_filter} > {output.name_sorted}
+        samtools fixmate -m {output.name_sorted} {output.fixed}
+        samtools view -b -f2 {output.fixed} | samtools sort -m 4G - > {output.alignment}
+        samtools index {output.alignment}
+            """
 
 rule calculate_subsampled_depth:
     input:
-        alignment = rules.subsample_reads.output.subalignment
+        alignment = rules.filter_subsampled_reads.output.alignment
     params:
         minimum_depth=config["coverage_mask"]["required_depth"],
         minimum_base_quality=config["call_variants"]["minimum_base_quality"],
@@ -37,7 +57,7 @@ rule calculate_subsampled_depth:
             reads = shell( "samtools view -c {input.alignment}", read=True ).strip()
 
         df = pd.read_csv( output.depth, sep="\t", header=None, names=["ref", "pos", "depth"] )
-        coverage = df.loc[df["depth"]>params.minimum_depth].shape[0] / df.shape[0]
+        coverage = df.loc[df["depth"]>=params.minimum_depth].shape[0] / df.shape[0]
         depth = df["depth"].median()
         with open( output.coverage, "wt" ) as f:
             f.write( f"{wildcards.sample},{reads},{coverage},{depth}\n" )
@@ -45,7 +65,7 @@ rule calculate_subsampled_depth:
 
 rule get_variants_and_counts:
     input:
-        alignment = rules.subsample_reads.output.subalignment,
+        alignment = rules.filter_subsampled_reads.output.alignment,
         reference = REFERENCE
     params:
         maximum_depth=config["call_variants"]["maximum_depth"],
@@ -68,6 +88,7 @@ rule get_variants_and_counts:
             -q {params.minimum_mapping_quality} \
             -Q {params.minimum_base_quality} \
             {params.mpileup_parameters} \
+            --ignore-overlaps --skip-indels \
             -f {input.reference} \
             {input.alignment} |\
         tee >(bcftools query -f '[%CHROM\t%POS\t%REF\t%ALT\t%DP\t%AD]\n' - > {output.counts} ) |\
@@ -78,13 +99,13 @@ rule get_variants_and_counts:
         bcftools filter \
             --no-version \
             -Ov \
-            -i "INFO/AD[1]>{params.minimum_depth} && INFO/ADF[1]>{params.minimum_strand_depth} && INFO/ADR[1]>{params.minimum_strand_depth}" \
+            -i "INFO/AD[1]>={params.minimum_depth} && INFO/ADF[1]>={params.minimum_strand_depth} && INFO/ADR[1]>={params.minimum_strand_depth}" \
             -o {output.variants}
         """
 
 rule summarize_variants_and_counts:
     input:
-        alignment = rules.subsample_reads.output.subalignment,
+        alignment = rules.filter_subsampled_reads.output.alignment,
         counts = rules.get_variants_and_counts.output.counts,
         variants = rules.get_variants_and_counts.output.variants
     output:

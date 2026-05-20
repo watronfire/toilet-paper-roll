@@ -14,7 +14,7 @@ rule alignment_minimap:
             -t {threads} \
             {input.reference} \
             {input.reads1} {input.reads2}  |\
-        samtools view -Sb -f2 - |\
+        samtools view -Sb - |\
         samtools sort -m 8G  - |\
         samtools addreplacerg \
             -r "ID:{wildcards.sample}" \
@@ -35,7 +35,7 @@ rule filter_minimap:
         max_divergence = 0.03
     shell:
         """
-        samtools view -h -b -q {params.min_mapq} -e '[NM] < {params.max_edit} && [de] < {params.max_divergence}' {input.alignment} > {output.init_filter}
+        samtools view -h -b -f2 -q {params.min_mapq} -e '[NM] < {params.max_edit} && [de] < {params.max_divergence}' {input.alignment} > {output.init_filter}
         samtools sort -m 4G -n {output.init_filter} > {output.name_sorted}
         samtools fixmate -m {output.name_sorted} {output.fixed}
         samtools view -b -f2 {output.fixed} | samtools sort -m 4G - > {output.alignment}
@@ -123,7 +123,7 @@ rule filter_variants:
         """
         bcftools filter \
             --no-version \
-            -i "INFO/AD[1]>={params.minimum_depth} && (INFO/AD[1])/(INFO/AD[0]+INFO/AD[1])>{params.minimum_support} && INFO/ADF[1]>{params.minimum_strand_depth} && INFO/ADR[1]>{params.minimum_strand_depth}" \
+            -i "INFO/AD[1]>={params.minimum_depth} && (INFO/AD[1])/(INFO/AD[0]+INFO/AD[1])>{params.minimum_support} && INFO/ADF[1]>={params.minimum_strand_depth} && INFO/ADR[1]>={params.minimum_strand_depth}" \
             -o {output.filtered_variants} \
             {input.variants}
         """
