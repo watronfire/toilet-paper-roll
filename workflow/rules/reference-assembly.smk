@@ -18,7 +18,7 @@ rule alignment_bwa:
             {input.reference} \
             {input.reads1} {input.reads2}  |\
         samtools view -Sb - |\
-        samtools sort - |\
+        samtools sort -m 8G  - |\
         samtools addreplacerg \
             -r "ID:{wildcards.sample}" \
             -o {output.alignment} -
@@ -229,12 +229,11 @@ rule bamqc:
     threads: 8
     shell:
         """
-        samtools view -H {input.alignment} |\
-        sed 's,^@RG.*,@RG\\tID:None\\tSM:None\\tLB:None\\tPL:Illumina,g' |\
-        samtools reheader - {input.alignment} > {output.reheaded_alignment} && \
+        samtools reheader --command 'sed "s,^@RG.*,@RG\\tID:None\\tSM:None\\tLB:None\\tPL:Illumina,g"' {input.alignment} > {output.reheaded_alignment} && \
         qualimap bamqc \
             -bam {output.reheaded_alignment} \
             -nt {threads} \
+            --java-mem-size=12G \
             -outdir {output.report_directory}
         """
 

@@ -4,11 +4,14 @@ configfile: "resources/configfile.yaml"
 localrules: all, index_reference, generate_complete_report
 
 REFERENCE = config["reference"]
-MULTIQC_CONFIG = "multiqc_config.yaml"
+MULTIQC_CONFIG = "resources/multiqc_config.yaml"
 KRAKEN_DB = "/PHShome/nm104/db/k2_standard-8"
 
 samples = pd.read_csv( config["samples_file"] )
-samples = samples.loc[samples["cell"]!="plate0-D10"]
+
+bad_cells = ["plate3-F8", "plate0-D10", "plate3-G8", "plate3-B10", "plate3-E8", "plate3-H8", "plate1-C11", "plate1-C8", "plate1-D7", "plate1-F1", "plate2-B4"]
+
+samples = samples.loc[~samples["cell"].isin(bad_cells)]
 SAMPLES = samples.set_index( "cell" )[["read1", "read2"]].to_dict( orient="index" )
 
 ORIGINAL_SAMPLES = dict()
@@ -22,9 +25,11 @@ rule all:
         consensus_distances = "results/reports/consensus_distances.csv",
 #        assembly = expand( "intermediates/illumina/assembly/{sample}.assembly.fasta", sample=SAMPLES )
         coverages = "results/coverage_subsample.csv",
-        #kraken_report = "results/reports/kraken2_reports.csv",
-        #bracken_report = "results/reports/bracken2_reports.csv",
+        kraken_report = "results/reports/kraken2_reports.csv",
+        bracken_report = "results/reports/bracken2_reports.csv",
         variant_report = "results/variants_subsample.csv"
+    output:
+        final = touch( "filter.complete" )
 
 
 rule index_reference:

@@ -1,3 +1,6 @@
+samples_file: "/data/wohllab/2025.07.10_fp/resources/samples.csv"
+reference: "/PHShome/nm104/scripts/bacpage/bacpage/resources/vc_reference.fasta"
+
 preprocessing:
   check_size: true
   minimum_size: 100

@@ -1,25 +1,33 @@
 executor: slurm
 jobs: 16
 jobscript: "jobscript.sh"
-retries: 0
-restart-times: 0
-slurm-requeue: True
+keep-going: True
+rerun-incomplete: True
+retries: 1
+restart-times: 1
+slurm-requeue: False
 max-status-checks-per-second: 1
 max-jobs-per-timespan: "60/1m"
 use-envmodules: True
+slurm-status-attempts: 50
 cores: 8
+logger: "snkmt"
+logger-snkmt-db: "/data/wohllab/2025.07.10_fp/logs/filter.db" 
 
 default-resources:
     mem_mb: 4000
-    runtime: 60
+    runtime: 120:00
     partition: "normal"
     slurm_account: "nm104"
 
 set-resources:
+    bamqc:
+        mem_mb: 16000
     alignment_bwa:
         mem_mb: 16000
-        runtime: 60
+        runtime: 6:00:00
     subsample_reads:
-        runtime: 10
+        runtime: 60:00
     kraken2_classify:
+        runtime: 120:00
         mem_mb: 16000
