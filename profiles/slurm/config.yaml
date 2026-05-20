@@ -12,7 +12,7 @@ use-envmodules: True
 slurm-status-attempts: 50
 cores: 8
 logger: "snkmt"
-logger-snkmt-db: "/data/wohllab/2025.07.10_fp/logs/filter.db" 
+logger-snkmt-db: "/data/wohllab/2025.07.10_fp/logs/filter.db"
 
 default-resources:
     mem_mb: 4000
@@ -23,9 +23,11 @@ default-resources:
 set-resources:
     bamqc:
         mem_mb: 16000
-    alignment_bwa:
+    alignment_minimap:
         mem_mb: 16000
         runtime: 6:00:00
+    filter_minimap:
+      mem_mb: 8000
     subsample_reads:
         runtime: 60:00
     kraken2_classify:
