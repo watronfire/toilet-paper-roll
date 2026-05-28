@@ -3,9 +3,9 @@ READS = [100_000, 1_000_000, 5_000_000, "all"]
 rule subsample_reads:
     input:
         read1 = lambda wildcards: SAMPLES[wildcards.sample]["read1"],
-        bam = rules.filter_minimap.output.alignment
+        bam = rules.alignment_minimap.output.alignment
     output:
-        subsampled_names = "intermediats/subsamples/{sample}.{reads}.{trial}.txt",
+        subsampled_names = "intermediates/subsamples/{sample}.{reads}.{trial}.txt",
         subsampled_bam = "intermediates/subsamples/{sample}.{reads}.{trial}.bam"
     group: "variants"
     run:
@@ -19,6 +19,7 @@ rule subsample_reads:
         else:
             shell( "cp {input.bam} {output.subsampled_bam}" )
             shell( "touch {output.subsampled_names}" )
+
 
 rule calculate_subsampled_depth:
     input:

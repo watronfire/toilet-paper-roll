@@ -1,45 +1,129 @@
+rule fastq:
+    message: "Calculate quality control metrics for raw sequencing reads of {wildcards.sample}."
+    input:
+        reads1=lambda wildcards: SAMPLES[wildcards.sample]["read1"],
+        reads2=lambda wildcards: SAMPLES[wildcards.sample]["read2"]
+    output:
+        cleaned_r1 = "intermediates/trimmed_reads/{sample}_R1.trim.fastq.gz",
+        cleaned_r2 = "intermediates/trimmed_reads/{sample}_R2.trim.fastq.gz"
+        json_report="results/reports/fastqc/{sample}_fastp.json",
+        html_report="results/reports/fastqc/{sample}_fastp.html",
+    threads: 2
+    group: "denovo"
+    shell:
+        """
+        fastp \
+            -i {input.reads1} -I {input.reads2} \
+            -o {output.r1} -O {output.r2} \
+            --json {output.json_report} \
+            --html {output.html_report} \
+            --report_title {wildcards.sample} \
+            --threads {threads}
+        """
+
+rule megahit:
+    input:
+        r1 = rules.fastp.output.cleaned_r1,
+        r2 = rules.fastp.output.cleaned_r2
+    params:
+        temp_outdir = "intermediates/assembly/{sample}/tmp"
+    output:
+        outdir = directory("intermediates/assembly/{sample}"),
+        contigs = "intermediates/assembly/{sample}/{sample}.contigs.fa"
+    threads: 8
+    group: "denovo"
+    shell:
+        """
+        rm -rf {params.temp_outdir}
+        megahit -1 {input.r1} -2 {input.r2} -o {params.temp_outdir} --out-prefix {wildcards.sample} -t {threads}
+        mv {params.temp_outdir}/* {output.outdir}
+        """
+
+
+rule classify_contigs:
+    input:
+        contigs = rules.megahit.output.contigs
+    params:
+        db = lambda wildcards: f"~/db/k2_standard-8"
+    output:
+        kraken_results = "results/kraken/{sample}.kraken.txt",
+        kraken_report = "results/kraken/{sample}.report.txt"
+    threads: 8
+    group: "denovo"
+    shell:
+        """
+        kraken2 --threads {threads} \
+            --db {params.db} \
+            --report {output.kraken_report} \
+            --output {output.kraken_results} \
+            {input.contigs}
+        """
+
+
+rule map_to_contigs:
+    input:
+        contigs = rules.megahit.output.contigs,
+        reads1 = rules.fastp.output.cleaned_r1,
+        reads2 = rules.fastp.output.cleaned_r2,
+    output:
+        alignment = "intermediates/assembly{sample}/{sample}.bam"
+    threads: 8
+    group: "denovo"
+    shell:
+        """
+        minimap2 -ax sr \
+            -t {threads} \
+            {input.contigs} \
+            {input.reads1} {input.reads2} |\
+        samtools view -u -f2 - |\
+        samtools sort -m 4G -o {output.alignment} -
+        """
+
+
+rule extract_vibrio_reads_from_contigs:
+    input:
+        alignment = rules.map_to_contigs.output.alignment,
+        contigs = rules.megahit.output.contigs,
+        kraken_results = rules.classify_contigs.output.kraken_results,
+        kraken_report = rules.classify_contigs.output.kraken_report
+    params:
+        taxid = 135623
+    output:
+        vibrio_contigs = "intermediates/assembly/{sample}/{sample}.vibrio.fasta",
+        vibrio_bed = "intermediates/assembly/{sample}/{sample}.vibrio.bed",
+        filtered_reads1 = "intermediates/filtered_reads/{sample}.R1.fastq.gz",
+        filtered_reads2 = "intermediates/filtered_reads/{sample}.R2.fastq.gz",
+    group: "denovo"
+    shell:
+        """
+        python extract_kraken_reads.py -k {input.kraken_results} -s {input.contigs} -t {params.taxid} -o {output.vibrio_contigs} --include-children -r {input.kraken_report} --noappend
+        fgrep ">" {output.vibrio_contigs} | sed "s/>//g" | awk '{{print $1"\t0\t1000000000"}}' > {output.vibrio_bed}
+        samtools view -hb -L {output.vibrio_bed} {input.alignment} | samtools sort -m 4G -n - | samtools fastq -1 {output.filtered_reads1} -2 {output.filtered_reads2}
+        """
+
+
 rule alignment_minimap:
     message: "Mapping reads for {wildcards.sample} to {input.reference} using `bwa mem`."
     input:
-        reads1=lambda wildcards: SAMPLES[wildcards.sample]["read1"],
-        reads2=lambda wildcards: SAMPLES[wildcards.sample]["read2"],
+        reads1=rules.extract_vibrio_reads_from_contigs.output.filtered_reads1,
+        reads2=rules.extract_vibrio_reads_from_contigs.output.filtered_reads2,
         reference=REFERENCE,
         reference_index=rules.index_reference.output.reference_index
     output:
         alignment="intermediates/merged_aligned_bams/{sample}.sorted.bam"
     threads: 8
+    group: "denovo"
     shell:
         """
         minimap2 -ax sr\
             -t {threads} \
             {input.reference} \
             {input.reads1} {input.reads2}  |\
-        samtools view -Sb - |\
+        samtools view -hb -f2 - |\
         samtools sort -m 8G  - |\
         samtools addreplacerg \
             -r "ID:{wildcards.sample}" \
             -o {output.alignment} -
-        """
-
-rule filter_minimap:
-    input:
-        alignment = rules.alignment_minimap.output.alignment
-    output:
-        init_filter = temp( "intermediates/filtered_bams/{sample}.minimap.filtered.bam" ),
-        name_sorted = temp( "intermediates/filtered_bams/{sample}.minimap.namesorted.bam" ),
-        fixed = temp( "intermediates/filtered_bams/{sample}.minimap.fixed.bam" ),
-        alignment = "intermediates/filtered_bams/{sample}.minimap.bam"
-    params:
-        min_mapq = 30,
-        max_edit = 10,
-        max_divergence = 0.03
-    shell:
-        """
-        samtools view -h -b -f2 -q {params.min_mapq} -e '[NM] < {params.max_edit} && [de] < {params.max_divergence}' {input.alignment} > {output.init_filter}
-        samtools sort -m 4G -n {output.init_filter} > {output.name_sorted}
-        samtools fixmate -m {output.name_sorted} {output.fixed}
-        samtools view -b -f2 {output.fixed} | samtools sort -m 4G - > {output.alignment}
-        samtools index {output.alignment}
         """
 
 
@@ -47,7 +131,7 @@ rule filter_minimap:
 rule generate_low_coverage_mask:
     message: "Create bed file from bam file for {wildcards.sample} indicating sites covered by less than {params.minimum_depth} reads"
     input:
-        alignment=rules.filter_minimap.output.alignment
+        alignment=rules.alignment_minimap.output.alignment
     output:
         depth=temp( "intermediates/depth/{sample}.depth" ),
         depth_mask=temp( "intermediates/depth/{sample}.depthmask.bed" )
@@ -55,6 +139,7 @@ rule generate_low_coverage_mask:
         minimum_depth=config["coverage_mask"]["required_depth"],
         minimum_base_quality=config["call_variants"]["minimum_base_quality"],
         minimum_mapping_quality=config["call_variants"]["minimum_mapping_quality"],
+    group: "consensus"
     shell:
         """
         samtools view -u -f2 {input.alignment} |\
@@ -74,7 +159,7 @@ rule generate_low_coverage_mask:
 rule call_variants_from_alignment:
     message: "Call variants from alignment for {wildcards.sample} using bcftools."
     input:
-        alignment=rules.filter_minimap.output.alignment,
+        alignment=rules.alignment_minimap.output.alignment,
         reference=REFERENCE,
         reference_index=rules.index_reference.output.reference_index
     params:
@@ -141,6 +226,7 @@ rule combine_depth_variants_mask:
     output:
         bcftools_filtered_mask="intermediates/variants/{sample}.vcffiltered.bed",
         depth_filtered_mask="intermediates/variants/{sample}.allmask.bed"
+    group: "consensus"
     shell:
         """
         bcftools filter \
@@ -228,30 +314,11 @@ rule combine_consensus_distances:
         cat {input.distances} > {output.distances}
         """
 
-rule fastq:
-    # We're assuming that R1 is representative of R2. This should generally work and I can't think of a reason where
-    # problems would only pop up in one rather than the other.
-    message: "Calculate quality control metrics for raw sequencing reads of {wildcards.sample}."
-    input:
-        reads1=lambda wildcards: SAMPLES[wildcards.sample]["read1"],
-        reads2=lambda wildcards: SAMPLES[wildcards.sample]["read2"]
-    output:
-        json_report="results/reports/fastqc/{sample}_fastp.json",
-        html_report="results/reports/fastqc/{sample}_fastp.html",
-    threads: 2
-    shell:
-        """
-        fastp \
-            -i {input.reads1} -I {input.reads2} \
-            -Q --disable_trim_poly_g --disable_length_filtering \
-            --json {output.json_report} --html {output.html_report} --report_title {wildcards.sample}
-        """
-
 
 rule alignment_stats:
     message: "Calculate the number of reads from {wildcards.sample} which map to the reference genome."
     input:
-        alignment=rules.filter_minimap.output.alignment
+        alignment=rules.alignment_minimap.output.alignment
     output:
         alignment_stats="results/reports/samtools/{sample}.stats.txt",
         alignment_idxstats="results/reports/samtools/{sample}.idxstats.txt"
@@ -266,7 +333,7 @@ rule alignment_stats:
 rule bamqc:
     message: "Assess the quality of the reference-based assembly of {wildcards.sample}."
     input:
-        alignment=rules.filter_minimap.output.alignment
+        alignment=rules.alignment_minimap.output.alignment
     output:
         reheaded_alignment="intermediates/merged_aligned_bams/{sample}.headed.bam",
         report_directory=directory( "results/reports/bamqc/{sample}/" )
