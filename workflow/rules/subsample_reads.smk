@@ -2,51 +2,35 @@ READS = [100_000, 1_000_000, 5_000_000, "all"]
 
 rule subsample_reads:
     input:
-        alignment = rules.alignment_minimap.output.alignment
+        read1 = lambda wildcards: SAMPLES[wildcards.sample]["read1"],
+        bam = rules.filter_minimap.output.alignment
     output:
-        subalignment = temp( "intermediates/subsamples/{sample}.{reads}.{trial}.bam" )
+        subsampled_names = "intermediats/subsamples/{sample}.{reads}.{trial}.txt",
+        subsampled_bam = "intermediates/subsamples/{sample}.{reads}.{trial}.bam"
+    group: "variants"
     run:
         if wildcards.reads != "all":
             reads = int( wildcards.reads )
             shell( """
-        cat <(samtools view -H {input.alignment}) <(samtools view {input.alignment} | shuf -n {reads}) |\
-        samtools view -b - |\
-        samtools sort -m 4G - > {output.subalignment}
+                zcat {input.read1} | grep "^@" |cut -f1 -d\  | cut -f2 -d@ | shuf -n {wildcards.reads} | sort > {output.subsampled_names} &&\
+                samtools view -b -h -N {output.subsampled_names} {input.bam} > {output.subsampled_bam} &&\
+                samtools index {output.subsampled_bam}
         """ )
         else:
-            shell( "cp {input.alignment} {output.subalignment}" )
-
-rule filter_subsampled_reads:
-    input:
-        alignment = rules.subsample_reads.output.subalignment
-    output:
-        init_filter = temp( "intermediates/subsamples/{sample}.{reads}.{trial}.init.bam" ),
-        name_sorted = temp( "intermediates/subsamples/{sample}.{reads}.{trial}.namesorted.bam" ),
-        fixed = temp( "intermediates/subsamples/{sample}.{reads}.{trial}.fixed.bam" ),
-        alignment = "intermediates/subsamples/{sample}.{reads}.{trial}.filtered.bam"
-    params:
-        min_mapq = 30,
-        max_edit = 10,
-        max_divergence = 0.03
-    shell:
-        """
-        samtools view -h -b -f2 -q {params.min_mapq} -e '[NM] < {params.max_edit} && [de] < {params.max_divergence}' {input.alignment} > {output.init_filter}
-        samtools sort -m 4G -n {output.init_filter} > {output.name_sorted}
-        samtools fixmate -m {output.name_sorted} {output.fixed}
-        samtools view -b -f2 {output.fixed} | samtools sort -m 4G - > {output.alignment}
-        samtools index {output.alignment}
-            """
+            shell( "cp {input.bam} {output.subsampled_bam}" )
+            shell( "touch {output.subsampled_names}" )
 
 rule calculate_subsampled_depth:
     input:
-        alignment = rules.filter_subsampled_reads.output.alignment
+        alignment = rules.subsample_reads.output.subsampled_bam
     params:
         minimum_depth=config["coverage_mask"]["required_depth"],
         minimum_base_quality=config["call_variants"]["minimum_base_quality"],
         minimum_mapping_quality=config["call_variants"]["minimum_mapping_quality"],
     output:
-        depth = temp( "intermediates/subsamples/{sample}.{reads}.{trial}.txt" ),
+        depth = temp( "intermediates/subsampled_depth/{sample}.{reads}.{trial}.txt" ),
         coverage = "intermediates/subsampled_coverage/{sample}.{reads}.{trial}.txt"
+    group: "variants"
     run:
         import pandas as pd
 
@@ -65,7 +49,7 @@ rule calculate_subsampled_depth:
 
 rule get_variants_and_counts:
     input:
-        alignment = rules.filter_subsampled_reads.output.alignment,
+        alignment = rules.subsample_reads.output.subsampled_bam,
         reference = REFERENCE
     params:
         maximum_depth=config["call_variants"]["maximum_depth"],
@@ -105,11 +89,11 @@ rule get_variants_and_counts:
 
 rule summarize_variants_and_counts:
     input:
-        alignment = rules.filter_subsampled_reads.output.alignment,
+        alignment = rules.subsample_reads.output.subsampled_bam,
         counts = rules.get_variants_and_counts.output.counts,
         variants = rules.get_variants_and_counts.output.variants
     output:
-        summary = "intermediates/subsample_variants/{sample}.{reads}.{trial}.summary.txt"
+        summary = "intermediates/subsampled_variants/{sample}.{reads}.{trial}.summary.txt"
     group: "variants"
     run:
         import pandas as pd
@@ -155,7 +139,7 @@ rule combine_subsampled_coverage:
 
 rule combined_subsampled_variants:
     input:
-        summaries = expand( "intermediates/subsample_variants/{sample}.{reads}.{trial}.summary.txt", sample=SAMPLES, reads=[1_000_000], trial=range(1) )
+        summaries = expand( "intermediates/subsampled_variants/{sample}.{reads}.{trial}.summary.txt", sample=SAMPLES, reads=[1_000_000], trial=range(1) )
     output:
         variant_report = "results/variants_subsample.csv"
     shell:

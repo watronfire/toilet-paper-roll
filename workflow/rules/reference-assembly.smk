@@ -70,6 +70,7 @@ rule generate_low_coverage_mask:
         """
 
 
+
 rule call_variants_from_alignment:
     message: "Call variants from alignment for {wildcards.sample} using bcftools."
     input:
@@ -128,6 +129,29 @@ rule filter_variants:
             {input.variants}
         """
 
+
+rule combine_depth_variants_mask:
+    input:
+        variants=rules.call_variants_from_alignment.output.variants,
+        depth_mask=rules.generate_low_coverage_mask.output.depth_mask
+    params:
+        minimum_depth=config["filter_variants"]["minimum_depth"],
+        minimum_strand_depth=config["filter_variants"]["minimum_strand_depth"],
+        minimum_support=config["filter_variants"]["minimum_support"]
+    output:
+        bcftools_filtered_mask="intermediates/variants/{sample}.vcffiltered.bed",
+        depth_filtered_mask="intermediates/variants/{sample}.allmask.bed"
+    shell:
+        """
+        bcftools filter \
+            --no-version \
+            -i "INFO/AD[1]<{params.minimum_depth} || (INFO/AD[1])/(INFO/AD[0]+INFO/AD[1])<={params.minimum_support} || INFO/ADF[1]<{params.minimum_strand_depth} || INFO/ADR[1]<{params.minimum_strand_depth}" \
+            {input.variants} |\
+        awk '(/^[^#]/ && length($4) == length($5)) {{printf "%s\\t%d\\t%d\\n", $1, $2 - 1, $2}}' > {output.bcftools_filtered_mask} &&\
+        cat {output.bcftools_filtered_mask} {input.depth_mask} | sort -u > {output.depth_filtered_mask}
+        """
+
+
 rule align_and_normalize_variants:
     message: "For sample {wildcards.sample}, Left-align and normalize indels, and remove insertions."
     input:
@@ -158,7 +182,7 @@ rule call_consensus:
     input:
         variants=rules.align_and_normalize_variants.output.normalized_variants,
         variant_index=rules.align_and_normalize_variants.output.variant_index,
-        depth_mask=rules.generate_low_coverage_mask.output.depth_mask,
+        depth_mask=rules.combine_depth_variants_mask.output.depth_filtered_mask,
         reference=REFERENCE,
         reference_index=rules.index_reference.output.reference_index
     params:
@@ -249,14 +273,18 @@ rule bamqc:
     threads: 8
     shell:
         """
-        samtools reheader --command 'sed "s,^@RG.*,@RG\\tID:None\\tSM:None\\tLB:None\\tPL:Illumina,g"' {input.alignment} > {output.reheaded_alignment} && \
-        qualimap bamqc \
-            -bam {output.reheaded_alignment} \
-            -nt {threads} \
-            --java-mem-size=12G \
-            -outdir {output.report_directory}
+        samtools reheader --command 'sed "s,^@RG.*,@RG\\tID:None\\tSM:None\\tLB:None\\tPL:Illumina,g"' {input.alignment} > {output.reheaded_alignment}
+        if ! samtools view -F 0x4 -c {output.reheaded_alignment} | grep -q "^0$"; then
+            qualimap bamqc \
+                -bam {output.reheaded_alignment} \
+                -nt {threads} \
+                --java-mem-size=12G \
+                -outdir {output.report_directory}
+        else
+            mkdir -p {output.report_directory}
+            touch {output.report_directory}/genome_results.txt
+        fi
         """
-
 
 
 def get_qc_inputs( wildcards ):
