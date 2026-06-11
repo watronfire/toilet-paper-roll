@@ -1,4 +1,4 @@
-READS = [100_000, 1_000_000, 5_000_000, "all"]
+READS = [100_000, 250_000, 500_000, 1_000_000, 2_500_000, 5_000_000, "all"]
 
 rule subsample_reads:
     input:
@@ -62,7 +62,7 @@ rule get_variants_and_counts:
         minimum_strand_depth=config["filter_variants"]["minimum_strand_depth"],
     output:
         counts = "intermediates/subsampled_variants/{sample}.{reads}.{trial}.counts.txt",
-        variants = "intermediates/subsampled_variants/{sample}.{reads}.{trial}.variants.vcf"
+        variants = "intermediates/subsampled_variants/{sample}.{reads}.{trial}.variants.vcf.gz"
     threads: 4
     group: "variants"
     shell:
@@ -83,10 +83,38 @@ rule get_variants_and_counts:
         bcftools +fill-tags -Ou - -- -t AF |\
         bcftools filter \
             --no-version \
-            -Ov \
+            -Oz \
             -i "INFO/AD[1]>={params.minimum_depth} && INFO/ADF[1]>={params.minimum_strand_depth} && INFO/ADR[1]>={params.minimum_strand_depth}" \
             -o {output.variants}
+        bcftools index {output.variants}
         """
+
+
+rule combine_vcfs:
+    input:
+        variants = expand( "intermediates/subsampled_variants/{sample}.{reads}.{trial}.variants.vcf.gz", sample=SAMPLES, reads=READS, trial=range(1) )\
+    output:
+        combined_variants = "intermediates/usher/alignment.vcf"
+    shell:
+        """
+        bcftools merge -Ov -o {output.combined_variants} {input.variants}
+        """
+
+rule classify_usher:
+    input:
+        variants = rules.combine_vcfs.output.combined_variants
+    params:
+        pb_tree = PBTREE,
+        outdir = "intermediates/vibecheck/"
+    output:
+        clades = "intermediates/vibecheck/clades.txt",
+        usher_log = "intermediates/vibecheck/logs/usher.txt"
+    threads: 8
+    shell:
+        """
+        usher -n -D -i {params.pb_tree} -v {input.variants} -T {threads} -d {params.outdir}
+        """
+
 
 rule summarize_variants_and_counts:
     input:
@@ -112,7 +140,7 @@ rule summarize_variants_and_counts:
             pi_median = counts["diversity"].median()
 
 
-        vcf = pd.read_csv( input.variants, sep="\t", header=None, names=["chrom", "pos", "id", "ref", "alt", "qual", "filter", "info", "format", "sample"],  comment="#" )
+        vcf = pd.read_csv( input.variants, sep="\t", header=None, names=["chrom", "pos", "id", "ref", "alt", "qual", "filter", "info", "format", "sample"],  comment="#", compression="gzip" )
         vcf = vcf.loc[vcf["ref"].str.len()==vcf["alt"].str.len()]
         vcf["AD"] = vcf["info"].str.extract( r"AD=([0-9,]+);" )
         vcf["AD"] = vcf["AD"].str.split( "," )
