@@ -5,26 +5,26 @@ rule fastq:
         reads2=lambda wildcards: SAMPLES[wildcards.sample]["read2"]
     output:
         cleaned_r1 = "intermediates/trimmed_reads/{sample}_R1.trim.fastq.gz",
-        cleaned_r2 = "intermediates/trimmed_reads/{sample}_R2.trim.fastq.gz"
+        cleaned_r2 = "intermediates/trimmed_reads/{sample}_R2.trim.fastq.gz",
         json_report="results/reports/fastqc/{sample}_fastp.json",
         html_report="results/reports/fastqc/{sample}_fastp.html",
-    threads: 2
+    threads: 4
     group: "denovo"
     shell:
         """
         fastp \
             -i {input.reads1} -I {input.reads2} \
-            -o {output.r1} -O {output.r2} \
+            -o {output.cleaned_r1} -O {output.cleaned_r2} \
             --json {output.json_report} \
             --html {output.html_report} \
             --report_title {wildcards.sample} \
-            --threads {threads}
+            --thread {threads}
         """
 
 rule megahit:
     input:
-        r1 = rules.fastp.output.cleaned_r1,
-        r2 = rules.fastp.output.cleaned_r2
+        r1 = rules.fastq.output.cleaned_r1,
+        r2 = rules.fastq.output.cleaned_r2
     params:
         temp_outdir = "intermediates/assembly/{sample}/tmp"
     output:
@@ -35,7 +35,7 @@ rule megahit:
     shell:
         """
         rm -rf {params.temp_outdir}
-        megahit -1 {input.r1} -2 {input.r2} -o {params.temp_outdir} --out-prefix {wildcards.sample} -t {threads}
+        megahit -1 {input.r1} -2 {input.r2} -o {params.temp_outdir} --out-prefix {wildcards.sample} -t {threads} --memory 32000000000
         mv {params.temp_outdir}/* {output.outdir}
         """
 
@@ -52,19 +52,24 @@ rule classify_contigs:
     group: "denovo"
     shell:
         """
-        kraken2 --threads {threads} \
-            --db {params.db} \
-            --report {output.kraken_report} \
-            --output {output.kraken_results} \
-            {input.contigs}
+        if [ ! -s "{input.contigs}" ]; then
+            echo "Input contigs file is empty or missing. Creating empty placeholder outputs."
+            touch "{output.kraken_results}" "{output.kraken_report}"
+        else
+            kraken2 --threads {threads} \
+                --db {params.db} \
+                --report {output.kraken_report} \
+                --output {output.kraken_results} \
+                {input.contigs}
+        fi
         """
 
 
 rule map_to_contigs:
     input:
         contigs = rules.megahit.output.contigs,
-        reads1 = rules.fastp.output.cleaned_r1,
-        reads2 = rules.fastp.output.cleaned_r2,
+        reads1 = rules.fastq.output.cleaned_r1,
+        reads2 = rules.fastq.output.cleaned_r2,
     output:
         alignment = "intermediates/assembly{sample}/{sample}.bam"
     threads: 8
@@ -87,7 +92,8 @@ rule extract_vibrio_reads_from_contigs:
         kraken_results = rules.classify_contigs.output.kraken_results,
         kraken_report = rules.classify_contigs.output.kraken_report
     params:
-        taxid = 135623
+        taxid = 135623,
+        script = "workflow/scripts/extract_kraken_reads.py"
     output:
         vibrio_contigs = "intermediates/assembly/{sample}/{sample}.vibrio.fasta",
         vibrio_bed = "intermediates/assembly/{sample}/{sample}.vibrio.bed",
@@ -96,9 +102,24 @@ rule extract_vibrio_reads_from_contigs:
     group: "denovo"
     shell:
         """
-        python extract_kraken_reads.py -k {input.kraken_results} -s {input.contigs} -t {params.taxid} -o {output.vibrio_contigs} --include-children -r {input.kraken_report} --noappend
-        fgrep ">" {output.vibrio_contigs} | sed "s/>//g" | awk '{{print $1"\t0\t1000000000"}}' > {output.vibrio_bed}
-        samtools view -hb -L {output.vibrio_bed} {input.alignment} | samtools sort -m 4G -n - | samtools fastq -1 {output.filtered_reads1} -2 {output.filtered_reads2}
+        if [ ! -s "{input.kraken_results}" ]; then
+            echo "Input results are empty or missing. Creating empty placeholder outputs."
+            touch {output.vibrio_contigs} {output.vibrio_bed}
+            echo -n "" | gzip > {output.filtered_reads1}
+            echo -n "" | gzip > {output.filtered_reads2}
+        else
+            python {params.script} -k {input.kraken_results} -s {input.contigs} -t {params.taxid} -o {output.vibrio_contigs} --include-children -r {input.kraken_report} --noappend
+        
+        if [ -s "{output.vibrio_contigs}" ]; then
+                fgrep ">" {output.vibrio_contigs} | sed "s/>//g" | awk '{{print $1"\t0\t1000000000"}}' > {output.vibrio_bed}
+                samtools view -hb -L {output.vibrio_bed} {input.alignment} | samtools sort -m 4G -n - | samtools fastq -1 {output.filtered_reads1} -2 {output.filtered_reads2}
+            else
+                echo "No Vibrio reads found. Creating empty placeholder outputs."
+                touch {output.vibrio_bed}
+                echo -n "" | gzip > {output.filtered_reads1}
+                echo -n "" | gzip > {output.filtered_reads2}
+            fi
+        fi
         """
 
 
