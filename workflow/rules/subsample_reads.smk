@@ -92,7 +92,7 @@ rule get_variants_and_counts:
 
 rule combine_vcfs:
     input:
-        variants = expand( "intermediates/subsampled_variants/{sample}.{reads}.{trial}.variants.vcf.gz", sample=SAMPLES, reads=READS, trial=range(1) )\
+        variants = expand( "intermediates/subsampled_variants/{sample}.{reads}.{trial}.variants.vcf.gz", sample=SAMPLES, reads=READS, trial=range(1) )
     output:
         combined_variants = "intermediates/usher/alignment.vcf"
     shell:
