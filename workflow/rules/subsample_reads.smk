@@ -102,6 +102,56 @@ rule combine_vcfs:
         bcftools merge -Ov -o {output.combined_variants} {input.variants}
         """
 
+
+rule cleanup_vcf:
+    input:
+        variants = rule.combine_vcfs.output.combined_variants
+    output:
+        cleaned_variants = "intermediates/usher/alignment.vcf.gz"
+    run:
+        import gzip
+        import pandas as pd
+
+        header_lines = []
+
+        with open(input.variants, "rt") as f:
+            for line in f:
+                if line.startswith("#"):
+                    header_lines.append(line)
+                else:
+                    # Once we hit data, we can stop reading line by line
+                    break
+
+        # The last header line is our column names (e.g., #CHROM, POS, ID...)
+        # We need to strip the '#' from '#CHROM' so pandas can use it cleanly
+        column_names = header_lines[-1].strip().split("\t")
+        column_names[0] = "CHROM"
+
+        # 2. Load the data into pandas, skipping the header rows
+        # We use comment='#' to safely ignore the header lines we already captured
+        df = pd.read_csv(
+            input.variants,
+            sep="\t",
+            comment="#",
+            header=None,
+            names=column_names,
+        )
+
+        # 3. Modify the chromosome name and positions
+        df.loc[df["CHROM"]=="AE003853","POS"] += 2961182
+        df["CHROM"] = "AE003853"
+        df = df.sort_values( "POS", ascending=True )
+
+        # 4. Save the file back out as vcf.gz
+        with gzip.open(output.cleaned_variants, "wt") as f_out:
+            # Write the original header lines back first
+            f_out.writelines(header_lines)
+
+            # Write the pandas DataFrame data (excluding the pandas header)
+            # We use lineterminator='\n' to ensure standard Unix line endings
+            df.to_csv(f_out, sep="\t", index=False, header=False, lineterminator="\n")
+
+
 rule classify_usher:
     input:
         variants = rules.combine_vcfs.output.combined_variants
