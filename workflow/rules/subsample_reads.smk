@@ -105,7 +105,7 @@ rule combine_vcfs:
 
 rule cleanup_vcf:
     input:
-        variants = rule.combine_vcfs.output.combined_variants
+        variants = rules.combine_vcfs.output.combined_variants
     output:
         cleaned_variants = "intermediates/usher/alignment.vcf.gz"
     run:
@@ -154,13 +154,12 @@ rule cleanup_vcf:
 
 rule classify_usher:
     input:
-        variants = rules.combine_vcfs.output.combined_variants
+        variants = rules.cleanup_vcf.output.cleaned_variants
     params:
         pb_tree = PBTREE,
         outdir = "intermediates/vibecheck/"
     output:
-        clades = "intermediates/vibecheck/clades.txt",
-        usher_log = "intermediates/vibecheck/logs/usher.txt"
+        clades = "intermediates/vibecheck/clades.txt"
     threads: 8
     shell:
         """
