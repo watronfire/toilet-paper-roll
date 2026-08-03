@@ -154,7 +154,7 @@ rule generate_low_coverage_mask:
     input:
         alignment=rules.alignment_minimap.output.alignment
     output:
-        depth=temp( "intermediates/depth/{sample}.depth" ),
+        depth="intermediates/depth/{sample}.depth",
         depth_mask=temp( "intermediates/depth/{sample}.depthmask.bed" )
     params:
         minimum_depth=config["coverage_mask"]["required_depth"],
