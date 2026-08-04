@@ -1,0 +1,1435 @@
+sequence_file,lineage,confidence,classification_notes,cell,reads,correct
+intermediates/subsamples/plate0-A10.100000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate0-A10,100000,0
+intermediates/subsamples/plate0-A10.250000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate0-A10,250000,0
+intermediates/subsamples/plate0-A10.500000.0.bam,UNDEFINED,0.5855421195842971,Usher placements: T12(58/75) UNDEFINED(17/75),plate0-A10,500000,0
+intermediates/subsamples/plate0-A10.1000000.0.bam,T12,1.0,Usher placements: T12(29/29),plate0-A10,1000000,1
+intermediates/subsamples/plate0-A10.2500000.0.bam,T12,1.0,Usher placements: T12(7/7),plate0-A10,2500000,1
+intermediates/subsamples/plate0-A10.5000000.0.bam,T12,1.0,Usher placements: T12(2/2),plate0-A10,5000000,1
+intermediates/subsamples/plate0-A11.100000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate0-A11,100000,0
+intermediates/subsamples/plate0-A11.250000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate0-A11,250000,0
+intermediates/subsamples/plate0-A11.500000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate0-A11,500000,0
+intermediates/subsamples/plate0-A11.1000000.0.bam,UNDEFINED,0.5855421195842971,Usher placements: T12(58/75) UNDEFINED(17/75),plate0-A11,1000000,0
+intermediates/subsamples/plate0-A11.2500000.0.bam,T12,1.0,Usher placements: T12(7/7),plate0-A11,2500000,1
+intermediates/subsamples/plate0-A11.5000000.0.bam,T12,1.0,Usher placements: T12(6/6),plate0-A11,5000000,1
+intermediates/subsamples/plate0-A12.100000.0.bam,UNDEFINED,0.5855421195842971,Usher placements: T12(58/75) UNDEFINED(17/75),plate0-A12,100000,0
+intermediates/subsamples/plate0-A12.250000.0.bam,T12,1.0,Usher placements: T12(39/39),plate0-A12,250000,1
+intermediates/subsamples/plate0-A12.500000.0.bam,T12,1.0,Usher placements: T12(4/4),plate0-A12,500000,1
+intermediates/subsamples/plate0-A12.1000000.0.bam,T12,1.0,Usher placements: T12(2/2),plate0-A12,1000000,1
+intermediates/subsamples/plate0-A12.2500000.0.bam,T12,1.0,Usher placements: T12(2/2),plate0-A12,2500000,1
+intermediates/subsamples/plate0-A12.5000000.0.bam,T12,1.0,Usher placements: T12(2/2),plate0-A12,5000000,1
+intermediates/subsamples/plate0-A1.100000.0.bam,UNDEFINED,0.5175113216381271,Usher placements: T12(58/92) UNDEFINED(34/92),plate0-A1,100000,0
+intermediates/subsamples/plate0-A1.250000.0.bam,UNDEFINED,0.6911951200392232,Usher placements: T12(58/66) UNDEFINED(8/66),plate0-A1,250000,0
+intermediates/subsamples/plate0-A1.500000.0.bam,T12,1.0,Usher placements: T12(26/26),plate0-A1,500000,1
+intermediates/subsamples/plate0-A1.1000000.0.bam,T12,1.0,Usher placements: T12(2/2),plate0-A1,1000000,1
+intermediates/subsamples/plate0-A1.2500000.0.bam,T12,1.0,Usher placements: T12(2/2),plate0-A1,2500000,1
+intermediates/subsamples/plate0-A1.5000000.0.bam,T12,1.0,Usher placements: T12(2/2),plate0-A1,5000000,1
+intermediates/subsamples/plate0-A2.100000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate0-A2,100000,0
+intermediates/subsamples/plate0-A2.250000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate0-A2,250000,0
+intermediates/subsamples/plate0-A2.500000.0.bam,T12,1.0,Usher placements: T12(44/44),plate0-A2,500000,1
+intermediates/subsamples/plate0-A2.1000000.0.bam,T12,1.0,Usher placements: T12(7/7),plate0-A2,1000000,1
+intermediates/subsamples/plate0-A2.2500000.0.bam,T12,1.0,Usher placements: T12(4/4),plate0-A2,2500000,1
+intermediates/subsamples/plate0-A2.5000000.0.bam,T12,1.0,Usher placements: T12(4/4),plate0-A2,5000000,1
+intermediates/subsamples/plate0-A3.100000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate0-A3,100000,0
+intermediates/subsamples/plate0-A3.250000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate0-A3,250000,0
+intermediates/subsamples/plate0-A3.500000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate0-A3,500000,0
+intermediates/subsamples/plate0-A3.1000000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate0-A3,1000000,0
+intermediates/subsamples/plate0-A3.2500000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate0-A3,2500000,0
+intermediates/subsamples/plate0-A3.5000000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate0-A3,5000000,0
+intermediates/subsamples/plate0-A4.100000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate0-A4,100000,0
+intermediates/subsamples/plate0-A4.250000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate0-A4,250000,0
+intermediates/subsamples/plate0-A4.500000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate0-A4,500000,0
+intermediates/subsamples/plate0-A4.1000000.0.bam,T12,1.0,Usher placements: T12(43/43),plate0-A4,1000000,1
+intermediates/subsamples/plate0-A4.2500000.0.bam,T12,1.0,Usher placements: T12(24/24),plate0-A4,2500000,1
+intermediates/subsamples/plate0-A4.5000000.0.bam,T12,1.0,Usher placements: T12(4/4),plate0-A4,5000000,1
+intermediates/subsamples/plate0-A5.100000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate0-A5,100000,0
+intermediates/subsamples/plate0-A5.250000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate0-A5,250000,0
+intermediates/subsamples/plate0-A5.500000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate0-A5,500000,0
+intermediates/subsamples/plate0-A5.1000000.0.bam,T12,1.0,Usher placements: T12(28/28),plate0-A5,1000000,1
+intermediates/subsamples/plate0-A5.2500000.0.bam,T12,1.0,Usher placements: T12(7/7),plate0-A5,2500000,1
+intermediates/subsamples/plate0-A5.5000000.0.bam,T12,1.0,Usher placements: T12(4/4),plate0-A5,5000000,1
+intermediates/subsamples/plate0-A6.100000.0.bam,T12,1.0,Usher placements: T12(42/42),plate0-A6,100000,1
+intermediates/subsamples/plate0-A6.250000.0.bam,T12,1.0,Usher placements: T12(7/7),plate0-A6,250000,1
+intermediates/subsamples/plate0-A6.500000.0.bam,T12,1.0,Usher placements: T12(4/4),plate0-A6,500000,1
+intermediates/subsamples/plate0-A6.1000000.0.bam,T12,1.0,Usher placements: T12(2/2),plate0-A6,1000000,1
+intermediates/subsamples/plate0-A6.2500000.0.bam,T12,1.0,Usher placements: T12(2/2),plate0-A6,2500000,1
+intermediates/subsamples/plate0-A6.5000000.0.bam,T12,1.0,Usher placements: T12(2/2),plate0-A6,5000000,1
+intermediates/subsamples/plate0-A7.100000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate0-A7,100000,0
+intermediates/subsamples/plate0-A7.250000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate0-A7,250000,0
+intermediates/subsamples/plate0-A7.500000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate0-A7,500000,0
+intermediates/subsamples/plate0-A7.1000000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate0-A7,1000000,0
+intermediates/subsamples/plate0-A7.2500000.0.bam,UNDEFINED,0.5855421195842971,Usher placements: T12(58/75) UNDEFINED(17/75),plate0-A7,2500000,0
+intermediates/subsamples/plate0-A7.5000000.0.bam,UNDEFINED,0.584181000112378,Usher placements: T12(54/70) UNDEFINED(16/70),plate0-A7,5000000,0
+intermediates/subsamples/plate0-A8.100000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate0-A8,100000,0
+intermediates/subsamples/plate0-A8.250000.0.bam,T12,1.0,Usher placements: T12(30/30),plate0-A8,250000,1
+intermediates/subsamples/plate0-A8.500000.0.bam,T12,1.0,Usher placements: T12(28/28),plate0-A8,500000,1
+intermediates/subsamples/plate0-A8.1000000.0.bam,T12,1.0,Usher placements: T12(7/7),plate0-A8,1000000,1
+intermediates/subsamples/plate0-A8.2500000.0.bam,T12,1.0,Usher placements: T12(2/2),plate0-A8,2500000,1
+intermediates/subsamples/plate0-A8.5000000.0.bam,T12,1.0,Usher placements: T12(2/2),plate0-A8,5000000,1
+intermediates/subsamples/plate0-A9.100000.0.bam,T12,1.0,Usher placements: T12(42/42),plate0-A9,100000,1
+intermediates/subsamples/plate0-A9.250000.0.bam,T12,1.0,Usher placements: T12(7/7),plate0-A9,250000,1
+intermediates/subsamples/plate0-A9.500000.0.bam,T12,1.0,Usher placements: T12(4/4),plate0-A9,500000,1
+intermediates/subsamples/plate0-A9.1000000.0.bam,T12,1.0,Usher placements: T12(4/4),plate0-A9,1000000,1
+intermediates/subsamples/plate0-A9.2500000.0.bam,T12,1.0,Usher placements: T12(4/4),plate0-A9,2500000,1
+intermediates/subsamples/plate0-A9.5000000.0.bam,T12,1.0,Usher placements: T12(3/3),plate0-A9,5000000,1
+intermediates/subsamples/plate0-B10.100000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate0-B10,100000,0
+intermediates/subsamples/plate0-B10.250000.0.bam,T12,1.0,Usher placements: T12(44/44),plate0-B10,250000,1
+intermediates/subsamples/plate0-B10.500000.0.bam,T12,1.0,Usher placements: T12(29/29),plate0-B10,500000,1
+intermediates/subsamples/plate0-B10.1000000.0.bam,T12,1.0,Usher placements: T12(7/7),plate0-B10,1000000,1
+intermediates/subsamples/plate0-B10.2500000.0.bam,T12,1.0,Usher placements: T12(6/6),plate0-B10,2500000,1
+intermediates/subsamples/plate0-B10.5000000.0.bam,T12,1.0,Usher placements: T12(2/2),plate0-B10,5000000,1
+intermediates/subsamples/plate0-B11.100000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate0-B11,100000,0
+intermediates/subsamples/plate0-B11.250000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate0-B11,250000,0
+intermediates/subsamples/plate0-B11.500000.0.bam,T12,1.0,Usher placements: T12(43/43),plate0-B11,500000,1
+intermediates/subsamples/plate0-B11.1000000.0.bam,T12,1.0,Usher placements: T12(29/29),plate0-B11,1000000,1
+intermediates/subsamples/plate0-B11.2500000.0.bam,T12,1.0,Usher placements: T12(6/6),plate0-B11,2500000,1
+intermediates/subsamples/plate0-B11.5000000.0.bam,T12,1.0,Usher placements: T12(4/4),plate0-B11,5000000,1
+intermediates/subsamples/plate0-B1.100000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate0-B1,100000,0
+intermediates/subsamples/plate0-B1.250000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate0-B1,250000,0
+intermediates/subsamples/plate0-B1.500000.0.bam,T12,1.0,Usher placements: T12(41/41),plate0-B1,500000,1
+intermediates/subsamples/plate0-B1.1000000.0.bam,T12,1.0,Usher placements: T12(7/7),plate0-B1,1000000,1
+intermediates/subsamples/plate0-B1.2500000.0.bam,T12,1.0,Usher placements: T12(6/6),plate0-B1,2500000,1
+intermediates/subsamples/plate0-B1.5000000.0.bam,T12,1.0,Usher placements: T12(6/6),plate0-B1,5000000,1
+intermediates/subsamples/plate0-B2.100000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate0-B2,100000,0
+intermediates/subsamples/plate0-B2.250000.0.bam,T12,1.0,Usher placements: T12(54/54),plate0-B2,250000,1
+intermediates/subsamples/plate0-B2.500000.0.bam,UNDEFINED,0.6860737421030715,Usher placements: T12(49/56) UNDEFINED(7/56),plate0-B2,500000,0
+intermediates/subsamples/plate0-B2.1000000.0.bam,T12,1.0,Usher placements: T12(37/37),plate0-B2,1000000,1
+intermediates/subsamples/plate0-B2.2500000.0.bam,T12,1.0,Usher placements: T12(28/28),plate0-B2,2500000,1
+intermediates/subsamples/plate0-B2.5000000.0.bam,T12,1.0,Usher placements: T12(6/6),plate0-B2,5000000,1
+intermediates/subsamples/plate0-B3.100000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate0-B3,100000,0
+intermediates/subsamples/plate0-B3.250000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate0-B3,250000,0
+intermediates/subsamples/plate0-B3.500000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate0-B3,500000,0
+intermediates/subsamples/plate0-B3.1000000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate0-B3,1000000,0
+intermediates/subsamples/plate0-B3.2500000.0.bam,T12,1.0,Usher placements: T12(30/30),plate0-B3,2500000,1
+intermediates/subsamples/plate0-B3.5000000.0.bam,T12,1.0,Usher placements: T12(7/7),plate0-B3,5000000,1
+intermediates/subsamples/plate0-B4.100000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate0-B4,100000,0
+intermediates/subsamples/plate0-B4.250000.0.bam,T12,1.0,Usher placements: T12(42/42),plate0-B4,250000,1
+intermediates/subsamples/plate0-B4.500000.0.bam,T12,1.0,Usher placements: T12(39/39),plate0-B4,500000,1
+intermediates/subsamples/plate0-B4.1000000.0.bam,T12,1.0,Usher placements: T12(7/7),plate0-B4,1000000,1
+intermediates/subsamples/plate0-B4.2500000.0.bam,T12,1.0,Usher placements: T12(4/4),plate0-B4,2500000,1
+intermediates/subsamples/plate0-B4.5000000.0.bam,T12,1.0,Usher placements: T12(2/2),plate0-B4,5000000,1
+intermediates/subsamples/plate0-B5.100000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate0-B5,100000,0
+intermediates/subsamples/plate0-B5.250000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate0-B5,250000,0
+intermediates/subsamples/plate0-B5.500000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate0-B5,500000,0
+intermediates/subsamples/plate0-B5.1000000.0.bam,T12,1.0,Usher placements: T12(43/43),plate0-B5,1000000,1
+intermediates/subsamples/plate0-B5.2500000.0.bam,T12,1.0,Usher placements: T12(37/37),plate0-B5,2500000,1
+intermediates/subsamples/plate0-B5.5000000.0.bam,T12,1.0,Usher placements: T12(7/7),plate0-B5,5000000,1
+intermediates/subsamples/plate0-B6.100000.0.bam,T12,1.0,Usher placements: T12(41/41),plate0-B6,100000,1
+intermediates/subsamples/plate0-B6.250000.0.bam,T12,1.0,Usher placements: T12(26/26),plate0-B6,250000,1
+intermediates/subsamples/plate0-B6.500000.0.bam,T12,1.0,Usher placements: T12(4/4),plate0-B6,500000,1
+intermediates/subsamples/plate0-B6.1000000.0.bam,T12,1.0,Usher placements: T12(4/4),plate0-B6,1000000,1
+intermediates/subsamples/plate0-B6.2500000.0.bam,T12,1.0,Usher placements: T12(4/4),plate0-B6,2500000,1
+intermediates/subsamples/plate0-B6.5000000.0.bam,T12,1.0,Usher placements: T12(2/2),plate0-B6,5000000,1
+intermediates/subsamples/plate0-B7.100000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate0-B7,100000,0
+intermediates/subsamples/plate0-B7.250000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate0-B7,250000,0
+intermediates/subsamples/plate0-B7.500000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate0-B7,500000,0
+intermediates/subsamples/plate0-B7.1000000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate0-B7,1000000,0
+intermediates/subsamples/plate0-B7.2500000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate0-B7,2500000,0
+intermediates/subsamples/plate0-B7.5000000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate0-B7,5000000,0
+intermediates/subsamples/plate0-B8.100000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate0-B8,100000,0
+intermediates/subsamples/plate0-B8.250000.0.bam,T12,1.0,Usher placements: T12(41/41),plate0-B8,250000,1
+intermediates/subsamples/plate0-B8.500000.0.bam,T12,1.0,Usher placements: T12(25/25),plate0-B8,500000,1
+intermediates/subsamples/plate0-B8.1000000.0.bam,T12,1.0,Usher placements: T12(6/6),plate0-B8,1000000,1
+intermediates/subsamples/plate0-B8.2500000.0.bam,T12,1.0,Usher placements: T12(4/4),plate0-B8,2500000,1
+intermediates/subsamples/plate0-B8.5000000.0.bam,T12,1.0,Usher placements: T12(4/4),plate0-B8,5000000,1
+intermediates/subsamples/plate0-B9.100000.0.bam,T12,1.0,Usher placements: T12(54/54),plate0-B9,100000,1
+intermediates/subsamples/plate0-B9.250000.0.bam,T12,1.0,Usher placements: T12(28/28),plate0-B9,250000,1
+intermediates/subsamples/plate0-B9.500000.0.bam,T12,1.0,Usher placements: T12(5/5),plate0-B9,500000,1
+intermediates/subsamples/plate0-B9.1000000.0.bam,T12,1.0,Usher placements: T12(2/2),plate0-B9,1000000,1
+intermediates/subsamples/plate0-B9.2500000.0.bam,T12,1.0,Usher placements: T12(2/2),plate0-B9,2500000,1
+intermediates/subsamples/plate0-B9.5000000.0.bam,T12,1.0,Usher placements: T12(2/2),plate0-B9,5000000,1
+intermediates/subsamples/plate0-C10.100000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate0-C10,100000,0
+intermediates/subsamples/plate0-C10.250000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate0-C10,250000,0
+intermediates/subsamples/plate0-C10.500000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate0-C10,500000,0
+intermediates/subsamples/plate0-C10.1000000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate0-C10,1000000,0
+intermediates/subsamples/plate0-C10.2500000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate0-C10,2500000,0
+intermediates/subsamples/plate0-C10.5000000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate0-C10,5000000,0
+intermediates/subsamples/plate0-C11.100000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate0-C11,100000,0
+intermediates/subsamples/plate0-C11.250000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate0-C11,250000,0
+intermediates/subsamples/plate0-C11.500000.0.bam,T12,1.0,Usher placements: T12(42/42),plate0-C11,500000,1
+intermediates/subsamples/plate0-C11.1000000.0.bam,T12,1.0,Usher placements: T12(42/42),plate0-C11,1000000,1
+intermediates/subsamples/plate0-C11.2500000.0.bam,T12,1.0,Usher placements: T12(42/42),plate0-C11,2500000,1
+intermediates/subsamples/plate0-C11.5000000.0.bam,T12,1.0,Usher placements: T12(42/42),plate0-C11,5000000,1
+intermediates/subsamples/plate0-C12.100000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate0-C12,100000,0
+intermediates/subsamples/plate0-C12.250000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate0-C12,250000,0
+intermediates/subsamples/plate0-C12.500000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate0-C12,500000,0
+intermediates/subsamples/plate0-C12.1000000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate0-C12,1000000,0
+intermediates/subsamples/plate0-C12.2500000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate0-C12,2500000,0
+intermediates/subsamples/plate0-C12.5000000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate0-C12,5000000,0
+intermediates/subsamples/plate0-C1.100000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate0-C1,100000,0
+intermediates/subsamples/plate0-C1.250000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate0-C1,250000,0
+intermediates/subsamples/plate0-C1.500000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate0-C1,500000,0
+intermediates/subsamples/plate0-C1.1000000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate0-C1,1000000,0
+intermediates/subsamples/plate0-C1.2500000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate0-C1,2500000,0
+intermediates/subsamples/plate0-C1.5000000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate0-C1,5000000,0
+intermediates/subsamples/plate0-C2.100000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate0-C2,100000,0
+intermediates/subsamples/plate0-C2.250000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate0-C2,250000,0
+intermediates/subsamples/plate0-C2.500000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate0-C2,500000,0
+intermediates/subsamples/plate0-C2.1000000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate0-C2,1000000,0
+intermediates/subsamples/plate0-C2.2500000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate0-C2,2500000,0
+intermediates/subsamples/plate0-C2.5000000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate0-C2,5000000,0
+intermediates/subsamples/plate0-C3.100000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate0-C3,100000,0
+intermediates/subsamples/plate0-C3.250000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate0-C3,250000,0
+intermediates/subsamples/plate0-C3.500000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate0-C3,500000,0
+intermediates/subsamples/plate0-C3.1000000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate0-C3,1000000,0
+intermediates/subsamples/plate0-C3.2500000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate0-C3,2500000,0
+intermediates/subsamples/plate0-C3.5000000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate0-C3,5000000,0
+intermediates/subsamples/plate0-C4.100000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate0-C4,100000,0
+intermediates/subsamples/plate0-C4.250000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate0-C4,250000,0
+intermediates/subsamples/plate0-C4.500000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate0-C4,500000,0
+intermediates/subsamples/plate0-C4.1000000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate0-C4,1000000,0
+intermediates/subsamples/plate0-C4.2500000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate0-C4,2500000,0
+intermediates/subsamples/plate0-C4.5000000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate0-C4,5000000,0
+intermediates/subsamples/plate0-C5.100000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate0-C5,100000,0
+intermediates/subsamples/plate0-C5.250000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate0-C5,250000,0
+intermediates/subsamples/plate0-C5.500000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate0-C5,500000,0
+intermediates/subsamples/plate0-C5.1000000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate0-C5,1000000,0
+intermediates/subsamples/plate0-C5.2500000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate0-C5,2500000,0
+intermediates/subsamples/plate0-C5.5000000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate0-C5,5000000,0
+intermediates/subsamples/plate0-C6.100000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate0-C6,100000,0
+intermediates/subsamples/plate0-C6.250000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate0-C6,250000,0
+intermediates/subsamples/plate0-C6.500000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate0-C6,500000,0
+intermediates/subsamples/plate0-C6.1000000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate0-C6,1000000,0
+intermediates/subsamples/plate0-C6.2500000.0.bam,UNDEFINED,0.5604250990763493,Usher placements: T12(58/79) UNDEFINED(21/79),plate0-C6,2500000,0
+intermediates/subsamples/plate0-C6.5000000.0.bam,UNDEFINED,0.5604250990763493,Usher placements: T12(58/79) UNDEFINED(21/79),plate0-C6,5000000,0
+intermediates/subsamples/plate0-C7.100000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate0-C7,100000,0
+intermediates/subsamples/plate0-C7.250000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate0-C7,250000,0
+intermediates/subsamples/plate0-C7.500000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate0-C7,500000,0
+intermediates/subsamples/plate0-C7.1000000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate0-C7,1000000,0
+intermediates/subsamples/plate0-C7.2500000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate0-C7,2500000,0
+intermediates/subsamples/plate0-C7.5000000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate0-C7,5000000,0
+intermediates/subsamples/plate0-C8.100000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate0-C8,100000,0
+intermediates/subsamples/plate0-C8.250000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate0-C8,250000,0
+intermediates/subsamples/plate0-C8.500000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate0-C8,500000,0
+intermediates/subsamples/plate0-C8.1000000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate0-C8,1000000,0
+intermediates/subsamples/plate0-C8.2500000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate0-C8,2500000,0
+intermediates/subsamples/plate0-C8.5000000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate0-C8,5000000,0
+intermediates/subsamples/plate0-C9.100000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate0-C9,100000,0
+intermediates/subsamples/plate0-C9.250000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate0-C9,250000,0
+intermediates/subsamples/plate0-C9.500000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate0-C9,500000,0
+intermediates/subsamples/plate0-C9.1000000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate0-C9,1000000,0
+intermediates/subsamples/plate0-C9.2500000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate0-C9,2500000,0
+intermediates/subsamples/plate0-C9.5000000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate0-C9,5000000,0
+intermediates/subsamples/plate0-D11.100000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate0-D11,100000,0
+intermediates/subsamples/plate0-D11.250000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate0-D11,250000,0
+intermediates/subsamples/plate0-D11.500000.0.bam,UNDEFINED,0.658643269546582,Usher placements: T12(58/68) UNDEFINED(10/68),plate0-D11,500000,0
+intermediates/subsamples/plate0-D11.1000000.0.bam,T12,1.0,Usher placements: T12(7/7),plate0-D11,1000000,1
+intermediates/subsamples/plate0-D11.2500000.0.bam,T12,1.0,Usher placements: T12(4/4),plate0-D11,2500000,1
+intermediates/subsamples/plate0-D11.5000000.0.bam,T12,1.0,Usher placements: T12(4/4),plate0-D11,5000000,1
+intermediates/subsamples/plate0-D1.100000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate0-D1,100000,0
+intermediates/subsamples/plate0-D1.250000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate0-D1,250000,0
+intermediates/subsamples/plate0-D1.500000.0.bam,T12,1.0,Usher placements: T12(57/57),plate0-D1,500000,1
+intermediates/subsamples/plate0-D1.1000000.0.bam,T12,1.0,Usher placements: T12(57/57),plate0-D1,1000000,1
+intermediates/subsamples/plate0-D1.2500000.0.bam,T12,1.0,Usher placements: T12(57/57),plate0-D1,2500000,1
+intermediates/subsamples/plate0-D1.5000000.0.bam,T12,1.0,Usher placements: T12(57/57),plate0-D1,5000000,1
+intermediates/subsamples/plate0-D2.100000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate0-D2,100000,0
+intermediates/subsamples/plate0-D2.250000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate0-D2,250000,0
+intermediates/subsamples/plate0-D2.500000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate0-D2,500000,0
+intermediates/subsamples/plate0-D2.1000000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate0-D2,1000000,0
+intermediates/subsamples/plate0-D2.2500000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate0-D2,2500000,0
+intermediates/subsamples/plate0-D2.5000000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate0-D2,5000000,0
+intermediates/subsamples/plate0-D3.100000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate0-D3,100000,0
+intermediates/subsamples/plate0-D3.250000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate0-D3,250000,0
+intermediates/subsamples/plate0-D3.500000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate0-D3,500000,0
+intermediates/subsamples/plate0-D3.1000000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate0-D3,1000000,0
+intermediates/subsamples/plate0-D3.2500000.0.bam,T12,1.0,Usher placements: T12(44/44),plate0-D3,2500000,1
+intermediates/subsamples/plate0-D3.5000000.0.bam,T12,1.0,Usher placements: T12(7/7),plate0-D3,5000000,1
+intermediates/subsamples/plate0-D4.100000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate0-D4,100000,0
+intermediates/subsamples/plate0-D4.250000.0.bam,T12,1.0,Usher placements: T12(41/41),plate0-D4,250000,1
+intermediates/subsamples/plate0-D4.500000.0.bam,T12,1.0,Usher placements: T12(42/42),plate0-D4,500000,1
+intermediates/subsamples/plate0-D4.1000000.0.bam,T12,1.0,Usher placements: T12(28/28),plate0-D4,1000000,1
+intermediates/subsamples/plate0-D4.2500000.0.bam,T12,1.0,Usher placements: T12(4/4),plate0-D4,2500000,1
+intermediates/subsamples/plate0-D4.5000000.0.bam,T12,1.0,Usher placements: T12(3/3),plate0-D4,5000000,1
+intermediates/subsamples/plate0-D5.100000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate0-D5,100000,0
+intermediates/subsamples/plate0-D5.250000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate0-D5,250000,0
+intermediates/subsamples/plate0-D5.500000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate0-D5,500000,0
+intermediates/subsamples/plate0-D5.1000000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate0-D5,1000000,0
+intermediates/subsamples/plate0-D5.2500000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate0-D5,2500000,0
+intermediates/subsamples/plate0-D5.5000000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate0-D5,5000000,0
+intermediates/subsamples/plate0-D6.100000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate0-D6,100000,0
+intermediates/subsamples/plate0-D6.250000.0.bam,T12,1.0,Usher placements: T12(37/37),plate0-D6,250000,1
+intermediates/subsamples/plate0-D6.500000.0.bam,T12,1.0,Usher placements: T12(24/24),plate0-D6,500000,1
+intermediates/subsamples/plate0-D6.1000000.0.bam,T12,1.0,Usher placements: T12(4/4),plate0-D6,1000000,1
+intermediates/subsamples/plate0-D6.2500000.0.bam,T12,1.0,Usher placements: T12(4/4),plate0-D6,2500000,1
+intermediates/subsamples/plate0-D6.5000000.0.bam,T12,1.0,Usher placements: T12(4/4),plate0-D6,5000000,1
+intermediates/subsamples/plate0-D7.100000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate0-D7,100000,0
+intermediates/subsamples/plate0-D7.250000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate0-D7,250000,0
+intermediates/subsamples/plate0-D7.500000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate0-D7,500000,0
+intermediates/subsamples/plate0-D7.1000000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate0-D7,1000000,0
+intermediates/subsamples/plate0-D7.2500000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate0-D7,2500000,0
+intermediates/subsamples/plate0-D7.5000000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate0-D7,5000000,0
+intermediates/subsamples/plate0-D8.100000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate0-D8,100000,0
+intermediates/subsamples/plate0-D8.250000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate0-D8,250000,0
+intermediates/subsamples/plate0-D8.500000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate0-D8,500000,0
+intermediates/subsamples/plate0-D8.1000000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate0-D8,1000000,0
+intermediates/subsamples/plate0-D8.2500000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate0-D8,2500000,0
+intermediates/subsamples/plate0-D8.5000000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate0-D8,5000000,0
+intermediates/subsamples/plate0-D9.100000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate0-D9,100000,0
+intermediates/subsamples/plate0-D9.250000.0.bam,T12,1.0,Usher placements: T12(43/43),plate0-D9,250000,1
+intermediates/subsamples/plate0-D9.500000.0.bam,T12,1.0,Usher placements: T12(26/26),plate0-D9,500000,1
+intermediates/subsamples/plate0-D9.1000000.0.bam,T12,1.0,Usher placements: T12(26/26),plate0-D9,1000000,1
+intermediates/subsamples/plate0-D9.2500000.0.bam,T12,1.0,Usher placements: T12(26/26),plate0-D9,2500000,1
+intermediates/subsamples/plate0-D9.5000000.0.bam,T12,1.0,Usher placements: T12(26/26),plate0-D9,5000000,1
+intermediates/subsamples/plate0-E10.100000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate0-E10,100000,0
+intermediates/subsamples/plate0-E10.250000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate0-E10,250000,0
+intermediates/subsamples/plate0-E10.500000.0.bam,T12,1.0,Usher placements: T12(31/31),plate0-E10,500000,1
+intermediates/subsamples/plate0-E10.1000000.0.bam,T12,1.0,Usher placements: T12(7/7),plate0-E10,1000000,1
+intermediates/subsamples/plate0-E10.2500000.0.bam,T12,1.0,Usher placements: T12(4/4),plate0-E10,2500000,1
+intermediates/subsamples/plate0-E10.5000000.0.bam,T12,1.0,Usher placements: T12(4/4),plate0-E10,5000000,1
+intermediates/subsamples/plate0-E11.100000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate0-E11,100000,0
+intermediates/subsamples/plate0-E11.250000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate0-E11,250000,0
+intermediates/subsamples/plate0-E11.500000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate0-E11,500000,0
+intermediates/subsamples/plate0-E11.1000000.0.bam,UNDEFINED,0.5771231049827352,Usher placements: T12(51/67) UNDEFINED(16/67),plate0-E11,1000000,0
+intermediates/subsamples/plate0-E11.2500000.0.bam,T12,1.0,Usher placements: T12(27/27),plate0-E11,2500000,1
+intermediates/subsamples/plate0-E11.5000000.0.bam,T12,1.0,Usher placements: T12(26/26),plate0-E11,5000000,1
+intermediates/subsamples/plate0-E12.100000.0.bam,T12,1.0,Usher placements: T12(31/31),plate0-E12,100000,1
+intermediates/subsamples/plate0-E12.250000.0.bam,T12,1.0,Usher placements: T12(6/6),plate0-E12,250000,1
+intermediates/subsamples/plate0-E12.500000.0.bam,T12,1.0,Usher placements: T12(5/5),plate0-E12,500000,1
+intermediates/subsamples/plate0-E12.1000000.0.bam,T12,1.0,Usher placements: T12(5/5),plate0-E12,1000000,1
+intermediates/subsamples/plate0-E12.2500000.0.bam,T12,1.0,Usher placements: T12(2/2),plate0-E12,2500000,1
+intermediates/subsamples/plate0-E12.5000000.0.bam,T12,1.0,Usher placements: T12(2/2),plate0-E12,5000000,1
+intermediates/subsamples/plate0-E1.100000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate0-E1,100000,0
+intermediates/subsamples/plate0-E1.250000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate0-E1,250000,0
+intermediates/subsamples/plate0-E1.500000.0.bam,T12,1.0,Usher placements: T12(52/52),plate0-E1,500000,1
+intermediates/subsamples/plate0-E1.1000000.0.bam,T12,1.0,Usher placements: T12(7/7),plate0-E1,1000000,1
+intermediates/subsamples/plate0-E1.2500000.0.bam,T12,1.0,Usher placements: T12(5/5),plate0-E1,2500000,1
+intermediates/subsamples/plate0-E1.5000000.0.bam,T12,1.0,Usher placements: T12(4/4),plate0-E1,5000000,1
+intermediates/subsamples/plate0-E2.100000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate0-E2,100000,0
+intermediates/subsamples/plate0-E2.250000.0.bam,T12,1.0,Usher placements: T12(36/36),plate0-E2,250000,1
+intermediates/subsamples/plate0-E2.500000.0.bam,T12,1.0,Usher placements: T12(7/7),plate0-E2,500000,1
+intermediates/subsamples/plate0-E2.1000000.0.bam,T12,1.0,Usher placements: T12(6/6),plate0-E2,1000000,1
+intermediates/subsamples/plate0-E2.2500000.0.bam,T12,1.0,Usher placements: T12(4/4),plate0-E2,2500000,1
+intermediates/subsamples/plate0-E2.5000000.0.bam,T12,1.0,Usher placements: T12(5/5),plate0-E2,5000000,1
+intermediates/subsamples/plate0-E3.100000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate0-E3,100000,0
+intermediates/subsamples/plate0-E3.250000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate0-E3,250000,0
+intermediates/subsamples/plate0-E3.500000.0.bam,T12,1.0,Usher placements: T12(36/36),plate0-E3,500000,1
+intermediates/subsamples/plate0-E3.1000000.0.bam,T12,1.0,Usher placements: T12(7/7),plate0-E3,1000000,1
+intermediates/subsamples/plate0-E3.2500000.0.bam,T12,1.0,Usher placements: T12(5/5),plate0-E3,2500000,1
+intermediates/subsamples/plate0-E3.5000000.0.bam,T12,1.0,Usher placements: T12(5/5),plate0-E3,5000000,1
+intermediates/subsamples/plate0-E4.100000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate0-E4,100000,0
+intermediates/subsamples/plate0-E4.250000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate0-E4,250000,0
+intermediates/subsamples/plate0-E4.500000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate0-E4,500000,0
+intermediates/subsamples/plate0-E4.1000000.0.bam,UNDEFINED,0.5719292240479291,Usher placements: T12(58/77) UNDEFINED(19/77),plate0-E4,1000000,0
+intermediates/subsamples/plate0-E4.2500000.0.bam,T12,1.0,Usher placements: T12(39/39),plate0-E4,2500000,1
+intermediates/subsamples/plate0-E4.5000000.0.bam,T12,1.0,Usher placements: T12(7/7),plate0-E4,5000000,1
+intermediates/subsamples/plate0-E5.100000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate0-E5,100000,0
+intermediates/subsamples/plate0-E5.250000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate0-E5,250000,0
+intermediates/subsamples/plate0-E5.500000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate0-E5,500000,0
+intermediates/subsamples/plate0-E5.1000000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate0-E5,1000000,0
+intermediates/subsamples/plate0-E5.2500000.0.bam,T12,1.0,Usher placements: T12(42/42),plate0-E5,2500000,1
+intermediates/subsamples/plate0-E5.5000000.0.bam,T12,1.0,Usher placements: T12(30/30),plate0-E5,5000000,1
+intermediates/subsamples/plate0-E6.100000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate0-E6,100000,0
+intermediates/subsamples/plate0-E6.250000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate0-E6,250000,0
+intermediates/subsamples/plate0-E6.500000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate0-E6,500000,0
+intermediates/subsamples/plate0-E6.1000000.0.bam,T12,1.0,Usher placements: T12(38/38),plate0-E6,1000000,1
+intermediates/subsamples/plate0-E6.2500000.0.bam,T12,1.0,Usher placements: T12(6/6),plate0-E6,2500000,1
+intermediates/subsamples/plate0-E6.5000000.0.bam,T12,1.0,Usher placements: T12(6/6),plate0-E6,5000000,1
+intermediates/subsamples/plate0-E7.100000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate0-E7,100000,0
+intermediates/subsamples/plate0-E7.250000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate0-E7,250000,0
+intermediates/subsamples/plate0-E7.500000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate0-E7,500000,0
+intermediates/subsamples/plate0-E7.1000000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate0-E7,1000000,0
+intermediates/subsamples/plate0-E7.2500000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate0-E7,2500000,0
+intermediates/subsamples/plate0-E7.5000000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate0-E7,5000000,0
+intermediates/subsamples/plate0-E8.100000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate0-E8,100000,0
+intermediates/subsamples/plate0-E8.250000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate0-E8,250000,0
+intermediates/subsamples/plate0-E8.500000.0.bam,UNDEFINED,0.5932869723455235,Usher placements: T12(58/74) UNDEFINED(16/74),plate0-E8,500000,0
+intermediates/subsamples/plate0-E8.1000000.0.bam,T12,1.0,Usher placements: T12(29/29),plate0-E8,1000000,1
+intermediates/subsamples/plate0-E8.2500000.0.bam,T12,1.0,Usher placements: T12(23/23),plate0-E8,2500000,1
+intermediates/subsamples/plate0-E8.5000000.0.bam,T12,1.0,Usher placements: T12(5/5),plate0-E8,5000000,1
+intermediates/subsamples/plate0-E9.100000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate0-E9,100000,0
+intermediates/subsamples/plate0-E9.250000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate0-E9,250000,0
+intermediates/subsamples/plate0-E9.500000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate0-E9,500000,0
+intermediates/subsamples/plate0-E9.1000000.0.bam,UNDEFINED,0.5064690817024926,Usher placements: T12(58/100) UNDEFINED(42/100),plate0-E9,1000000,0
+intermediates/subsamples/plate0-E9.2500000.0.bam,T12,1.0,Usher placements: T12(37/37),plate0-E9,2500000,1
+intermediates/subsamples/plate0-E9.5000000.0.bam,T12,1.0,Usher placements: T12(7/7),plate0-E9,5000000,1
+intermediates/subsamples/plate0-F10.100000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate0-F10,100000,0
+intermediates/subsamples/plate0-F10.250000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate0-F10,250000,0
+intermediates/subsamples/plate0-F10.500000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate0-F10,500000,0
+intermediates/subsamples/plate0-F10.1000000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate0-F10,1000000,0
+intermediates/subsamples/plate0-F10.2500000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate0-F10,2500000,0
+intermediates/subsamples/plate0-F10.5000000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate0-F10,5000000,0
+intermediates/subsamples/plate0-F11.100000.0.bam,T12,1.0,Usher placements: T12(42/42),plate0-F11,100000,1
+intermediates/subsamples/plate0-F11.250000.0.bam,T12,1.0,Usher placements: T12(7/7),plate0-F11,250000,1
+intermediates/subsamples/plate0-F11.500000.0.bam,T12,1.0,Usher placements: T12(7/7),plate0-F11,500000,1
+intermediates/subsamples/plate0-F11.1000000.0.bam,T12,1.0,Usher placements: T12(2/2),plate0-F11,1000000,1
+intermediates/subsamples/plate0-F11.2500000.0.bam,T12,1.0,Usher placements: T12(2/2),plate0-F11,2500000,1
+intermediates/subsamples/plate0-F11.5000000.0.bam,T12,1.0,Usher placements: T12(2/2),plate0-F11,5000000,1
+intermediates/subsamples/plate0-F12.100000.0.bam,T12,1.0,Usher placements: T12(42/42),plate0-F12,100000,1
+intermediates/subsamples/plate0-F12.250000.0.bam,T12,1.0,Usher placements: T12(4/4),plate0-F12,250000,1
+intermediates/subsamples/plate0-F12.500000.0.bam,T12,1.0,Usher placements: T12(4/4),plate0-F12,500000,1
+intermediates/subsamples/plate0-F12.1000000.0.bam,T12,1.0,Usher placements: T12(4/4),plate0-F12,1000000,1
+intermediates/subsamples/plate0-F12.2500000.0.bam,T12,1.0,Usher placements: T12(2/2),plate0-F12,2500000,1
+intermediates/subsamples/plate0-F12.5000000.0.bam,T12,1.0,Usher placements: T12(2/2),plate0-F12,5000000,1
+intermediates/subsamples/plate0-F1.100000.0.bam,T12,0.6919117691320793,Usher placements: T12(51/58) UNDEFINED(7/58),plate0-F1,100000,1
+intermediates/subsamples/plate0-F1.250000.0.bam,T12,1.0,Usher placements: T12(19/19),plate0-F1,250000,1
+intermediates/subsamples/plate0-F1.500000.0.bam,T12,1.0,Usher placements: T12(4/4),plate0-F1,500000,1
+intermediates/subsamples/plate0-F1.1000000.0.bam,T12,1.0,Usher placements: T12(2/2),plate0-F1,1000000,1
+intermediates/subsamples/plate0-F1.2500000.0.bam,T12,1.0,Usher placements: T12(2/2),plate0-F1,2500000,1
+intermediates/subsamples/plate0-F1.5000000.0.bam,T12,1.0,Usher placements: T12(2/2),plate0-F1,5000000,1
+intermediates/subsamples/plate0-F2.100000.0.bam,T12,1.0,Usher placements: T12(41/41),plate0-F2,100000,1
+intermediates/subsamples/plate0-F2.250000.0.bam,T12,1.0,Usher placements: T12(7/7),plate0-F2,250000,1
+intermediates/subsamples/plate0-F2.500000.0.bam,T12,1.0,Usher placements: T12(4/4),plate0-F2,500000,1
+intermediates/subsamples/plate0-F2.1000000.0.bam,T12,1.0,Usher placements: T12(2/2),plate0-F2,1000000,1
+intermediates/subsamples/plate0-F2.2500000.0.bam,T12,1.0,Usher placements: T12(2/2),plate0-F2,2500000,1
+intermediates/subsamples/plate0-F2.5000000.0.bam,T12,1.0,Usher placements: T12(2/2),plate0-F2,5000000,1
+intermediates/subsamples/plate0-F3.100000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate0-F3,100000,0
+intermediates/subsamples/plate0-F3.250000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate0-F3,250000,0
+intermediates/subsamples/plate0-F3.500000.0.bam,UNDEFINED,0.7105875024329669,Usher placements: T12(58/65) UNDEFINED(7/65),plate0-F3,500000,0
+intermediates/subsamples/plate0-F3.1000000.0.bam,T12,1.0,Usher placements: T12(7/7),plate0-F3,1000000,1
+intermediates/subsamples/plate0-F3.2500000.0.bam,T12,1.0,Usher placements: T12(7/7),plate0-F3,2500000,1
+intermediates/subsamples/plate0-F3.5000000.0.bam,T12,1.0,Usher placements: T12(4/4),plate0-F3,5000000,1
+intermediates/subsamples/plate0-F4.100000.0.bam,T12,1.0,Usher placements: T12(42/42),plate0-F4,100000,1
+intermediates/subsamples/plate0-F4.250000.0.bam,T12,1.0,Usher placements: T12(6/6),plate0-F4,250000,1
+intermediates/subsamples/plate0-F4.500000.0.bam,T12,1.0,Usher placements: T12(5/5),plate0-F4,500000,1
+intermediates/subsamples/plate0-F4.1000000.0.bam,T12,1.0,Usher placements: T12(2/2),plate0-F4,1000000,1
+intermediates/subsamples/plate0-F4.2500000.0.bam,T12,1.0,Usher placements: T12(3/3),plate0-F4,2500000,1
+intermediates/subsamples/plate0-F4.5000000.0.bam,T12,1.0,Usher placements: T12(3/3),plate0-F4,5000000,1
+intermediates/subsamples/plate0-F5.100000.0.bam,T12,1.0,Usher placements: T12(40/40),plate0-F5,100000,1
+intermediates/subsamples/plate0-F5.250000.0.bam,T12,1.0,Usher placements: T12(28/28),plate0-F5,250000,1
+intermediates/subsamples/plate0-F5.500000.0.bam,T12,1.0,Usher placements: T12(4/4),plate0-F5,500000,1
+intermediates/subsamples/plate0-F5.1000000.0.bam,T12,1.0,Usher placements: T12(4/4),plate0-F5,1000000,1
+intermediates/subsamples/plate0-F5.2500000.0.bam,T12,1.0,Usher placements: T12(2/2),plate0-F5,2500000,1
+intermediates/subsamples/plate0-F5.5000000.0.bam,T12,1.0,Usher placements: T12(2/2),plate0-F5,5000000,1
+intermediates/subsamples/plate0-F6.100000.0.bam,UNDEFINED,0.658643269546582,Usher placements: T12(58/68) UNDEFINED(10/68),plate0-F6,100000,0
+intermediates/subsamples/plate0-F6.250000.0.bam,T12,1.0,Usher placements: T12(7/7),plate0-F6,250000,1
+intermediates/subsamples/plate0-F6.500000.0.bam,T12,1.0,Usher placements: T12(3/3),plate0-F6,500000,1
+intermediates/subsamples/plate0-F6.1000000.0.bam,T12,1.0,Usher placements: T12(2/2),plate0-F6,1000000,1
+intermediates/subsamples/plate0-F6.2500000.0.bam,T12,1.0,Usher placements: T12(2/2),plate0-F6,2500000,1
+intermediates/subsamples/plate0-F6.5000000.0.bam,T12,1.0,Usher placements: T12(2/2),plate0-F6,5000000,1
+intermediates/subsamples/plate0-F7.100000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate0-F7,100000,0
+intermediates/subsamples/plate0-F7.250000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate0-F7,250000,0
+intermediates/subsamples/plate0-F7.500000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate0-F7,500000,0
+intermediates/subsamples/plate0-F7.1000000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate0-F7,1000000,0
+intermediates/subsamples/plate0-F7.2500000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate0-F7,2500000,0
+intermediates/subsamples/plate0-F7.5000000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate0-F7,5000000,0
+intermediates/subsamples/plate0-F8.100000.0.bam,UNDEFINED,0.5855421195842971,Usher placements: T12(58/75) UNDEFINED(17/75),plate0-F8,100000,0
+intermediates/subsamples/plate0-F8.250000.0.bam,T12,1.0,Usher placements: T12(29/29),plate0-F8,250000,1
+intermediates/subsamples/plate0-F8.500000.0.bam,T12,1.0,Usher placements: T12(5/5),plate0-F8,500000,1
+intermediates/subsamples/plate0-F8.1000000.0.bam,T12,1.0,Usher placements: T12(2/2),plate0-F8,1000000,1
+intermediates/subsamples/plate0-F8.2500000.0.bam,T12,1.0,Usher placements: T12(2/2),plate0-F8,2500000,1
+intermediates/subsamples/plate0-F8.5000000.0.bam,T12,1.0,Usher placements: T12(2/2),plate0-F8,5000000,1
+intermediates/subsamples/plate0-F9.100000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate0-F9,100000,0
+intermediates/subsamples/plate0-F9.250000.0.bam,T12,1.0,Usher placements: T12(40/40),plate0-F9,250000,1
+intermediates/subsamples/plate0-F9.500000.0.bam,T12,1.0,Usher placements: T12(25/25),plate0-F9,500000,1
+intermediates/subsamples/plate0-F9.1000000.0.bam,T12,1.0,Usher placements: T12(12/12),plate0-F9,1000000,1
+intermediates/subsamples/plate0-F9.2500000.0.bam,T12,1.0,Usher placements: T12(4/4),plate0-F9,2500000,1
+intermediates/subsamples/plate0-F9.5000000.0.bam,T12,1.0,Usher placements: T12(2/2),plate0-F9,5000000,1
+intermediates/subsamples/plate0-G10.100000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate0-G10,100000,0
+intermediates/subsamples/plate0-G10.250000.0.bam,T12,1.0,Usher placements: T12(40/40),plate0-G10,250000,1
+intermediates/subsamples/plate0-G10.500000.0.bam,T12,1.0,Usher placements: T12(25/25),plate0-G10,500000,1
+intermediates/subsamples/plate0-G10.1000000.0.bam,T12,1.0,Usher placements: T12(4/4),plate0-G10,1000000,1
+intermediates/subsamples/plate0-G10.2500000.0.bam,T12,1.0,Usher placements: T12(4/4),plate0-G10,2500000,1
+intermediates/subsamples/plate0-G10.5000000.0.bam,T12,1.0,Usher placements: T12(2/2),plate0-G10,5000000,1
+intermediates/subsamples/plate0-G11.100000.0.bam,T12,1.0,Usher placements: T12(43/43),plate0-G11,100000,1
+intermediates/subsamples/plate0-G11.250000.0.bam,T12,1.0,Usher placements: T12(7/7),plate0-G11,250000,1
+intermediates/subsamples/plate0-G11.500000.0.bam,T12,1.0,Usher placements: T12(6/6),plate0-G11,500000,1
+intermediates/subsamples/plate0-G11.1000000.0.bam,T12,1.0,Usher placements: T12(2/2),plate0-G11,1000000,1
+intermediates/subsamples/plate0-G11.2500000.0.bam,T12,1.0,Usher placements: T12(2/2),plate0-G11,2500000,1
+intermediates/subsamples/plate0-G11.5000000.0.bam,T12,1.0,Usher placements: T12(2/2),plate0-G11,5000000,1
+intermediates/subsamples/plate0-G12.100000.0.bam,T12,1.0,Usher placements: T12(39/39),plate0-G12,100000,1
+intermediates/subsamples/plate0-G12.250000.0.bam,T12,1.0,Usher placements: T12(13/13),plate0-G12,250000,1
+intermediates/subsamples/plate0-G12.500000.0.bam,T12,1.0,Usher placements: T12(4/4),plate0-G12,500000,1
+intermediates/subsamples/plate0-G12.1000000.0.bam,T12,1.0,Usher placements: T12(2/2),plate0-G12,1000000,1
+intermediates/subsamples/plate0-G12.2500000.0.bam,T12,1.0,Usher placements: T12(2/2),plate0-G12,2500000,1
+intermediates/subsamples/plate0-G12.5000000.0.bam,T12,1.0,Usher placements: T12(3/3),plate0-G12,5000000,1
+intermediates/subsamples/plate0-G1.100000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate0-G1,100000,0
+intermediates/subsamples/plate0-G1.250000.0.bam,T12,1.0,Usher placements: T12(38/38),plate0-G1,250000,1
+intermediates/subsamples/plate0-G1.500000.0.bam,T12,1.0,Usher placements: T12(13/13),plate0-G1,500000,1
+intermediates/subsamples/plate0-G1.1000000.0.bam,T12,1.0,Usher placements: T12(6/6),plate0-G1,1000000,1
+intermediates/subsamples/plate0-G1.2500000.0.bam,T12,1.0,Usher placements: T12(4/4),plate0-G1,2500000,1
+intermediates/subsamples/plate0-G1.5000000.0.bam,T12,1.0,Usher placements: T12(4/4),plate0-G1,5000000,1
+intermediates/subsamples/plate0-G2.100000.0.bam,T12,1.0,Usher placements: T12(7/7),plate0-G2,100000,1
+intermediates/subsamples/plate0-G2.250000.0.bam,T12,1.0,Usher placements: T12(6/6),plate0-G2,250000,1
+intermediates/subsamples/plate0-G2.500000.0.bam,T12,1.0,Usher placements: T12(3/3),plate0-G2,500000,1
+intermediates/subsamples/plate0-G2.1000000.0.bam,T12,1.0,Usher placements: T12(2/2),plate0-G2,1000000,1
+intermediates/subsamples/plate0-G2.2500000.0.bam,T12,1.0,Usher placements: T12(2/2),plate0-G2,2500000,1
+intermediates/subsamples/plate0-G2.5000000.0.bam,T12,1.0,Usher placements: T12(3/3),plate0-G2,5000000,1
+intermediates/subsamples/plate0-G3.100000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate0-G3,100000,0
+intermediates/subsamples/plate0-G3.250000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate0-G3,250000,0
+intermediates/subsamples/plate0-G3.500000.0.bam,T12,1.0,Usher placements: T12(41/41),plate0-G3,500000,1
+intermediates/subsamples/plate0-G3.1000000.0.bam,T12,1.0,Usher placements: T12(5/5),plate0-G3,1000000,1
+intermediates/subsamples/plate0-G3.2500000.0.bam,T12,1.0,Usher placements: T12(4/4),plate0-G3,2500000,1
+intermediates/subsamples/plate0-G3.5000000.0.bam,T12,1.0,Usher placements: T12(4/4),plate0-G3,5000000,1
+intermediates/subsamples/plate0-G4.100000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate0-G4,100000,0
+intermediates/subsamples/plate0-G4.250000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate0-G4,250000,0
+intermediates/subsamples/plate0-G4.500000.0.bam,T12,1.0,Usher placements: T12(38/38),plate0-G4,500000,1
+intermediates/subsamples/plate0-G4.1000000.0.bam,T12,1.0,Usher placements: T12(25/25),plate0-G4,1000000,1
+intermediates/subsamples/plate0-G4.2500000.0.bam,T12,1.0,Usher placements: T12(4/4),plate0-G4,2500000,1
+intermediates/subsamples/plate0-G4.5000000.0.bam,T12,1.0,Usher placements: T12(4/4),plate0-G4,5000000,1
+intermediates/subsamples/plate0-G5.100000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate0-G5,100000,0
+intermediates/subsamples/plate0-G5.250000.0.bam,UNDEFINED,0.5855421195842971,Usher placements: T12(58/75) UNDEFINED(17/75),plate0-G5,250000,0
+intermediates/subsamples/plate0-G5.500000.0.bam,T12,1.0,Usher placements: T12(44/44),plate0-G5,500000,1
+intermediates/subsamples/plate0-G5.1000000.0.bam,T12,1.0,Usher placements: T12(7/7),plate0-G5,1000000,1
+intermediates/subsamples/plate0-G5.2500000.0.bam,T12,1.0,Usher placements: T12(4/4),plate0-G5,2500000,1
+intermediates/subsamples/plate0-G5.5000000.0.bam,T12,1.0,Usher placements: T12(4/4),plate0-G5,5000000,1
+intermediates/subsamples/plate0-G6.100000.0.bam,UNDEFINED,0.658643269546582,Usher placements: T12(58/68) UNDEFINED(10/68),plate0-G6,100000,0
+intermediates/subsamples/plate0-G6.250000.0.bam,T12,1.0,Usher placements: T12(7/7),plate0-G6,250000,1
+intermediates/subsamples/plate0-G6.500000.0.bam,T12,1.0,Usher placements: T12(12/12),plate0-G6,500000,1
+intermediates/subsamples/plate0-G6.1000000.0.bam,T12,1.0,Usher placements: T12(4/4),plate0-G6,1000000,1
+intermediates/subsamples/plate0-G6.2500000.0.bam,T12,1.0,Usher placements: T12(2/2),plate0-G6,2500000,1
+intermediates/subsamples/plate0-G6.5000000.0.bam,T12,1.0,Usher placements: T12(2/2),plate0-G6,5000000,1
+intermediates/subsamples/plate0-G7.100000.0.bam,T12,1.0,Usher placements: T12(39/39),plate0-G7,100000,1
+intermediates/subsamples/plate0-G7.250000.0.bam,T12,1.0,Usher placements: T12(24/24),plate0-G7,250000,1
+intermediates/subsamples/plate0-G7.500000.0.bam,T12,1.0,Usher placements: T12(4/4),plate0-G7,500000,1
+intermediates/subsamples/plate0-G7.1000000.0.bam,T12,1.0,Usher placements: T12(4/4),plate0-G7,1000000,1
+intermediates/subsamples/plate0-G7.2500000.0.bam,T12,1.0,Usher placements: T12(2/2),plate0-G7,2500000,1
+intermediates/subsamples/plate0-G7.5000000.0.bam,T12,1.0,Usher placements: T12(2/2),plate0-G7,5000000,1
+intermediates/subsamples/plate0-G8.100000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate0-G8,100000,0
+intermediates/subsamples/plate0-G8.250000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate0-G8,250000,0
+intermediates/subsamples/plate0-G8.500000.0.bam,UNDEFINED,0.515320751644509,Usher placements: T12(56/90) UNDEFINED(34/90),plate0-G8,500000,0
+intermediates/subsamples/plate0-G8.1000000.0.bam,T12,1.0,Usher placements: T12(7/7),plate0-G8,1000000,1
+intermediates/subsamples/plate0-G8.2500000.0.bam,T12,1.0,Usher placements: T12(6/6),plate0-G8,2500000,1
+intermediates/subsamples/plate0-G8.5000000.0.bam,T12,1.0,Usher placements: T12(4/4),plate0-G8,5000000,1
+intermediates/subsamples/plate0-G9.100000.0.bam,UNDEFINED,0.7105875024329669,Usher placements: T12(58/65) UNDEFINED(7/65),plate0-G9,100000,0
+intermediates/subsamples/plate0-G9.250000.0.bam,T12,1.0,Usher placements: T12(7/7),plate0-G9,250000,1
+intermediates/subsamples/plate0-G9.500000.0.bam,T12,1.0,Usher placements: T12(6/6),plate0-G9,500000,1
+intermediates/subsamples/plate0-G9.1000000.0.bam,T12,1.0,Usher placements: T12(4/4),plate0-G9,1000000,1
+intermediates/subsamples/plate0-G9.2500000.0.bam,T12,1.0,Usher placements: T12(2/2),plate0-G9,2500000,1
+intermediates/subsamples/plate0-G9.5000000.0.bam,T12,1.0,Usher placements: T12(2/2),plate0-G9,5000000,1
+intermediates/subsamples/plate0-H10.100000.0.bam,T12,1.0,Usher placements: T12(42/42),plate0-H10,100000,1
+intermediates/subsamples/plate0-H10.250000.0.bam,T12,1.0,Usher placements: T12(26/26),plate0-H10,250000,1
+intermediates/subsamples/plate0-H10.500000.0.bam,T12,1.0,Usher placements: T12(4/4),plate0-H10,500000,1
+intermediates/subsamples/plate0-H10.1000000.0.bam,T12,1.0,Usher placements: T12(2/2),plate0-H10,1000000,1
+intermediates/subsamples/plate0-H10.2500000.0.bam,T12,1.0,Usher placements: T12(2/2),plate0-H10,2500000,1
+intermediates/subsamples/plate0-H10.5000000.0.bam,T12,1.0,Usher placements: T12(2/2),plate0-H10,5000000,1
+intermediates/subsamples/plate0-H11.100000.0.bam,T12,1.0,Usher placements: T12(40/40),plate0-H11,100000,1
+intermediates/subsamples/plate0-H11.250000.0.bam,T12,1.0,Usher placements: T12(7/7),plate0-H11,250000,1
+intermediates/subsamples/plate0-H11.500000.0.bam,T12,1.0,Usher placements: T12(4/4),plate0-H11,500000,1
+intermediates/subsamples/plate0-H11.1000000.0.bam,T12,1.0,Usher placements: T12(2/2),plate0-H11,1000000,1
+intermediates/subsamples/plate0-H11.2500000.0.bam,T12,1.0,Usher placements: T12(2/2),plate0-H11,2500000,1
+intermediates/subsamples/plate0-H11.5000000.0.bam,T12,1.0,Usher placements: T12(2/2),plate0-H11,5000000,1
+intermediates/subsamples/plate0-H1.100000.0.bam,T12,1.0,Usher placements: T12(43/43),plate0-H1,100000,1
+intermediates/subsamples/plate0-H1.250000.0.bam,T12,1.0,Usher placements: T12(7/7),plate0-H1,250000,1
+intermediates/subsamples/plate0-H1.500000.0.bam,T12,1.0,Usher placements: T12(7/7),plate0-H1,500000,1
+intermediates/subsamples/plate0-H1.1000000.0.bam,T12,1.0,Usher placements: T12(4/4),plate0-H1,1000000,1
+intermediates/subsamples/plate0-H1.2500000.0.bam,T12,1.0,Usher placements: T12(2/2),plate0-H1,2500000,1
+intermediates/subsamples/plate0-H1.5000000.0.bam,T12,1.0,Usher placements: T12(2/2),plate0-H1,5000000,1
+intermediates/subsamples/plate0-H2.100000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate0-H2,100000,0
+intermediates/subsamples/plate0-H2.250000.0.bam,UNDEFINED,0.5175113216381271,Usher placements: T12(58/92) UNDEFINED(34/92),plate0-H2,250000,0
+intermediates/subsamples/plate0-H2.500000.0.bam,UNDEFINED,0.5175113216381271,Usher placements: T12(58/92) UNDEFINED(34/92),plate0-H2,500000,0
+intermediates/subsamples/plate0-H2.1000000.0.bam,UNDEFINED,0.5175113216381271,Usher placements: T12(58/92) UNDEFINED(34/92),plate0-H2,1000000,0
+intermediates/subsamples/plate0-H2.2500000.0.bam,UNDEFINED,0.5175113216381271,Usher placements: T12(58/92) UNDEFINED(34/92),plate0-H2,2500000,0
+intermediates/subsamples/plate0-H2.5000000.0.bam,UNDEFINED,0.5175113216381271,Usher placements: T12(58/92) UNDEFINED(34/92),plate0-H2,5000000,0
+intermediates/subsamples/plate0-H3.100000.0.bam,T12,1.0,Usher placements: T12(42/42),plate0-H3,100000,1
+intermediates/subsamples/plate0-H3.250000.0.bam,T12,1.0,Usher placements: T12(5/5),plate0-H3,250000,1
+intermediates/subsamples/plate0-H3.500000.0.bam,T12,1.0,Usher placements: T12(4/4),plate0-H3,500000,1
+intermediates/subsamples/plate0-H3.1000000.0.bam,T12,1.0,Usher placements: T12(2/2),plate0-H3,1000000,1
+intermediates/subsamples/plate0-H3.2500000.0.bam,T12,1.0,Usher placements: T12(2/2),plate0-H3,2500000,1
+intermediates/subsamples/plate0-H3.5000000.0.bam,T12,1.0,Usher placements: T12(3/3),plate0-H3,5000000,1
+intermediates/subsamples/plate0-H4.100000.0.bam,UNDEFINED,0.5855421195842971,Usher placements: T12(58/75) UNDEFINED(17/75),plate0-H4,100000,0
+intermediates/subsamples/plate0-H4.250000.0.bam,T12,1.0,Usher placements: T12(20/20),plate0-H4,250000,1
+intermediates/subsamples/plate0-H4.500000.0.bam,T12,1.0,Usher placements: T12(2/2),plate0-H4,500000,1
+intermediates/subsamples/plate0-H4.1000000.0.bam,T12,1.0,Usher placements: T12(3/3),plate0-H4,1000000,1
+intermediates/subsamples/plate0-H4.2500000.0.bam,T12,1.0,Usher placements: T12(2/2),plate0-H4,2500000,1
+intermediates/subsamples/plate0-H4.5000000.0.bam,T12,1.0,Usher placements: T12(3/3),plate0-H4,5000000,1
+intermediates/subsamples/plate0-H5.100000.0.bam,T12,1.0,Usher placements: T12(42/42),plate0-H5,100000,1
+intermediates/subsamples/plate0-H5.250000.0.bam,T12,1.0,Usher placements: T12(7/7),plate0-H5,250000,1
+intermediates/subsamples/plate0-H5.500000.0.bam,T12,1.0,Usher placements: T12(4/4),plate0-H5,500000,1
+intermediates/subsamples/plate0-H5.1000000.0.bam,T12,1.0,Usher placements: T12(2/2),plate0-H5,1000000,1
+intermediates/subsamples/plate0-H5.2500000.0.bam,T12,1.0,Usher placements: T12(2/2),plate0-H5,2500000,1
+intermediates/subsamples/plate0-H5.5000000.0.bam,T12,1.0,Usher placements: T12(2/2),plate0-H5,5000000,1
+intermediates/subsamples/plate0-H6.100000.0.bam,T12,1.0,Usher placements: T12(28/28),plate0-H6,100000,1
+intermediates/subsamples/plate0-H6.250000.0.bam,T12,1.0,Usher placements: T12(13/13),plate0-H6,250000,1
+intermediates/subsamples/plate0-H6.500000.0.bam,T12,1.0,Usher placements: T12(4/4),plate0-H6,500000,1
+intermediates/subsamples/plate0-H6.1000000.0.bam,T12,1.0,Usher placements: T12(2/2),plate0-H6,1000000,1
+intermediates/subsamples/plate0-H6.2500000.0.bam,T12,1.0,Usher placements: T12(2/2),plate0-H6,2500000,1
+intermediates/subsamples/plate0-H6.5000000.0.bam,T12,1.0,Usher placements: T12(2/2),plate0-H6,5000000,1
+intermediates/subsamples/plate0-H7.100000.0.bam,T12,1.0,Usher placements: T12(41/41),plate0-H7,100000,1
+intermediates/subsamples/plate0-H7.250000.0.bam,T12,1.0,Usher placements: T12(6/6),plate0-H7,250000,1
+intermediates/subsamples/plate0-H7.500000.0.bam,T12,1.0,Usher placements: T12(2/2),plate0-H7,500000,1
+intermediates/subsamples/plate0-H7.1000000.0.bam,T12,1.0,Usher placements: T12(2/2),plate0-H7,1000000,1
+intermediates/subsamples/plate0-H7.2500000.0.bam,T12,1.0,Usher placements: T12(3/3),plate0-H7,2500000,1
+intermediates/subsamples/plate0-H7.5000000.0.bam,T12,1.0,Usher placements: T12(3/3),plate0-H7,5000000,1
+intermediates/subsamples/plate0-H8.100000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate0-H8,100000,0
+intermediates/subsamples/plate0-H8.250000.0.bam,UNDEFINED,0.7105875024329669,Usher placements: T12(58/65) UNDEFINED(7/65),plate0-H8,250000,0
+intermediates/subsamples/plate0-H8.500000.0.bam,T12,1.0,Usher placements: T12(28/28),plate0-H8,500000,1
+intermediates/subsamples/plate0-H8.1000000.0.bam,T12,1.0,Usher placements: T12(6/6),plate0-H8,1000000,1
+intermediates/subsamples/plate0-H8.2500000.0.bam,T12,1.0,Usher placements: T12(4/4),plate0-H8,2500000,1
+intermediates/subsamples/plate0-H8.5000000.0.bam,T12,1.0,Usher placements: T12(2/2),plate0-H8,5000000,1
+intermediates/subsamples/plate0-H9.100000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate0-H9,100000,0
+intermediates/subsamples/plate0-H9.250000.0.bam,T12,1.0,Usher placements: T12(42/42),plate0-H9,250000,1
+intermediates/subsamples/plate0-H9.500000.0.bam,T12,1.0,Usher placements: T12(7/7),plate0-H9,500000,1
+intermediates/subsamples/plate0-H9.1000000.0.bam,T12,1.0,Usher placements: T12(4/4),plate0-H9,1000000,1
+intermediates/subsamples/plate0-H9.2500000.0.bam,T12,1.0,Usher placements: T12(2/2),plate0-H9,2500000,1
+intermediates/subsamples/plate0-H9.5000000.0.bam,T12,1.0,Usher placements: T12(2/2),plate0-H9,5000000,1
+intermediates/subsamples/plate1-A10.100000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate1-A10,100000,0
+intermediates/subsamples/plate1-A10.250000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate1-A10,250000,0
+intermediates/subsamples/plate1-A10.500000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate1-A10,500000,0
+intermediates/subsamples/plate1-A10.1000000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate1-A10,1000000,0
+intermediates/subsamples/plate1-A10.2500000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate1-A10,2500000,0
+intermediates/subsamples/plate1-A10.5000000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate1-A10,5000000,0
+intermediates/subsamples/plate1-A11.100000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate1-A11,100000,0
+intermediates/subsamples/plate1-A11.250000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate1-A11,250000,0
+intermediates/subsamples/plate1-A11.500000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate1-A11,500000,0
+intermediates/subsamples/plate1-A11.1000000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate1-A11,1000000,0
+intermediates/subsamples/plate1-A11.2500000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate1-A11,2500000,0
+intermediates/subsamples/plate1-A11.5000000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate1-A11,5000000,0
+intermediates/subsamples/plate1-A12.100000.0.bam,T12,0.8285211391994125,Usher placements: T12(41/43) UNDEFINED(2/43),plate1-A12,100000,1
+intermediates/subsamples/plate1-A12.250000.0.bam,T12,1.0,Usher placements: T12(4/4),plate1-A12,250000,1
+intermediates/subsamples/plate1-A12.500000.0.bam,T12,1.0,Usher placements: T12(4/4),plate1-A12,500000,1
+intermediates/subsamples/plate1-A12.1000000.0.bam,T12,1.0,Usher placements: T12(2/2),plate1-A12,1000000,1
+intermediates/subsamples/plate1-A12.2500000.0.bam,T12,1.0,Usher placements: T12(3/3),plate1-A12,2500000,1
+intermediates/subsamples/plate1-A12.5000000.0.bam,T12,1.0,Usher placements: T12(3/3),plate1-A12,5000000,1
+intermediates/subsamples/plate1-A1.100000.0.bam,T12,1.0,Usher placements: T12(42/42),plate1-A1,100000,1
+intermediates/subsamples/plate1-A1.250000.0.bam,T12,1.0,Usher placements: T12(4/4),plate1-A1,250000,1
+intermediates/subsamples/plate1-A1.500000.0.bam,T12,1.0,Usher placements: T12(4/4),plate1-A1,500000,1
+intermediates/subsamples/plate1-A1.1000000.0.bam,T12,1.0,Usher placements: T12(2/2),plate1-A1,1000000,1
+intermediates/subsamples/plate1-A1.2500000.0.bam,T12,1.0,Usher placements: T12(2/2),plate1-A1,2500000,1
+intermediates/subsamples/plate1-A1.5000000.0.bam,T12,1.0,Usher placements: T12(2/2),plate1-A1,5000000,1
+intermediates/subsamples/plate1-A2.100000.0.bam,T12,1.0,Usher placements: T12(39/39),plate1-A2,100000,1
+intermediates/subsamples/plate1-A2.250000.0.bam,T12,1.0,Usher placements: T12(5/5),plate1-A2,250000,1
+intermediates/subsamples/plate1-A2.500000.0.bam,T12,1.0,Usher placements: T12(5/5),plate1-A2,500000,1
+intermediates/subsamples/plate1-A2.1000000.0.bam,T12,1.0,Usher placements: T12(3/3),plate1-A2,1000000,1
+intermediates/subsamples/plate1-A2.2500000.0.bam,T12,1.0,Usher placements: T12(3/3),plate1-A2,2500000,1
+intermediates/subsamples/plate1-A2.5000000.0.bam,T12,1.0,Usher placements: T12(3/3),plate1-A2,5000000,1
+intermediates/subsamples/plate1-A3.100000.0.bam,T12,1.0,Usher placements: T12(37/37),plate1-A3,100000,1
+intermediates/subsamples/plate1-A3.250000.0.bam,T12,1.0,Usher placements: T12(10/10),plate1-A3,250000,1
+intermediates/subsamples/plate1-A3.500000.0.bam,T12,1.0,Usher placements: T12(2/2),plate1-A3,500000,1
+intermediates/subsamples/plate1-A3.1000000.0.bam,T12,1.0,Usher placements: T12(2/2),plate1-A3,1000000,1
+intermediates/subsamples/plate1-A3.2500000.0.bam,T12,1.0,Usher placements: T12(2/2),plate1-A3,2500000,1
+intermediates/subsamples/plate1-A3.5000000.0.bam,T12,1.0,Usher placements: T12(3/3),plate1-A3,5000000,1
+intermediates/subsamples/plate1-A5.100000.0.bam,T12,1.0,Usher placements: T12(7/7),plate1-A5,100000,1
+intermediates/subsamples/plate1-A5.250000.0.bam,T12,1.0,Usher placements: T12(9/9),plate1-A5,250000,1
+intermediates/subsamples/plate1-A5.500000.0.bam,T12,1.0,Usher placements: T12(4/4),plate1-A5,500000,1
+intermediates/subsamples/plate1-A5.1000000.0.bam,T12,1.0,Usher placements: T12(2/2),plate1-A5,1000000,1
+intermediates/subsamples/plate1-A5.2500000.0.bam,T12,1.0,Usher placements: T12(2/2),plate1-A5,2500000,1
+intermediates/subsamples/plate1-A5.5000000.0.bam,T12,1.0,Usher placements: T12(2/2),plate1-A5,5000000,1
+intermediates/subsamples/plate1-A6.100000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate1-A6,100000,0
+intermediates/subsamples/plate1-A6.250000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate1-A6,250000,0
+intermediates/subsamples/plate1-A6.500000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate1-A6,500000,0
+intermediates/subsamples/plate1-A6.1000000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate1-A6,1000000,0
+intermediates/subsamples/plate1-A6.2500000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate1-A6,2500000,0
+intermediates/subsamples/plate1-A6.5000000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate1-A6,5000000,0
+intermediates/subsamples/plate1-A7.100000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate1-A7,100000,0
+intermediates/subsamples/plate1-A7.250000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate1-A7,250000,0
+intermediates/subsamples/plate1-A7.500000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate1-A7,500000,0
+intermediates/subsamples/plate1-A7.1000000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate1-A7,1000000,0
+intermediates/subsamples/plate1-A7.2500000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate1-A7,2500000,0
+intermediates/subsamples/plate1-A7.5000000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate1-A7,5000000,0
+intermediates/subsamples/plate1-A8.100000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate1-A8,100000,0
+intermediates/subsamples/plate1-A8.250000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate1-A8,250000,0
+intermediates/subsamples/plate1-A8.500000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate1-A8,500000,0
+intermediates/subsamples/plate1-A8.1000000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate1-A8,1000000,0
+intermediates/subsamples/plate1-A8.2500000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate1-A8,2500000,0
+intermediates/subsamples/plate1-A8.5000000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate1-A8,5000000,0
+intermediates/subsamples/plate1-A9.100000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate1-A9,100000,0
+intermediates/subsamples/plate1-A9.250000.0.bam,T12,1.0,Usher placements: T12(30/30),plate1-A9,250000,1
+intermediates/subsamples/plate1-A9.500000.0.bam,T12,1.0,Usher placements: T12(24/24),plate1-A9,500000,1
+intermediates/subsamples/plate1-A9.1000000.0.bam,T12,1.0,Usher placements: T12(24/24),plate1-A9,1000000,1
+intermediates/subsamples/plate1-A9.2500000.0.bam,T12,1.0,Usher placements: T12(24/24),plate1-A9,2500000,1
+intermediates/subsamples/plate1-A9.5000000.0.bam,T12,1.0,Usher placements: T12(24/24),plate1-A9,5000000,1
+intermediates/subsamples/plate1-B10.100000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate1-B10,100000,0
+intermediates/subsamples/plate1-B10.250000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate1-B10,250000,0
+intermediates/subsamples/plate1-B10.500000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate1-B10,500000,0
+intermediates/subsamples/plate1-B10.1000000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate1-B10,1000000,0
+intermediates/subsamples/plate1-B10.2500000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate1-B10,2500000,0
+intermediates/subsamples/plate1-B10.5000000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate1-B10,5000000,0
+intermediates/subsamples/plate1-B11.100000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate1-B11,100000,0
+intermediates/subsamples/plate1-B11.250000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate1-B11,250000,0
+intermediates/subsamples/plate1-B11.500000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate1-B11,500000,0
+intermediates/subsamples/plate1-B11.1000000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate1-B11,1000000,0
+intermediates/subsamples/plate1-B11.2500000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate1-B11,2500000,0
+intermediates/subsamples/plate1-B11.5000000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate1-B11,5000000,0
+intermediates/subsamples/plate1-B12.100000.0.bam,T12,1.0,Usher placements: T12(40/40),plate1-B12,100000,1
+intermediates/subsamples/plate1-B12.250000.0.bam,T12,1.0,Usher placements: T12(10/10),plate1-B12,250000,1
+intermediates/subsamples/plate1-B12.500000.0.bam,T12,1.0,Usher placements: T12(2/2),plate1-B12,500000,1
+intermediates/subsamples/plate1-B12.1000000.0.bam,T12,1.0,Usher placements: T12(2/2),plate1-B12,1000000,1
+intermediates/subsamples/plate1-B12.2500000.0.bam,T12,1.0,Usher placements: T12(2/2),plate1-B12,2500000,1
+intermediates/subsamples/plate1-B12.5000000.0.bam,T12,1.0,Usher placements: T12(2/2),plate1-B12,5000000,1
+intermediates/subsamples/plate1-B1.100000.0.bam,T12,1.0,Usher placements: T12(5/5),plate1-B1,100000,1
+intermediates/subsamples/plate1-B1.250000.0.bam,T12,1.0,Usher placements: T12(5/5),plate1-B1,250000,1
+intermediates/subsamples/plate1-B1.500000.0.bam,T12,1.0,Usher placements: T12(4/4),plate1-B1,500000,1
+intermediates/subsamples/plate1-B1.1000000.0.bam,T12,1.0,Usher placements: T12(4/4),plate1-B1,1000000,1
+intermediates/subsamples/plate1-B1.2500000.0.bam,T12,1.0,Usher placements: T12(2/2),plate1-B1,2500000,1
+intermediates/subsamples/plate1-B1.5000000.0.bam,T12,1.0,Usher placements: T12(2/2),plate1-B1,5000000,1
+intermediates/subsamples/plate1-B2.100000.0.bam,T12,1.0,Usher placements: T12(37/37),plate1-B2,100000,1
+intermediates/subsamples/plate1-B2.250000.0.bam,T12,1.0,Usher placements: T12(4/4),plate1-B2,250000,1
+intermediates/subsamples/plate1-B2.500000.0.bam,T12,1.0,Usher placements: T12(4/4),plate1-B2,500000,1
+intermediates/subsamples/plate1-B2.1000000.0.bam,T12,1.0,Usher placements: T12(4/4),plate1-B2,1000000,1
+intermediates/subsamples/plate1-B2.2500000.0.bam,T12,1.0,Usher placements: T12(2/2),plate1-B2,2500000,1
+intermediates/subsamples/plate1-B2.5000000.0.bam,T12,1.0,Usher placements: T12(2/2),plate1-B2,5000000,1
+intermediates/subsamples/plate1-B3.100000.0.bam,T12,1.0,Usher placements: T12(26/26),plate1-B3,100000,1
+intermediates/subsamples/plate1-B3.250000.0.bam,T12,1.0,Usher placements: T12(5/5),plate1-B3,250000,1
+intermediates/subsamples/plate1-B3.500000.0.bam,T12,1.0,Usher placements: T12(4/4),plate1-B3,500000,1
+intermediates/subsamples/plate1-B3.1000000.0.bam,T12,1.0,Usher placements: T12(2/2),plate1-B3,1000000,1
+intermediates/subsamples/plate1-B3.2500000.0.bam,T12,1.0,Usher placements: T12(2/2),plate1-B3,2500000,1
+intermediates/subsamples/plate1-B3.5000000.0.bam,T12,1.0,Usher placements: T12(2/2),plate1-B3,5000000,1
+intermediates/subsamples/plate1-B4.100000.0.bam,T12,1.0,Usher placements: T12(28/28),plate1-B4,100000,1
+intermediates/subsamples/plate1-B4.250000.0.bam,T12,1.0,Usher placements: T12(4/4),plate1-B4,250000,1
+intermediates/subsamples/plate1-B4.500000.0.bam,T12,1.0,Usher placements: T12(4/4),plate1-B4,500000,1
+intermediates/subsamples/plate1-B4.1000000.0.bam,T12,1.0,Usher placements: T12(4/4),plate1-B4,1000000,1
+intermediates/subsamples/plate1-B4.2500000.0.bam,T12,1.0,Usher placements: T12(2/2),plate1-B4,2500000,1
+intermediates/subsamples/plate1-B4.5000000.0.bam,T12,1.0,Usher placements: T12(2/2),plate1-B4,5000000,1
+intermediates/subsamples/plate1-B5.100000.0.bam,T12,1.0,Usher placements: T12(7/7),plate1-B5,100000,1
+intermediates/subsamples/plate1-B5.250000.0.bam,T12,1.0,Usher placements: T12(5/5),plate1-B5,250000,1
+intermediates/subsamples/plate1-B5.500000.0.bam,T12,1.0,Usher placements: T12(4/4),plate1-B5,500000,1
+intermediates/subsamples/plate1-B5.1000000.0.bam,T12,1.0,Usher placements: T12(2/2),plate1-B5,1000000,1
+intermediates/subsamples/plate1-B5.2500000.0.bam,T12,1.0,Usher placements: T12(3/3),plate1-B5,2500000,1
+intermediates/subsamples/plate1-B5.5000000.0.bam,T12,1.0,Usher placements: T12(3/3),plate1-B5,5000000,1
+intermediates/subsamples/plate1-B6.100000.0.bam,T12,1.0,Usher placements: T12(43/43),plate1-B6,100000,1
+intermediates/subsamples/plate1-B6.250000.0.bam,T12,1.0,Usher placements: T12(5/5),plate1-B6,250000,1
+intermediates/subsamples/plate1-B6.500000.0.bam,T12,1.0,Usher placements: T12(4/4),plate1-B6,500000,1
+intermediates/subsamples/plate1-B6.1000000.0.bam,T12,1.0,Usher placements: T12(4/4),plate1-B6,1000000,1
+intermediates/subsamples/plate1-B6.2500000.0.bam,T12,1.0,Usher placements: T12(4/4),plate1-B6,2500000,1
+intermediates/subsamples/plate1-B6.5000000.0.bam,T12,1.0,Usher placements: T12(2/2),plate1-B6,5000000,1
+intermediates/subsamples/plate1-B7.100000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate1-B7,100000,0
+intermediates/subsamples/plate1-B7.250000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate1-B7,250000,0
+intermediates/subsamples/plate1-B7.500000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate1-B7,500000,0
+intermediates/subsamples/plate1-B7.1000000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate1-B7,1000000,0
+intermediates/subsamples/plate1-B7.2500000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate1-B7,2500000,0
+intermediates/subsamples/plate1-B7.5000000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate1-B7,5000000,0
+intermediates/subsamples/plate1-B8.100000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate1-B8,100000,0
+intermediates/subsamples/plate1-B8.250000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate1-B8,250000,0
+intermediates/subsamples/plate1-B8.500000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate1-B8,500000,0
+intermediates/subsamples/plate1-B8.1000000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate1-B8,1000000,0
+intermediates/subsamples/plate1-B8.2500000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate1-B8,2500000,0
+intermediates/subsamples/plate1-B8.5000000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate1-B8,5000000,0
+intermediates/subsamples/plate1-B9.100000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate1-B9,100000,0
+intermediates/subsamples/plate1-B9.250000.0.bam,UNDEFINED,0.5110509344571617,Usher placements: T12(58/96) UNDEFINED(38/96),plate1-B9,250000,0
+intermediates/subsamples/plate1-B9.500000.0.bam,UNDEFINED,0.5767019709942703,Usher placements: T12(54/71) UNDEFINED(17/71),plate1-B9,500000,0
+intermediates/subsamples/plate1-B9.1000000.0.bam,T12,1.0,Usher placements: T12(26/26),plate1-B9,1000000,1
+intermediates/subsamples/plate1-B9.2500000.0.bam,T12,1.0,Usher placements: T12(4/4),plate1-B9,2500000,1
+intermediates/subsamples/plate1-B9.5000000.0.bam,T12,1.0,Usher placements: T12(4/4),plate1-B9,5000000,1
+intermediates/subsamples/plate1-C10.100000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate1-C10,100000,0
+intermediates/subsamples/plate1-C10.250000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate1-C10,250000,0
+intermediates/subsamples/plate1-C10.500000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate1-C10,500000,0
+intermediates/subsamples/plate1-C10.1000000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate1-C10,1000000,0
+intermediates/subsamples/plate1-C10.2500000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate1-C10,2500000,0
+intermediates/subsamples/plate1-C10.5000000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate1-C10,5000000,0
+intermediates/subsamples/plate1-C12.100000.0.bam,T12,1.0,Usher placements: T12(37/37),plate1-C12,100000,1
+intermediates/subsamples/plate1-C12.250000.0.bam,T12,1.0,Usher placements: T12(6/6),plate1-C12,250000,1
+intermediates/subsamples/plate1-C12.500000.0.bam,T12,1.0,Usher placements: T12(4/4),plate1-C12,500000,1
+intermediates/subsamples/plate1-C12.1000000.0.bam,T12,1.0,Usher placements: T12(4/4),plate1-C12,1000000,1
+intermediates/subsamples/plate1-C12.2500000.0.bam,T12,1.0,Usher placements: T12(4/4),plate1-C12,2500000,1
+intermediates/subsamples/plate1-C12.5000000.0.bam,T12,1.0,Usher placements: T12(2/2),plate1-C12,5000000,1
+intermediates/subsamples/plate1-C1.100000.0.bam,T12,1.0,Usher placements: T12(41/41),plate1-C1,100000,1
+intermediates/subsamples/plate1-C1.250000.0.bam,T12,1.0,Usher placements: T12(4/4),plate1-C1,250000,1
+intermediates/subsamples/plate1-C1.500000.0.bam,T12,1.0,Usher placements: T12(4/4),plate1-C1,500000,1
+intermediates/subsamples/plate1-C1.1000000.0.bam,T12,1.0,Usher placements: T12(4/4),plate1-C1,1000000,1
+intermediates/subsamples/plate1-C1.2500000.0.bam,T12,1.0,Usher placements: T12(2/2),plate1-C1,2500000,1
+intermediates/subsamples/plate1-C1.5000000.0.bam,T12,1.0,Usher placements: T12(2/2),plate1-C1,5000000,1
+intermediates/subsamples/plate1-C2.100000.0.bam,T12,1.0,Usher placements: T12(41/41),plate1-C2,100000,1
+intermediates/subsamples/plate1-C2.250000.0.bam,T12,1.0,Usher placements: T12(5/5),plate1-C2,250000,1
+intermediates/subsamples/plate1-C2.500000.0.bam,T12,1.0,Usher placements: T12(4/4),plate1-C2,500000,1
+intermediates/subsamples/plate1-C2.1000000.0.bam,T12,1.0,Usher placements: T12(2/2),plate1-C2,1000000,1
+intermediates/subsamples/plate1-C2.2500000.0.bam,T12,1.0,Usher placements: T12(2/2),plate1-C2,2500000,1
+intermediates/subsamples/plate1-C2.5000000.0.bam,T12,1.0,Usher placements: T12(2/2),plate1-C2,5000000,1
+intermediates/subsamples/plate1-C3.100000.0.bam,T12,1.0,Usher placements: T12(41/41),plate1-C3,100000,1
+intermediates/subsamples/plate1-C3.250000.0.bam,T12,1.0,Usher placements: T12(19/19),plate1-C3,250000,1
+intermediates/subsamples/plate1-C3.500000.0.bam,T12,1.0,Usher placements: T12(2/2),plate1-C3,500000,1
+intermediates/subsamples/plate1-C3.1000000.0.bam,T12,1.0,Usher placements: T12(2/2),plate1-C3,1000000,1
+intermediates/subsamples/plate1-C3.2500000.0.bam,T12,1.0,Usher placements: T12(2/2),plate1-C3,2500000,1
+intermediates/subsamples/plate1-C3.5000000.0.bam,T12,1.0,Usher placements: T12(3/3),plate1-C3,5000000,1
+intermediates/subsamples/plate1-C4.100000.0.bam,T12,1.0,Usher placements: T12(36/36),plate1-C4,100000,1
+intermediates/subsamples/plate1-C4.250000.0.bam,T12,1.0,Usher placements: T12(4/4),plate1-C4,250000,1
+intermediates/subsamples/plate1-C4.500000.0.bam,T12,1.0,Usher placements: T12(4/4),plate1-C4,500000,1
+intermediates/subsamples/plate1-C4.1000000.0.bam,T12,1.0,Usher placements: T12(2/2),plate1-C4,1000000,1
+intermediates/subsamples/plate1-C4.2500000.0.bam,T12,1.0,Usher placements: T12(3/3),plate1-C4,2500000,1
+intermediates/subsamples/plate1-C4.5000000.0.bam,T12,1.0,Usher placements: T12(3/3),plate1-C4,5000000,1
+intermediates/subsamples/plate1-C5.100000.0.bam,T12,1.0,Usher placements: T12(40/40),plate1-C5,100000,1
+intermediates/subsamples/plate1-C5.250000.0.bam,T12,1.0,Usher placements: T12(10/10),plate1-C5,250000,1
+intermediates/subsamples/plate1-C5.500000.0.bam,T12,1.0,Usher placements: T12(2/2),plate1-C5,500000,1
+intermediates/subsamples/plate1-C5.1000000.0.bam,T12,1.0,Usher placements: T12(2/2),plate1-C5,1000000,1
+intermediates/subsamples/plate1-C5.2500000.0.bam,T12,1.0,Usher placements: T12(2/2),plate1-C5,2500000,1
+intermediates/subsamples/plate1-C5.5000000.0.bam,T12,1.0,Usher placements: T12(2/2),plate1-C5,5000000,1
+intermediates/subsamples/plate1-C6.100000.0.bam,T12,1.0,Usher placements: T12(39/39),plate1-C6,100000,1
+intermediates/subsamples/plate1-C6.250000.0.bam,T12,1.0,Usher placements: T12(5/5),plate1-C6,250000,1
+intermediates/subsamples/plate1-C6.500000.0.bam,T12,1.0,Usher placements: T12(2/2),plate1-C6,500000,1
+intermediates/subsamples/plate1-C6.1000000.0.bam,T12,1.0,Usher placements: T12(2/2),plate1-C6,1000000,1
+intermediates/subsamples/plate1-C6.2500000.0.bam,T12,1.0,Usher placements: T12(2/2),plate1-C6,2500000,1
+intermediates/subsamples/plate1-C6.5000000.0.bam,T12,1.0,Usher placements: T12(3/3),plate1-C6,5000000,1
+intermediates/subsamples/plate1-C7.100000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate1-C7,100000,0
+intermediates/subsamples/plate1-C7.250000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate1-C7,250000,0
+intermediates/subsamples/plate1-C7.500000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate1-C7,500000,0
+intermediates/subsamples/plate1-C7.1000000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate1-C7,1000000,0
+intermediates/subsamples/plate1-C7.2500000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate1-C7,2500000,0
+intermediates/subsamples/plate1-C7.5000000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate1-C7,5000000,0
+intermediates/subsamples/plate1-C9.100000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate1-C9,100000,0
+intermediates/subsamples/plate1-C9.250000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate1-C9,250000,0
+intermediates/subsamples/plate1-C9.500000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate1-C9,500000,0
+intermediates/subsamples/plate1-C9.1000000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate1-C9,1000000,0
+intermediates/subsamples/plate1-C9.2500000.0.bam,T12,1.0,Usher placements: T12(30/30),plate1-C9,2500000,1
+intermediates/subsamples/plate1-C9.5000000.0.bam,T12,1.0,Usher placements: T12(28/28),plate1-C9,5000000,1
+intermediates/subsamples/plate1-D10.100000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate1-D10,100000,0
+intermediates/subsamples/plate1-D10.250000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate1-D10,250000,0
+intermediates/subsamples/plate1-D10.500000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate1-D10,500000,0
+intermediates/subsamples/plate1-D10.1000000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate1-D10,1000000,0
+intermediates/subsamples/plate1-D10.2500000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate1-D10,2500000,0
+intermediates/subsamples/plate1-D10.5000000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate1-D10,5000000,0
+intermediates/subsamples/plate1-D11.100000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate1-D11,100000,0
+intermediates/subsamples/plate1-D11.250000.0.bam,UNDEFINED,0.5659392327257149,Usher placements: T12(58/78) UNDEFINED(20/78),plate1-D11,250000,0
+intermediates/subsamples/plate1-D11.500000.0.bam,UNDEFINED,0.5659392327257149,Usher placements: T12(58/78) UNDEFINED(20/78),plate1-D11,500000,0
+intermediates/subsamples/plate1-D11.1000000.0.bam,UNDEFINED,0.5659392327257149,Usher placements: T12(58/78) UNDEFINED(20/78),plate1-D11,1000000,0
+intermediates/subsamples/plate1-D11.2500000.0.bam,UNDEFINED,0.5659392327257149,Usher placements: T12(58/78) UNDEFINED(20/78),plate1-D11,2500000,0
+intermediates/subsamples/plate1-D11.5000000.0.bam,UNDEFINED,0.5659392327257149,Usher placements: T12(58/78) UNDEFINED(20/78),plate1-D11,5000000,0
+intermediates/subsamples/plate1-D12.100000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate1-D12,100000,0
+intermediates/subsamples/plate1-D12.250000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate1-D12,250000,0
+intermediates/subsamples/plate1-D12.500000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate1-D12,500000,0
+intermediates/subsamples/plate1-D12.1000000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate1-D12,1000000,0
+intermediates/subsamples/plate1-D12.2500000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate1-D12,2500000,0
+intermediates/subsamples/plate1-D12.5000000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate1-D12,5000000,0
+intermediates/subsamples/plate1-D1.100000.0.bam,T12,1.0,Usher placements: T12(7/7),plate1-D1,100000,1
+intermediates/subsamples/plate1-D1.250000.0.bam,T12,1.0,Usher placements: T12(4/4),plate1-D1,250000,1
+intermediates/subsamples/plate1-D1.500000.0.bam,T12,1.0,Usher placements: T12(4/4),plate1-D1,500000,1
+intermediates/subsamples/plate1-D1.1000000.0.bam,T12,1.0,Usher placements: T12(4/4),plate1-D1,1000000,1
+intermediates/subsamples/plate1-D1.2500000.0.bam,T12,1.0,Usher placements: T12(3/3),plate1-D1,2500000,1
+intermediates/subsamples/plate1-D1.5000000.0.bam,T12,1.0,Usher placements: T12(3/3),plate1-D1,5000000,1
+intermediates/subsamples/plate1-D2.100000.0.bam,T12,1.0,Usher placements: T12(43/43),plate1-D2,100000,1
+intermediates/subsamples/plate1-D2.250000.0.bam,T12,1.0,Usher placements: T12(29/29),plate1-D2,250000,1
+intermediates/subsamples/plate1-D2.500000.0.bam,T12,1.0,Usher placements: T12(4/4),plate1-D2,500000,1
+intermediates/subsamples/plate1-D2.1000000.0.bam,T12,1.0,Usher placements: T12(4/4),plate1-D2,1000000,1
+intermediates/subsamples/plate1-D2.2500000.0.bam,T12,1.0,Usher placements: T12(4/4),plate1-D2,2500000,1
+intermediates/subsamples/plate1-D2.5000000.0.bam,T12,1.0,Usher placements: T12(2/2),plate1-D2,5000000,1
+intermediates/subsamples/plate1-D3.100000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate1-D3,100000,0
+intermediates/subsamples/plate1-D3.250000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate1-D3,250000,0
+intermediates/subsamples/plate1-D3.500000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate1-D3,500000,0
+intermediates/subsamples/plate1-D3.1000000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate1-D3,1000000,0
+intermediates/subsamples/plate1-D3.2500000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate1-D3,2500000,0
+intermediates/subsamples/plate1-D3.5000000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate1-D3,5000000,0
+intermediates/subsamples/plate1-D4.100000.0.bam,T12,1.0,Usher placements: T12(42/42),plate1-D4,100000,1
+intermediates/subsamples/plate1-D4.250000.0.bam,T12,1.0,Usher placements: T12(4/4),plate1-D4,250000,1
+intermediates/subsamples/plate1-D4.500000.0.bam,T12,1.0,Usher placements: T12(4/4),plate1-D4,500000,1
+intermediates/subsamples/plate1-D4.1000000.0.bam,T12,1.0,Usher placements: T12(4/4),plate1-D4,1000000,1
+intermediates/subsamples/plate1-D4.2500000.0.bam,T12,1.0,Usher placements: T12(2/2),plate1-D4,2500000,1
+intermediates/subsamples/plate1-D4.5000000.0.bam,T12,1.0,Usher placements: T12(2/2),plate1-D4,5000000,1
+intermediates/subsamples/plate1-D5.100000.0.bam,T12,1.0,Usher placements: T12(36/36),plate1-D5,100000,1
+intermediates/subsamples/plate1-D5.250000.0.bam,T12,1.0,Usher placements: T12(7/7),plate1-D5,250000,1
+intermediates/subsamples/plate1-D5.500000.0.bam,T12,1.0,Usher placements: T12(4/4),plate1-D5,500000,1
+intermediates/subsamples/plate1-D5.1000000.0.bam,T12,1.0,Usher placements: T12(4/4),plate1-D5,1000000,1
+intermediates/subsamples/plate1-D5.2500000.0.bam,T12,1.0,Usher placements: T12(2/2),plate1-D5,2500000,1
+intermediates/subsamples/plate1-D5.5000000.0.bam,T12,1.0,Usher placements: T12(2/2),plate1-D5,5000000,1
+intermediates/subsamples/plate1-D6.100000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate1-D6,100000,0
+intermediates/subsamples/plate1-D6.250000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate1-D6,250000,0
+intermediates/subsamples/plate1-D6.500000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate1-D6,500000,0
+intermediates/subsamples/plate1-D6.1000000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate1-D6,1000000,0
+intermediates/subsamples/plate1-D6.2500000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate1-D6,2500000,0
+intermediates/subsamples/plate1-D6.5000000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate1-D6,5000000,0
+intermediates/subsamples/plate1-D8.100000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate1-D8,100000,0
+intermediates/subsamples/plate1-D8.250000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate1-D8,250000,0
+intermediates/subsamples/plate1-D8.500000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate1-D8,500000,0
+intermediates/subsamples/plate1-D8.1000000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate1-D8,1000000,0
+intermediates/subsamples/plate1-D8.2500000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate1-D8,2500000,0
+intermediates/subsamples/plate1-D8.5000000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate1-D8,5000000,0
+intermediates/subsamples/plate1-D9.100000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate1-D9,100000,0
+intermediates/subsamples/plate1-D9.250000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate1-D9,250000,0
+intermediates/subsamples/plate1-D9.500000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate1-D9,500000,0
+intermediates/subsamples/plate1-D9.1000000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate1-D9,1000000,0
+intermediates/subsamples/plate1-D9.2500000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate1-D9,2500000,0
+intermediates/subsamples/plate1-D9.5000000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate1-D9,5000000,0
+intermediates/subsamples/plate1-E10.100000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate1-E10,100000,0
+intermediates/subsamples/plate1-E10.250000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate1-E10,250000,0
+intermediates/subsamples/plate1-E10.500000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate1-E10,500000,0
+intermediates/subsamples/plate1-E10.1000000.0.bam,UNDEFINED,0.5047470198638355,Usher placements: T12(58/102) UNDEFINED(44/102),plate1-E10,1000000,0
+intermediates/subsamples/plate1-E10.2500000.0.bam,T12,1.0,Usher placements: T12(42/42),plate1-E10,2500000,1
+intermediates/subsamples/plate1-E10.5000000.0.bam,T12,1.0,Usher placements: T12(7/7),plate1-E10,5000000,1
+intermediates/subsamples/plate1-E11.100000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate1-E11,100000,0
+intermediates/subsamples/plate1-E11.250000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate1-E11,250000,0
+intermediates/subsamples/plate1-E11.500000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate1-E11,500000,0
+intermediates/subsamples/plate1-E11.1000000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate1-E11,1000000,0
+intermediates/subsamples/plate1-E11.2500000.0.bam,T12,1.0,Usher placements: T12(42/42),plate1-E11,2500000,1
+intermediates/subsamples/plate1-E11.5000000.0.bam,T12,1.0,Usher placements: T12(5/5),plate1-E11,5000000,1
+intermediates/subsamples/plate1-E12.100000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate1-E12,100000,0
+intermediates/subsamples/plate1-E12.250000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate1-E12,250000,0
+intermediates/subsamples/plate1-E12.500000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate1-E12,500000,0
+intermediates/subsamples/plate1-E12.1000000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate1-E12,1000000,0
+intermediates/subsamples/plate1-E12.2500000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate1-E12,2500000,0
+intermediates/subsamples/plate1-E12.5000000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate1-E12,5000000,0
+intermediates/subsamples/plate1-E1.100000.0.bam,T12,1.0,Usher placements: T12(27/27),plate1-E1,100000,1
+intermediates/subsamples/plate1-E1.250000.0.bam,T12,1.0,Usher placements: T12(5/5),plate1-E1,250000,1
+intermediates/subsamples/plate1-E1.500000.0.bam,T12,1.0,Usher placements: T12(4/4),plate1-E1,500000,1
+intermediates/subsamples/plate1-E1.1000000.0.bam,T12,1.0,Usher placements: T12(2/2),plate1-E1,1000000,1
+intermediates/subsamples/plate1-E1.2500000.0.bam,T12,1.0,Usher placements: T12(2/2),plate1-E1,2500000,1
+intermediates/subsamples/plate1-E1.5000000.0.bam,T12,1.0,Usher placements: T12(2/2),plate1-E1,5000000,1
+intermediates/subsamples/plate1-E2.100000.0.bam,T12,1.0,Usher placements: T12(15/15),plate1-E2,100000,1
+intermediates/subsamples/plate1-E2.250000.0.bam,T12,1.0,Usher placements: T12(5/5),plate1-E2,250000,1
+intermediates/subsamples/plate1-E2.500000.0.bam,T12,1.0,Usher placements: T12(2/2),plate1-E2,500000,1
+intermediates/subsamples/plate1-E2.1000000.0.bam,T12,1.0,Usher placements: T12(2/2),plate1-E2,1000000,1
+intermediates/subsamples/plate1-E2.2500000.0.bam,T12,1.0,Usher placements: T12(2/2),plate1-E2,2500000,1
+intermediates/subsamples/plate1-E2.5000000.0.bam,T12,1.0,Usher placements: T12(2/2),plate1-E2,5000000,1
+intermediates/subsamples/plate1-E3.100000.0.bam,T12,1.0,Usher placements: T12(39/39),plate1-E3,100000,1
+intermediates/subsamples/plate1-E3.250000.0.bam,T12,1.0,Usher placements: T12(12/12),plate1-E3,250000,1
+intermediates/subsamples/plate1-E3.500000.0.bam,T12,1.0,Usher placements: T12(2/2),plate1-E3,500000,1
+intermediates/subsamples/plate1-E3.1000000.0.bam,T12,1.0,Usher placements: T12(2/2),plate1-E3,1000000,1
+intermediates/subsamples/plate1-E3.2500000.0.bam,T12,1.0,Usher placements: T12(2/2),plate1-E3,2500000,1
+intermediates/subsamples/plate1-E3.5000000.0.bam,T12,1.0,Usher placements: T12(2/2),plate1-E3,5000000,1
+intermediates/subsamples/plate1-E4.100000.0.bam,T12,1.0,Usher placements: T12(20/20),plate1-E4,100000,1
+intermediates/subsamples/plate1-E4.250000.0.bam,T12,1.0,Usher placements: T12(4/4),plate1-E4,250000,1
+intermediates/subsamples/plate1-E4.500000.0.bam,T12,1.0,Usher placements: T12(4/4),plate1-E4,500000,1
+intermediates/subsamples/plate1-E4.1000000.0.bam,T12,1.0,Usher placements: T12(2/2),plate1-E4,1000000,1
+intermediates/subsamples/plate1-E4.2500000.0.bam,T12,1.0,Usher placements: T12(2/2),plate1-E4,2500000,1
+intermediates/subsamples/plate1-E4.5000000.0.bam,T12,1.0,Usher placements: T12(2/2),plate1-E4,5000000,1
+intermediates/subsamples/plate1-E5.100000.0.bam,T12,0.7696922780487698,Usher placements: T12(38/41) UNDEFINED(3/41),plate1-E5,100000,1
+intermediates/subsamples/plate1-E5.250000.0.bam,T12,1.0,Usher placements: T12(6/6),plate1-E5,250000,1
+intermediates/subsamples/plate1-E5.500000.0.bam,T12,1.0,Usher placements: T12(4/4),plate1-E5,500000,1
+intermediates/subsamples/plate1-E5.1000000.0.bam,T12,1.0,Usher placements: T12(2/2),plate1-E5,1000000,1
+intermediates/subsamples/plate1-E5.2500000.0.bam,T12,1.0,Usher placements: T12(2/2),plate1-E5,2500000,1
+intermediates/subsamples/plate1-E5.5000000.0.bam,T12,1.0,Usher placements: T12(2/2),plate1-E5,5000000,1
+intermediates/subsamples/plate1-E6.100000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate1-E6,100000,0
+intermediates/subsamples/plate1-E6.250000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate1-E6,250000,0
+intermediates/subsamples/plate1-E6.500000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate1-E6,500000,0
+intermediates/subsamples/plate1-E6.1000000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate1-E6,1000000,0
+intermediates/subsamples/plate1-E6.2500000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate1-E6,2500000,0
+intermediates/subsamples/plate1-E6.5000000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate1-E6,5000000,0
+intermediates/subsamples/plate1-E7.100000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate1-E7,100000,0
+intermediates/subsamples/plate1-E7.250000.0.bam,T12,1.0,Usher placements: T12(40/40),plate1-E7,250000,1
+intermediates/subsamples/plate1-E7.500000.0.bam,T12,1.0,Usher placements: T12(7/7),plate1-E7,500000,1
+intermediates/subsamples/plate1-E7.1000000.0.bam,T12,1.0,Usher placements: T12(4/4),plate1-E7,1000000,1
+intermediates/subsamples/plate1-E7.2500000.0.bam,T12,1.0,Usher placements: T12(4/4),plate1-E7,2500000,1
+intermediates/subsamples/plate1-E7.5000000.0.bam,T12,1.0,Usher placements: T12(2/2),plate1-E7,5000000,1
+intermediates/subsamples/plate1-E8.100000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate1-E8,100000,0
+intermediates/subsamples/plate1-E8.250000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate1-E8,250000,0
+intermediates/subsamples/plate1-E8.500000.0.bam,UNDEFINED,0.5719292240479291,Usher placements: T12(58/77) UNDEFINED(19/77),plate1-E8,500000,0
+intermediates/subsamples/plate1-E8.1000000.0.bam,T12,1.0,Usher placements: T12(39/39),plate1-E8,1000000,1
+intermediates/subsamples/plate1-E8.2500000.0.bam,T12,1.0,Usher placements: T12(6/6),plate1-E8,2500000,1
+intermediates/subsamples/plate1-E8.5000000.0.bam,T12,1.0,Usher placements: T12(4/4),plate1-E8,5000000,1
+intermediates/subsamples/plate1-E9.100000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate1-E9,100000,0
+intermediates/subsamples/plate1-E9.250000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate1-E9,250000,0
+intermediates/subsamples/plate1-E9.500000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate1-E9,500000,0
+intermediates/subsamples/plate1-E9.1000000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate1-E9,1000000,0
+intermediates/subsamples/plate1-E9.2500000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate1-E9,2500000,0
+intermediates/subsamples/plate1-E9.5000000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate1-E9,5000000,0
+intermediates/subsamples/plate1-F10.100000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate1-F10,100000,0
+intermediates/subsamples/plate1-F10.250000.0.bam,UNDEFINED,0.5320567125392801,Usher placements: T12(58/86) UNDEFINED(28/86),plate1-F10,250000,0
+intermediates/subsamples/plate1-F10.500000.0.bam,T12,1.0,Usher placements: T12(39/39),plate1-F10,500000,1
+intermediates/subsamples/plate1-F10.1000000.0.bam,T12,1.0,Usher placements: T12(4/4),plate1-F10,1000000,1
+intermediates/subsamples/plate1-F10.2500000.0.bam,T12,1.0,Usher placements: T12(4/4),plate1-F10,2500000,1
+intermediates/subsamples/plate1-F10.5000000.0.bam,T12,1.0,Usher placements: T12(4/4),plate1-F10,5000000,1
+intermediates/subsamples/plate1-F11.100000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate1-F11,100000,0
+intermediates/subsamples/plate1-F11.250000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate1-F11,250000,0
+intermediates/subsamples/plate1-F11.500000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate1-F11,500000,0
+intermediates/subsamples/plate1-F11.1000000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate1-F11,1000000,0
+intermediates/subsamples/plate1-F11.2500000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate1-F11,2500000,0
+intermediates/subsamples/plate1-F11.5000000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate1-F11,5000000,0
+intermediates/subsamples/plate1-F12.100000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate1-F12,100000,0
+intermediates/subsamples/plate1-F12.250000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate1-F12,250000,0
+intermediates/subsamples/plate1-F12.500000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate1-F12,500000,0
+intermediates/subsamples/plate1-F12.1000000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate1-F12,1000000,0
+intermediates/subsamples/plate1-F12.2500000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate1-F12,2500000,0
+intermediates/subsamples/plate1-F12.5000000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate1-F12,5000000,0
+intermediates/subsamples/plate1-F2.100000.0.bam,T12,1.0,Usher placements: T12(42/42),plate1-F2,100000,1
+intermediates/subsamples/plate1-F2.250000.0.bam,T12,1.0,Usher placements: T12(4/4),plate1-F2,250000,1
+intermediates/subsamples/plate1-F2.500000.0.bam,T12,1.0,Usher placements: T12(2/2),plate1-F2,500000,1
+intermediates/subsamples/plate1-F2.1000000.0.bam,T12,1.0,Usher placements: T12(2/2),plate1-F2,1000000,1
+intermediates/subsamples/plate1-F2.2500000.0.bam,T12,1.0,Usher placements: T12(2/2),plate1-F2,2500000,1
+intermediates/subsamples/plate1-F2.5000000.0.bam,T12,1.0,Usher placements: T12(3/3),plate1-F2,5000000,1
+intermediates/subsamples/plate1-F3.100000.0.bam,T12,1.0,Usher placements: T12(37/37),plate1-F3,100000,1
+intermediates/subsamples/plate1-F3.250000.0.bam,T12,1.0,Usher placements: T12(7/7),plate1-F3,250000,1
+intermediates/subsamples/plate1-F3.500000.0.bam,T12,1.0,Usher placements: T12(4/4),plate1-F3,500000,1
+intermediates/subsamples/plate1-F3.1000000.0.bam,T12,1.0,Usher placements: T12(2/2),plate1-F3,1000000,1
+intermediates/subsamples/plate1-F3.2500000.0.bam,T12,1.0,Usher placements: T12(2/2),plate1-F3,2500000,1
+intermediates/subsamples/plate1-F3.5000000.0.bam,T12,1.0,Usher placements: T12(2/2),plate1-F3,5000000,1
+intermediates/subsamples/plate1-F4.100000.0.bam,T12,1.0,Usher placements: T12(30/30),plate1-F4,100000,1
+intermediates/subsamples/plate1-F4.250000.0.bam,T12,1.0,Usher placements: T12(4/4),plate1-F4,250000,1
+intermediates/subsamples/plate1-F4.500000.0.bam,T12,1.0,Usher placements: T12(4/4),plate1-F4,500000,1
+intermediates/subsamples/plate1-F4.1000000.0.bam,T12,1.0,Usher placements: T12(2/2),plate1-F4,1000000,1
+intermediates/subsamples/plate1-F4.2500000.0.bam,T12,1.0,Usher placements: T12(2/2),plate1-F4,2500000,1
+intermediates/subsamples/plate1-F4.5000000.0.bam,T12,1.0,Usher placements: T12(2/2),plate1-F4,5000000,1
+intermediates/subsamples/plate1-F5.100000.0.bam,T12,1.0,Usher placements: T12(7/7),plate1-F5,100000,1
+intermediates/subsamples/plate1-F5.250000.0.bam,T12,1.0,Usher placements: T12(34/34),plate1-F5,250000,1
+intermediates/subsamples/plate1-F5.500000.0.bam,T12,1.0,Usher placements: T12(4/4),plate1-F5,500000,1
+intermediates/subsamples/plate1-F5.1000000.0.bam,T12,1.0,Usher placements: T12(4/4),plate1-F5,1000000,1
+intermediates/subsamples/plate1-F5.2500000.0.bam,T12,1.0,Usher placements: T12(4/4),plate1-F5,2500000,1
+intermediates/subsamples/plate1-F5.5000000.0.bam,T12,1.0,Usher placements: T12(4/4),plate1-F5,5000000,1
+intermediates/subsamples/plate1-F6.100000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate1-F6,100000,0
+intermediates/subsamples/plate1-F6.250000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate1-F6,250000,0
+intermediates/subsamples/plate1-F6.500000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate1-F6,500000,0
+intermediates/subsamples/plate1-F6.1000000.0.bam,T12,1.0,Usher placements: T12(26/26),plate1-F6,1000000,1
+intermediates/subsamples/plate1-F6.2500000.0.bam,T12,1.0,Usher placements: T12(22/22),plate1-F6,2500000,1
+intermediates/subsamples/plate1-F6.5000000.0.bam,T12,1.0,Usher placements: T12(4/4),plate1-F6,5000000,1
+intermediates/subsamples/plate1-F7.100000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate1-F7,100000,0
+intermediates/subsamples/plate1-F7.250000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate1-F7,250000,0
+intermediates/subsamples/plate1-F7.500000.0.bam,T12,1.0,Usher placements: T12(41/41),plate1-F7,500000,1
+intermediates/subsamples/plate1-F7.1000000.0.bam,T12,1.0,Usher placements: T12(5/5),plate1-F7,1000000,1
+intermediates/subsamples/plate1-F7.2500000.0.bam,T12,1.0,Usher placements: T12(5/5),plate1-F7,2500000,1
+intermediates/subsamples/plate1-F7.5000000.0.bam,T12,1.0,Usher placements: T12(2/2),plate1-F7,5000000,1
+intermediates/subsamples/plate1-F9.100000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate1-F9,100000,0
+intermediates/subsamples/plate1-F9.250000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate1-F9,250000,0
+intermediates/subsamples/plate1-F9.500000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate1-F9,500000,0
+intermediates/subsamples/plate1-F9.1000000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate1-F9,1000000,0
+intermediates/subsamples/plate1-F9.2500000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate1-F9,2500000,0
+intermediates/subsamples/plate1-F9.5000000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate1-F9,5000000,0
+intermediates/subsamples/plate1-G10.100000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate1-G10,100000,0
+intermediates/subsamples/plate1-G10.250000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate1-G10,250000,0
+intermediates/subsamples/plate1-G10.500000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate1-G10,500000,0
+intermediates/subsamples/plate1-G10.1000000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate1-G10,1000000,0
+intermediates/subsamples/plate1-G10.2500000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate1-G10,2500000,0
+intermediates/subsamples/plate1-G10.5000000.0.bam,UNDEFINED,0.5320567125392801,Usher placements: T12(58/86) UNDEFINED(28/86),plate1-G10,5000000,0
+intermediates/subsamples/plate1-G11.100000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate1-G11,100000,0
+intermediates/subsamples/plate1-G11.250000.0.bam,UNDEFINED,0.5124705274288021,Usher placements: T12(58/95) UNDEFINED(37/95),plate1-G11,250000,0
+intermediates/subsamples/plate1-G11.500000.0.bam,T12,1.0,Usher placements: T12(43/43),plate1-G11,500000,1
+intermediates/subsamples/plate1-G11.1000000.0.bam,T12,1.0,Usher placements: T12(43/43),plate1-G11,1000000,1
+intermediates/subsamples/plate1-G11.2500000.0.bam,T12,1.0,Usher placements: T12(43/43),plate1-G11,2500000,1
+intermediates/subsamples/plate1-G11.5000000.0.bam,T12,1.0,Usher placements: T12(43/43),plate1-G11,5000000,1
+intermediates/subsamples/plate1-G12.100000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate1-G12,100000,0
+intermediates/subsamples/plate1-G12.250000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate1-G12,250000,0
+intermediates/subsamples/plate1-G12.500000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate1-G12,500000,0
+intermediates/subsamples/plate1-G12.1000000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate1-G12,1000000,0
+intermediates/subsamples/plate1-G12.2500000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate1-G12,2500000,0
+intermediates/subsamples/plate1-G12.5000000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate1-G12,5000000,0
+intermediates/subsamples/plate1-G1.100000.0.bam,T12,1.0,Usher placements: T12(41/41),plate1-G1,100000,1
+intermediates/subsamples/plate1-G1.250000.0.bam,T12,1.0,Usher placements: T12(5/5),plate1-G1,250000,1
+intermediates/subsamples/plate1-G1.500000.0.bam,T12,1.0,Usher placements: T12(4/4),plate1-G1,500000,1
+intermediates/subsamples/plate1-G1.1000000.0.bam,T12,1.0,Usher placements: T12(4/4),plate1-G1,1000000,1
+intermediates/subsamples/plate1-G1.2500000.0.bam,T12,1.0,Usher placements: T12(4/4),plate1-G1,2500000,1
+intermediates/subsamples/plate1-G1.5000000.0.bam,T12,1.0,Usher placements: T12(2/2),plate1-G1,5000000,1
+intermediates/subsamples/plate1-G2.100000.0.bam,T12,1.0,Usher placements: T12(40/40),plate1-G2,100000,1
+intermediates/subsamples/plate1-G2.250000.0.bam,T12,1.0,Usher placements: T12(5/5),plate1-G2,250000,1
+intermediates/subsamples/plate1-G2.500000.0.bam,T12,1.0,Usher placements: T12(4/4),plate1-G2,500000,1
+intermediates/subsamples/plate1-G2.1000000.0.bam,T12,1.0,Usher placements: T12(2/2),plate1-G2,1000000,1
+intermediates/subsamples/plate1-G2.2500000.0.bam,T12,1.0,Usher placements: T12(2/2),plate1-G2,2500000,1
+intermediates/subsamples/plate1-G2.5000000.0.bam,T12,1.0,Usher placements: T12(2/2),plate1-G2,5000000,1
+intermediates/subsamples/plate1-G3.100000.0.bam,T12,1.0,Usher placements: T12(15/15),plate1-G3,100000,1
+intermediates/subsamples/plate1-G3.250000.0.bam,T12,1.0,Usher placements: T12(10/10),plate1-G3,250000,1
+intermediates/subsamples/plate1-G3.500000.0.bam,T12,1.0,Usher placements: T12(2/2),plate1-G3,500000,1
+intermediates/subsamples/plate1-G3.1000000.0.bam,T12,1.0,Usher placements: T12(2/2),plate1-G3,1000000,1
+intermediates/subsamples/plate1-G3.2500000.0.bam,T12,1.0,Usher placements: T12(2/2),plate1-G3,2500000,1
+intermediates/subsamples/plate1-G3.5000000.0.bam,T12,1.0,Usher placements: T12(2/2),plate1-G3,5000000,1
+intermediates/subsamples/plate1-G4.100000.0.bam,T12,1.0,Usher placements: T12(39/39),plate1-G4,100000,1
+intermediates/subsamples/plate1-G4.250000.0.bam,T12,1.0,Usher placements: T12(4/4),plate1-G4,250000,1
+intermediates/subsamples/plate1-G4.500000.0.bam,T12,1.0,Usher placements: T12(4/4),plate1-G4,500000,1
+intermediates/subsamples/plate1-G4.1000000.0.bam,T12,1.0,Usher placements: T12(4/4),plate1-G4,1000000,1
+intermediates/subsamples/plate1-G4.2500000.0.bam,T12,1.0,Usher placements: T12(2/2),plate1-G4,2500000,1
+intermediates/subsamples/plate1-G4.5000000.0.bam,T12,1.0,Usher placements: T12(2/2),plate1-G4,5000000,1
+intermediates/subsamples/plate1-G5.100000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate1-G5,100000,0
+intermediates/subsamples/plate1-G5.250000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate1-G5,250000,0
+intermediates/subsamples/plate1-G5.500000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate1-G5,500000,0
+intermediates/subsamples/plate1-G5.1000000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate1-G5,1000000,0
+intermediates/subsamples/plate1-G5.2500000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate1-G5,2500000,0
+intermediates/subsamples/plate1-G5.5000000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate1-G5,5000000,0
+intermediates/subsamples/plate1-G6.100000.0.bam,UNDEFINED,0.5463275992266529,Usher placements: T12(58/82) UNDEFINED(24/82),plate1-G6,100000,0
+intermediates/subsamples/plate1-G6.250000.0.bam,T12,1.0,Usher placements: T12(7/7),plate1-G6,250000,1
+intermediates/subsamples/plate1-G6.500000.0.bam,T12,1.0,Usher placements: T12(7/7),plate1-G6,500000,1
+intermediates/subsamples/plate1-G6.1000000.0.bam,T12,1.0,Usher placements: T12(4/4),plate1-G6,1000000,1
+intermediates/subsamples/plate1-G6.2500000.0.bam,T12,1.0,Usher placements: T12(4/4),plate1-G6,2500000,1
+intermediates/subsamples/plate1-G6.5000000.0.bam,T12,1.0,Usher placements: T12(2/2),plate1-G6,5000000,1
+intermediates/subsamples/plate1-G7.100000.0.bam,T12,1.0,Usher placements: T12(42/42),plate1-G7,100000,1
+intermediates/subsamples/plate1-G7.250000.0.bam,T12,1.0,Usher placements: T12(5/5),plate1-G7,250000,1
+intermediates/subsamples/plate1-G7.500000.0.bam,T12,1.0,Usher placements: T12(2/2),plate1-G7,500000,1
+intermediates/subsamples/plate1-G7.1000000.0.bam,T12,1.0,Usher placements: T12(2/2),plate1-G7,1000000,1
+intermediates/subsamples/plate1-G7.2500000.0.bam,T12,1.0,Usher placements: T12(2/2),plate1-G7,2500000,1
+intermediates/subsamples/plate1-G7.5000000.0.bam,T12,1.0,Usher placements: T12(2/2),plate1-G7,5000000,1
+intermediates/subsamples/plate1-G8.100000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate1-G8,100000,0
+intermediates/subsamples/plate1-G8.250000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate1-G8,250000,0
+intermediates/subsamples/plate1-G8.500000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate1-G8,500000,0
+intermediates/subsamples/plate1-G8.1000000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate1-G8,1000000,0
+intermediates/subsamples/plate1-G8.2500000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate1-G8,2500000,0
+intermediates/subsamples/plate1-G8.5000000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate1-G8,5000000,0
+intermediates/subsamples/plate1-G9.100000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate1-G9,100000,0
+intermediates/subsamples/plate1-G9.250000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate1-G9,250000,0
+intermediates/subsamples/plate1-G9.500000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate1-G9,500000,0
+intermediates/subsamples/plate1-G9.1000000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate1-G9,1000000,0
+intermediates/subsamples/plate1-G9.2500000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate1-G9,2500000,0
+intermediates/subsamples/plate1-G9.5000000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate1-G9,5000000,0
+intermediates/subsamples/plate1-H10.100000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate1-H10,100000,0
+intermediates/subsamples/plate1-H10.250000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate1-H10,250000,0
+intermediates/subsamples/plate1-H10.500000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate1-H10,500000,0
+intermediates/subsamples/plate1-H10.1000000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate1-H10,1000000,0
+intermediates/subsamples/plate1-H10.2500000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate1-H10,2500000,0
+intermediates/subsamples/plate1-H10.5000000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate1-H10,5000000,0
+intermediates/subsamples/plate1-H11.100000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate1-H11,100000,0
+intermediates/subsamples/plate1-H11.250000.0.bam,T12,1.0,Usher placements: T12(28/28),plate1-H11,250000,1
+intermediates/subsamples/plate1-H11.500000.0.bam,T12,1.0,Usher placements: T12(5/5),plate1-H11,500000,1
+intermediates/subsamples/plate1-H11.1000000.0.bam,T12,1.0,Usher placements: T12(4/4),plate1-H11,1000000,1
+intermediates/subsamples/plate1-H11.2500000.0.bam,T12,1.0,Usher placements: T12(4/4),plate1-H11,2500000,1
+intermediates/subsamples/plate1-H11.5000000.0.bam,T12,1.0,Usher placements: T12(4/4),plate1-H11,5000000,1
+intermediates/subsamples/plate1-H12.100000.0.bam,T12,1.0,Usher placements: T12(39/39),plate1-H12,100000,1
+intermediates/subsamples/plate1-H12.250000.0.bam,T12,1.0,Usher placements: T12(5/5),plate1-H12,250000,1
+intermediates/subsamples/plate1-H12.500000.0.bam,T12,1.0,Usher placements: T12(4/4),plate1-H12,500000,1
+intermediates/subsamples/plate1-H12.1000000.0.bam,T12,1.0,Usher placements: T12(4/4),plate1-H12,1000000,1
+intermediates/subsamples/plate1-H12.2500000.0.bam,T12,1.0,Usher placements: T12(4/4),plate1-H12,2500000,1
+intermediates/subsamples/plate1-H12.5000000.0.bam,T12,1.0,Usher placements: T12(4/4),plate1-H12,5000000,1
+intermediates/subsamples/plate1-H1.100000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate1-H1,100000,0
+intermediates/subsamples/plate1-H1.250000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate1-H1,250000,0
+intermediates/subsamples/plate1-H1.500000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate1-H1,500000,0
+intermediates/subsamples/plate1-H1.1000000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate1-H1,1000000,0
+intermediates/subsamples/plate1-H1.2500000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate1-H1,2500000,0
+intermediates/subsamples/plate1-H1.5000000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate1-H1,5000000,0
+intermediates/subsamples/plate1-H2.100000.0.bam,T12,1.0,Usher placements: T12(24/24),plate1-H2,100000,1
+intermediates/subsamples/plate1-H2.250000.0.bam,T12,1.0,Usher placements: T12(9/9),plate1-H2,250000,1
+intermediates/subsamples/plate1-H2.500000.0.bam,T12,1.0,Usher placements: T12(4/4),plate1-H2,500000,1
+intermediates/subsamples/plate1-H2.1000000.0.bam,T12,1.0,Usher placements: T12(2/2),plate1-H2,1000000,1
+intermediates/subsamples/plate1-H2.2500000.0.bam,T12,1.0,Usher placements: T12(2/2),plate1-H2,2500000,1
+intermediates/subsamples/plate1-H2.5000000.0.bam,T12,1.0,Usher placements: T12(2/2),plate1-H2,5000000,1
+intermediates/subsamples/plate1-H3.100000.0.bam,T12,1.0,Usher placements: T12(56/56),plate1-H3,100000,1
+intermediates/subsamples/plate1-H3.250000.0.bam,T12,1.0,Usher placements: T12(5/5),plate1-H3,250000,1
+intermediates/subsamples/plate1-H3.500000.0.bam,T12,1.0,Usher placements: T12(5/5),plate1-H3,500000,1
+intermediates/subsamples/plate1-H3.1000000.0.bam,T12,1.0,Usher placements: T12(4/4),plate1-H3,1000000,1
+intermediates/subsamples/plate1-H3.2500000.0.bam,T12,1.0,Usher placements: T12(2/2),plate1-H3,2500000,1
+intermediates/subsamples/plate1-H3.5000000.0.bam,T12,1.0,Usher placements: T12(2/2),plate1-H3,5000000,1
+intermediates/subsamples/plate1-H4.100000.0.bam,T12,0.7995405122048954,Usher placements: T12(16/17) UNDEFINED(1/17),plate1-H4,100000,1
+intermediates/subsamples/plate1-H4.250000.0.bam,T12,1.0,Usher placements: T12(7/7),plate1-H4,250000,1
+intermediates/subsamples/plate1-H4.500000.0.bam,T12,1.0,Usher placements: T12(2/2),plate1-H4,500000,1
+intermediates/subsamples/plate1-H4.1000000.0.bam,T12,1.0,Usher placements: T12(2/2),plate1-H4,1000000,1
+intermediates/subsamples/plate1-H4.2500000.0.bam,T12,1.0,Usher placements: T12(2/2),plate1-H4,2500000,1
+intermediates/subsamples/plate1-H4.5000000.0.bam,T12,1.0,Usher placements: T12(2/2),plate1-H4,5000000,1
+intermediates/subsamples/plate1-H5.100000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate1-H5,100000,0
+intermediates/subsamples/plate1-H5.250000.0.bam,T12,1.0,Usher placements: T12(44/44),plate1-H5,250000,1
+intermediates/subsamples/plate1-H5.500000.0.bam,T12,1.0,Usher placements: T12(30/30),plate1-H5,500000,1
+intermediates/subsamples/plate1-H5.1000000.0.bam,T12,1.0,Usher placements: T12(4/4),plate1-H5,1000000,1
+intermediates/subsamples/plate1-H5.2500000.0.bam,T12,1.0,Usher placements: T12(2/2),plate1-H5,2500000,1
+intermediates/subsamples/plate1-H5.5000000.0.bam,T12,1.0,Usher placements: T12(2/2),plate1-H5,5000000,1
+intermediates/subsamples/plate1-H6.100000.0.bam,T12,1.0,Usher placements: T12(35/35),plate1-H6,100000,1
+intermediates/subsamples/plate1-H6.250000.0.bam,T12,1.0,Usher placements: T12(19/19),plate1-H6,250000,1
+intermediates/subsamples/plate1-H6.500000.0.bam,T12,1.0,Usher placements: T12(4/4),plate1-H6,500000,1
+intermediates/subsamples/plate1-H6.1000000.0.bam,T12,1.0,Usher placements: T12(2/2),plate1-H6,1000000,1
+intermediates/subsamples/plate1-H6.2500000.0.bam,T12,1.0,Usher placements: T12(2/2),plate1-H6,2500000,1
+intermediates/subsamples/plate1-H6.5000000.0.bam,T12,1.0,Usher placements: T12(2/2),plate1-H6,5000000,1
+intermediates/subsamples/plate1-H7.100000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate1-H7,100000,0
+intermediates/subsamples/plate1-H7.250000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate1-H7,250000,0
+intermediates/subsamples/plate1-H7.500000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate1-H7,500000,0
+intermediates/subsamples/plate1-H7.1000000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate1-H7,1000000,0
+intermediates/subsamples/plate1-H7.2500000.0.bam,T12,0.5,Usher placements: T12(1/2) UNDEFINED(1/2),plate1-H7,2500000,0
+intermediates/subsamples/plate1-H7.5000000.0.bam,T12,1.0,Usher placements: T12(2/2),plate1-H7,5000000,1
+intermediates/subsamples/plate1-H8.100000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate1-H8,100000,0
+intermediates/subsamples/plate1-H8.250000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate1-H8,250000,0
+intermediates/subsamples/plate1-H8.500000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate1-H8,500000,0
+intermediates/subsamples/plate1-H8.1000000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate1-H8,1000000,0
+intermediates/subsamples/plate1-H8.2500000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate1-H8,2500000,0
+intermediates/subsamples/plate1-H8.5000000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate1-H8,5000000,0
+intermediates/subsamples/plate1-H9.100000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate1-H9,100000,0
+intermediates/subsamples/plate1-H9.250000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate1-H9,250000,0
+intermediates/subsamples/plate1-H9.500000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate1-H9,500000,0
+intermediates/subsamples/plate1-H9.1000000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate1-H9,1000000,0
+intermediates/subsamples/plate1-H9.2500000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate1-H9,2500000,0
+intermediates/subsamples/plate1-H9.5000000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate1-H9,5000000,0
+intermediates/subsamples/plate2-A1.100000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate2-A1,100000,0
+intermediates/subsamples/plate2-A1.250000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate2-A1,250000,0
+intermediates/subsamples/plate2-A1.500000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate2-A1,500000,0
+intermediates/subsamples/plate2-A1.1000000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate2-A1,1000000,0
+intermediates/subsamples/plate2-A1.2500000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate2-A1,2500000,0
+intermediates/subsamples/plate2-A1.5000000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate2-A1,5000000,0
+intermediates/subsamples/plate2-A2.100000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate2-A2,100000,0
+intermediates/subsamples/plate2-A2.250000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate2-A2,250000,0
+intermediates/subsamples/plate2-A2.500000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate2-A2,500000,0
+intermediates/subsamples/plate2-A2.1000000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate2-A2,1000000,0
+intermediates/subsamples/plate2-A2.2500000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate2-A2,2500000,0
+intermediates/subsamples/plate2-A2.5000000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate2-A2,5000000,0
+intermediates/subsamples/plate2-B1.100000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate2-B1,100000,0
+intermediates/subsamples/plate2-B1.250000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate2-B1,250000,0
+intermediates/subsamples/plate2-B1.500000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate2-B1,500000,0
+intermediates/subsamples/plate2-B1.1000000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate2-B1,1000000,0
+intermediates/subsamples/plate2-B1.2500000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate2-B1,2500000,0
+intermediates/subsamples/plate2-B1.5000000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate2-B1,5000000,0
+intermediates/subsamples/plate2-B2.100000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate2-B2,100000,0
+intermediates/subsamples/plate2-B2.250000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate2-B2,250000,0
+intermediates/subsamples/plate2-B2.500000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate2-B2,500000,0
+intermediates/subsamples/plate2-B2.1000000.0.bam,UNDEFINED,0.7105875024329669,Usher placements: T12(58/65) UNDEFINED(7/65),plate2-B2,1000000,0
+intermediates/subsamples/plate2-B2.2500000.0.bam,T12,1.0,Usher placements: T12(34/34),plate2-B2,2500000,1
+intermediates/subsamples/plate2-B2.5000000.0.bam,T12,1.0,Usher placements: T12(5/5),plate2-B2,5000000,1
+intermediates/subsamples/plate2-C1.100000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate2-C1,100000,0
+intermediates/subsamples/plate2-C1.250000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate2-C1,250000,0
+intermediates/subsamples/plate2-C1.500000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate2-C1,500000,0
+intermediates/subsamples/plate2-C1.1000000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate2-C1,1000000,0
+intermediates/subsamples/plate2-C1.2500000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate2-C1,2500000,0
+intermediates/subsamples/plate2-C1.5000000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate2-C1,5000000,0
+intermediates/subsamples/plate2-C2.100000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate2-C2,100000,0
+intermediates/subsamples/plate2-C2.250000.0.bam,UNDEFINED,0.5124705274288021,Usher placements: T12(58/95) UNDEFINED(37/95),plate2-C2,250000,0
+intermediates/subsamples/plate2-C2.500000.0.bam,T12,1.0,Usher placements: T12(5/5),plate2-C2,500000,1
+intermediates/subsamples/plate2-C2.1000000.0.bam,T12,1.0,Usher placements: T12(5/5),plate2-C2,1000000,1
+intermediates/subsamples/plate2-C2.2500000.0.bam,T12,1.0,Usher placements: T12(4/4),plate2-C2,2500000,1
+intermediates/subsamples/plate2-C2.5000000.0.bam,T12,1.0,Usher placements: T12(2/2),plate2-C2,5000000,1
+intermediates/subsamples/plate2-D1.100000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate2-D1,100000,0
+intermediates/subsamples/plate2-D1.250000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate2-D1,250000,0
+intermediates/subsamples/plate2-D1.500000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate2-D1,500000,0
+intermediates/subsamples/plate2-D1.1000000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate2-D1,1000000,0
+intermediates/subsamples/plate2-D1.2500000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate2-D1,2500000,0
+intermediates/subsamples/plate2-D1.5000000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate2-D1,5000000,0
+intermediates/subsamples/plate2-D2.100000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate2-D2,100000,0
+intermediates/subsamples/plate2-D2.250000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate2-D2,250000,0
+intermediates/subsamples/plate2-D2.500000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate2-D2,500000,0
+intermediates/subsamples/plate2-D2.1000000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate2-D2,1000000,0
+intermediates/subsamples/plate2-D2.2500000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate2-D2,2500000,0
+intermediates/subsamples/plate2-D2.5000000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate2-D2,5000000,0
+intermediates/subsamples/plate2-E1.100000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate2-E1,100000,0
+intermediates/subsamples/plate2-E1.250000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate2-E1,250000,0
+intermediates/subsamples/plate2-E1.500000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate2-E1,500000,0
+intermediates/subsamples/plate2-E1.1000000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate2-E1,1000000,0
+intermediates/subsamples/plate2-E1.2500000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate2-E1,2500000,0
+intermediates/subsamples/plate2-E1.5000000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate2-E1,5000000,0
+intermediates/subsamples/plate2-E2.100000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate2-E2,100000,0
+intermediates/subsamples/plate2-E2.250000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate2-E2,250000,0
+intermediates/subsamples/plate2-E2.500000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate2-E2,500000,0
+intermediates/subsamples/plate2-E2.1000000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate2-E2,1000000,0
+intermediates/subsamples/plate2-E2.2500000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate2-E2,2500000,0
+intermediates/subsamples/plate2-E2.5000000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate2-E2,5000000,0
+intermediates/subsamples/plate2-F1.100000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate2-F1,100000,0
+intermediates/subsamples/plate2-F1.250000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate2-F1,250000,0
+intermediates/subsamples/plate2-F1.500000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate2-F1,500000,0
+intermediates/subsamples/plate2-F1.1000000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate2-F1,1000000,0
+intermediates/subsamples/plate2-F1.2500000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate2-F1,2500000,0
+intermediates/subsamples/plate2-F1.5000000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate2-F1,5000000,0
+intermediates/subsamples/plate2-F2.100000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate2-F2,100000,0
+intermediates/subsamples/plate2-F2.250000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate2-F2,250000,0
+intermediates/subsamples/plate2-F2.500000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate2-F2,500000,0
+intermediates/subsamples/plate2-F2.1000000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate2-F2,1000000,0
+intermediates/subsamples/plate2-F2.2500000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate2-F2,2500000,0
+intermediates/subsamples/plate2-F2.5000000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate2-F2,5000000,0
+intermediates/subsamples/plate2-G1.100000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate2-G1,100000,0
+intermediates/subsamples/plate2-G1.250000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate2-G1,250000,0
+intermediates/subsamples/plate2-G1.500000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate2-G1,500000,0
+intermediates/subsamples/plate2-G1.1000000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate2-G1,1000000,0
+intermediates/subsamples/plate2-G1.2500000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate2-G1,2500000,0
+intermediates/subsamples/plate2-G1.5000000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate2-G1,5000000,0
+intermediates/subsamples/plate2-G2.100000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate2-G2,100000,0
+intermediates/subsamples/plate2-G2.250000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate2-G2,250000,0
+intermediates/subsamples/plate2-G2.500000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate2-G2,500000,0
+intermediates/subsamples/plate2-G2.1000000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate2-G2,1000000,0
+intermediates/subsamples/plate2-G2.2500000.0.bam,T12,1.0,Usher placements: T12(43/43),plate2-G2,2500000,1
+intermediates/subsamples/plate2-G2.5000000.0.bam,T12,1.0,Usher placements: T12(43/43),plate2-G2,5000000,1
+intermediates/subsamples/plate2-H1.100000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate2-H1,100000,0
+intermediates/subsamples/plate2-H1.250000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate2-H1,250000,0
+intermediates/subsamples/plate2-H1.500000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate2-H1,500000,0
+intermediates/subsamples/plate2-H1.1000000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate2-H1,1000000,0
+intermediates/subsamples/plate2-H1.2500000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate2-H1,2500000,0
+intermediates/subsamples/plate2-H1.5000000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate2-H1,5000000,0
+intermediates/subsamples/plate3-A10.100000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate3-A10,100000,0
+intermediates/subsamples/plate3-A10.250000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate3-A10,250000,0
+intermediates/subsamples/plate3-A10.500000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate3-A10,500000,0
+intermediates/subsamples/plate3-A10.1000000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate3-A10,1000000,0
+intermediates/subsamples/plate3-A10.2500000.0.bam,UNDEFINED,0.5652393936030884,Usher placements: T12(49/66) UNDEFINED(17/66),plate3-A10,2500000,0
+intermediates/subsamples/plate3-A10.5000000.0.bam,T12,1.0,Usher placements: T12(7/7),plate3-A10,5000000,1
+intermediates/subsamples/plate3-A11.100000.0.bam,UNDEFINED,0.6494839069141378,Usher placements: T12(49/58) UNDEFINED(9/58),plate3-A11,100000,0
+intermediates/subsamples/plate3-A11.250000.0.bam,T12,1.0,Usher placements: T12(6/6),plate3-A11,250000,1
+intermediates/subsamples/plate3-A11.500000.0.bam,T12,1.0,Usher placements: T12(4/4),plate3-A11,500000,1
+intermediates/subsamples/plate3-A11.1000000.0.bam,T12,1.0,Usher placements: T12(4/4),plate3-A11,1000000,1
+intermediates/subsamples/plate3-A11.2500000.0.bam,T12,1.0,Usher placements: T12(2/2),plate3-A11,2500000,1
+intermediates/subsamples/plate3-A11.5000000.0.bam,T12,1.0,Usher placements: T12(2/2),plate3-A11,5000000,1
+intermediates/subsamples/plate3-A12.100000.0.bam,T12,1.0,Usher placements: T12(26/26),plate3-A12,100000,1
+intermediates/subsamples/plate3-A12.250000.0.bam,T12,1.0,Usher placements: T12(5/5),plate3-A12,250000,1
+intermediates/subsamples/plate3-A12.500000.0.bam,T12,1.0,Usher placements: T12(2/2),plate3-A12,500000,1
+intermediates/subsamples/plate3-A12.1000000.0.bam,T12,1.0,Usher placements: T12(2/2),plate3-A12,1000000,1
+intermediates/subsamples/plate3-A12.2500000.0.bam,T12,1.0,Usher placements: T12(2/2),plate3-A12,2500000,1
+intermediates/subsamples/plate3-A12.5000000.0.bam,T12,1.0,Usher placements: T12(2/2),plate3-A12,5000000,1
+intermediates/subsamples/plate3-A7.100000.0.bam,T12,1.0,Usher placements: T12(28/28),plate3-A7,100000,1
+intermediates/subsamples/plate3-A7.250000.0.bam,T12,1.0,Usher placements: T12(21/21),plate3-A7,250000,1
+intermediates/subsamples/plate3-A7.500000.0.bam,T12,1.0,Usher placements: T12(4/4),plate3-A7,500000,1
+intermediates/subsamples/plate3-A7.1000000.0.bam,T12,1.0,Usher placements: T12(2/2),plate3-A7,1000000,1
+intermediates/subsamples/plate3-A7.2500000.0.bam,T12,1.0,Usher placements: T12(3/3),plate3-A7,2500000,1
+intermediates/subsamples/plate3-A7.5000000.0.bam,T12,1.0,Usher placements: T12(3/3),plate3-A7,5000000,1
+intermediates/subsamples/plate3-A8.100000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate3-A8,100000,0
+intermediates/subsamples/plate3-A8.250000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate3-A8,250000,0
+intermediates/subsamples/plate3-A8.500000.0.bam,T12,1.0,Usher placements: T12(29/29),plate3-A8,500000,1
+intermediates/subsamples/plate3-A8.1000000.0.bam,T12,1.0,Usher placements: T12(29/29),plate3-A8,1000000,1
+intermediates/subsamples/plate3-A8.2500000.0.bam,T12,1.0,Usher placements: T12(29/29),plate3-A8,2500000,1
+intermediates/subsamples/plate3-A8.5000000.0.bam,T12,1.0,Usher placements: T12(29/29),plate3-A8,5000000,1
+intermediates/subsamples/plate3-A9.100000.0.bam,T12,1.0,Usher placements: T12(30/30),plate3-A9,100000,1
+intermediates/subsamples/plate3-A9.250000.0.bam,T12,1.0,Usher placements: T12(5/5),plate3-A9,250000,1
+intermediates/subsamples/plate3-A9.500000.0.bam,T12,1.0,Usher placements: T12(4/4),plate3-A9,500000,1
+intermediates/subsamples/plate3-A9.1000000.0.bam,T12,1.0,Usher placements: T12(4/4),plate3-A9,1000000,1
+intermediates/subsamples/plate3-A9.2500000.0.bam,T12,1.0,Usher placements: T12(4/4),plate3-A9,2500000,1
+intermediates/subsamples/plate3-A9.5000000.0.bam,T12,1.0,Usher placements: T12(2/2),plate3-A9,5000000,1
+intermediates/subsamples/plate3-B11.100000.0.bam,T12,1.0,Usher placements: T12(29/29),plate3-B11,100000,1
+intermediates/subsamples/plate3-B11.250000.0.bam,T12,1.0,Usher placements: T12(5/5),plate3-B11,250000,1
+intermediates/subsamples/plate3-B11.500000.0.bam,T12,1.0,Usher placements: T12(5/5),plate3-B11,500000,1
+intermediates/subsamples/plate3-B11.1000000.0.bam,T12,1.0,Usher placements: T12(2/2),plate3-B11,1000000,1
+intermediates/subsamples/plate3-B11.2500000.0.bam,T12,1.0,Usher placements: T12(2/2),plate3-B11,2500000,1
+intermediates/subsamples/plate3-B11.5000000.0.bam,T12,1.0,Usher placements: T12(2/2),plate3-B11,5000000,1
+intermediates/subsamples/plate3-B12.100000.0.bam,T12,1.0,Usher placements: T12(37/37),plate3-B12,100000,1
+intermediates/subsamples/plate3-B12.250000.0.bam,T12,1.0,Usher placements: T12(4/4),plate3-B12,250000,1
+intermediates/subsamples/plate3-B12.500000.0.bam,T12,1.0,Usher placements: T12(4/4),plate3-B12,500000,1
+intermediates/subsamples/plate3-B12.1000000.0.bam,T12,1.0,Usher placements: T12(4/4),plate3-B12,1000000,1
+intermediates/subsamples/plate3-B12.2500000.0.bam,T12,1.0,Usher placements: T12(2/2),plate3-B12,2500000,1
+intermediates/subsamples/plate3-B12.5000000.0.bam,T12,1.0,Usher placements: T12(2/2),plate3-B12,5000000,1
+intermediates/subsamples/plate3-B7.100000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate3-B7,100000,0
+intermediates/subsamples/plate3-B7.250000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate3-B7,250000,0
+intermediates/subsamples/plate3-B7.500000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate3-B7,500000,0
+intermediates/subsamples/plate3-B7.1000000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate3-B7,1000000,0
+intermediates/subsamples/plate3-B7.2500000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate3-B7,2500000,0
+intermediates/subsamples/plate3-B7.5000000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate3-B7,5000000,0
+intermediates/subsamples/plate3-B8.100000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate3-B8,100000,0
+intermediates/subsamples/plate3-B8.250000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate3-B8,250000,0
+intermediates/subsamples/plate3-B8.500000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate3-B8,500000,0
+intermediates/subsamples/plate3-B8.1000000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate3-B8,1000000,0
+intermediates/subsamples/plate3-B8.2500000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate3-B8,2500000,0
+intermediates/subsamples/plate3-B8.5000000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate3-B8,5000000,0
+intermediates/subsamples/plate3-B9.100000.0.bam,T12,1.0,Usher placements: T12(7/7),plate3-B9,100000,1
+intermediates/subsamples/plate3-B9.250000.0.bam,T12,1.0,Usher placements: T12(6/6),plate3-B9,250000,1
+intermediates/subsamples/plate3-B9.500000.0.bam,T12,1.0,Usher placements: T12(4/4),plate3-B9,500000,1
+intermediates/subsamples/plate3-B9.1000000.0.bam,T12,1.0,Usher placements: T12(4/4),plate3-B9,1000000,1
+intermediates/subsamples/plate3-B9.2500000.0.bam,T12,1.0,Usher placements: T12(2/2),plate3-B9,2500000,1
+intermediates/subsamples/plate3-B9.5000000.0.bam,T12,1.0,Usher placements: T12(2/2),plate3-B9,5000000,1
+intermediates/subsamples/plate3-C10.100000.0.bam,T12,1.0,Usher placements: T12(22/22),plate3-C10,100000,1
+intermediates/subsamples/plate3-C10.250000.0.bam,T12,1.0,Usher placements: T12(19/19),plate3-C10,250000,1
+intermediates/subsamples/plate3-C10.500000.0.bam,T12,1.0,Usher placements: T12(1/1),plate3-C10,500000,1
+intermediates/subsamples/plate3-C10.1000000.0.bam,T12,1.0,Usher placements: T12(3/3),plate3-C10,1000000,1
+intermediates/subsamples/plate3-C10.2500000.0.bam,T12,1.0,Usher placements: T12(4/4),plate3-C10,2500000,1
+intermediates/subsamples/plate3-C10.5000000.0.bam,T12,1.0,Usher placements: T12(4/4),plate3-C10,5000000,1
+intermediates/subsamples/plate3-C11.100000.0.bam,UNDEFINED,0.658643269546582,Usher placements: T12(58/68) UNDEFINED(10/68),plate3-C11,100000,0
+intermediates/subsamples/plate3-C11.250000.0.bam,T12,1.0,Usher placements: T12(28/28),plate3-C11,250000,1
+intermediates/subsamples/plate3-C11.500000.0.bam,T12,1.0,Usher placements: T12(1/1),plate3-C11,500000,1
+intermediates/subsamples/plate3-C11.1000000.0.bam,T12,1.0,Usher placements: T12(1/1),plate3-C11,1000000,1
+intermediates/subsamples/plate3-C11.2500000.0.bam,T12,1.0,Usher placements: T12(3/3),plate3-C11,2500000,1
+intermediates/subsamples/plate3-C11.5000000.0.bam,T12,1.0,Usher placements: T12(3/3),plate3-C11,5000000,1
+intermediates/subsamples/plate3-C12.100000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate3-C12,100000,0
+intermediates/subsamples/plate3-C12.250000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate3-C12,250000,0
+intermediates/subsamples/plate3-C12.500000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate3-C12,500000,0
+intermediates/subsamples/plate3-C12.1000000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate3-C12,1000000,0
+intermediates/subsamples/plate3-C12.2500000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate3-C12,2500000,0
+intermediates/subsamples/plate3-C12.5000000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate3-C12,5000000,0
+intermediates/subsamples/plate3-C7.100000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate3-C7,100000,0
+intermediates/subsamples/plate3-C7.250000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate3-C7,250000,0
+intermediates/subsamples/plate3-C7.500000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate3-C7,500000,0
+intermediates/subsamples/plate3-C7.1000000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate3-C7,1000000,0
+intermediates/subsamples/plate3-C7.2500000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate3-C7,2500000,0
+intermediates/subsamples/plate3-C7.5000000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate3-C7,5000000,0
+intermediates/subsamples/plate3-C8.100000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate3-C8,100000,0
+intermediates/subsamples/plate3-C8.250000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate3-C8,250000,0
+intermediates/subsamples/plate3-C8.500000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate3-C8,500000,0
+intermediates/subsamples/plate3-C8.1000000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate3-C8,1000000,0
+intermediates/subsamples/plate3-C8.2500000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate3-C8,2500000,0
+intermediates/subsamples/plate3-C8.5000000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate3-C8,5000000,0
+intermediates/subsamples/plate3-C9.100000.0.bam,T12,1.0,Usher placements: T12(39/39),plate3-C9,100000,1
+intermediates/subsamples/plate3-C9.250000.0.bam,T12,1.0,Usher placements: T12(1/1),plate3-C9,250000,1
+intermediates/subsamples/plate3-C9.500000.0.bam,T12,1.0,Usher placements: T12(1/1),plate3-C9,500000,1
+intermediates/subsamples/plate3-C9.1000000.0.bam,T12,1.0,Usher placements: T12(3/3),plate3-C9,1000000,1
+intermediates/subsamples/plate3-C9.2500000.0.bam,T12,1.0,Usher placements: T12(4/4),plate3-C9,2500000,1
+intermediates/subsamples/plate3-C9.5000000.0.bam,T12,1.0,Usher placements: T12(4/4),plate3-C9,5000000,1
+intermediates/subsamples/plate3-D10.100000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate3-D10,100000,0
+intermediates/subsamples/plate3-D10.250000.0.bam,UNDEFINED,0.5428814526898254,Usher placements: T12(56/80) UNDEFINED(24/80),plate3-D10,250000,0
+intermediates/subsamples/plate3-D10.500000.0.bam,T12,1.0,Usher placements: T12(42/42),plate3-D10,500000,1
+intermediates/subsamples/plate3-D10.1000000.0.bam,T12,1.0,Usher placements: T12(7/7),plate3-D10,1000000,1
+intermediates/subsamples/plate3-D10.2500000.0.bam,T12,1.0,Usher placements: T12(4/4),plate3-D10,2500000,1
+intermediates/subsamples/plate3-D10.5000000.0.bam,T12,1.0,Usher placements: T12(2/2),plate3-D10,5000000,1
+intermediates/subsamples/plate3-D11.100000.0.bam,T12,1.0,Usher placements: T12(30/30),plate3-D11,100000,1
+intermediates/subsamples/plate3-D11.250000.0.bam,T12,1.0,Usher placements: T12(4/4),plate3-D11,250000,1
+intermediates/subsamples/plate3-D11.500000.0.bam,T12,1.0,Usher placements: T12(4/4),plate3-D11,500000,1
+intermediates/subsamples/plate3-D11.1000000.0.bam,T12,1.0,Usher placements: T12(2/2),plate3-D11,1000000,1
+intermediates/subsamples/plate3-D11.2500000.0.bam,T12,1.0,Usher placements: T12(2/2),plate3-D11,2500000,1
+intermediates/subsamples/plate3-D11.5000000.0.bam,T12,1.0,Usher placements: T12(2/2),plate3-D11,5000000,1
+intermediates/subsamples/plate3-D12.100000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate3-D12,100000,0
+intermediates/subsamples/plate3-D12.250000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate3-D12,250000,0
+intermediates/subsamples/plate3-D12.500000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate3-D12,500000,0
+intermediates/subsamples/plate3-D12.1000000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate3-D12,1000000,0
+intermediates/subsamples/plate3-D12.2500000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate3-D12,2500000,0
+intermediates/subsamples/plate3-D12.5000000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate3-D12,5000000,0
+intermediates/subsamples/plate3-D7.100000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate3-D7,100000,0
+intermediates/subsamples/plate3-D7.250000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate3-D7,250000,0
+intermediates/subsamples/plate3-D7.500000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate3-D7,500000,0
+intermediates/subsamples/plate3-D7.1000000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate3-D7,1000000,0
+intermediates/subsamples/plate3-D7.2500000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate3-D7,2500000,0
+intermediates/subsamples/plate3-D7.5000000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate3-D7,5000000,0
+intermediates/subsamples/plate3-D8.100000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate3-D8,100000,0
+intermediates/subsamples/plate3-D8.250000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate3-D8,250000,0
+intermediates/subsamples/plate3-D8.500000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate3-D8,500000,0
+intermediates/subsamples/plate3-D8.1000000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate3-D8,1000000,0
+intermediates/subsamples/plate3-D8.2500000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate3-D8,2500000,0
+intermediates/subsamples/plate3-D8.5000000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate3-D8,5000000,0
+intermediates/subsamples/plate3-D9.100000.0.bam,T12,1.0,Usher placements: T12(39/39),plate3-D9,100000,1
+intermediates/subsamples/plate3-D9.250000.0.bam,T12,1.0,Usher placements: T12(7/7),plate3-D9,250000,1
+intermediates/subsamples/plate3-D9.500000.0.bam,T12,1.0,Usher placements: T12(4/4),plate3-D9,500000,1
+intermediates/subsamples/plate3-D9.1000000.0.bam,T12,1.0,Usher placements: T12(4/4),plate3-D9,1000000,1
+intermediates/subsamples/plate3-D9.2500000.0.bam,T12,1.0,Usher placements: T12(2/2),plate3-D9,2500000,1
+intermediates/subsamples/plate3-D9.5000000.0.bam,T12,1.0,Usher placements: T12(2/2),plate3-D9,5000000,1
+intermediates/subsamples/plate3-E10.100000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate3-E10,100000,0
+intermediates/subsamples/plate3-E10.250000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate3-E10,250000,0
+intermediates/subsamples/plate3-E10.500000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate3-E10,500000,0
+intermediates/subsamples/plate3-E10.1000000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate3-E10,1000000,0
+intermediates/subsamples/plate3-E10.2500000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate3-E10,2500000,0
+intermediates/subsamples/plate3-E10.5000000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate3-E10,5000000,0
+intermediates/subsamples/plate3-E11.100000.0.bam,UNDEFINED,0.5463275992266529,Usher placements: T12(58/82) UNDEFINED(24/82),plate3-E11,100000,0
+intermediates/subsamples/plate3-E11.250000.0.bam,T12,1.0,Usher placements: T12(30/30),plate3-E11,250000,1
+intermediates/subsamples/plate3-E11.500000.0.bam,T12,1.0,Usher placements: T12(4/4),plate3-E11,500000,1
+intermediates/subsamples/plate3-E11.1000000.0.bam,T12,1.0,Usher placements: T12(4/4),plate3-E11,1000000,1
+intermediates/subsamples/plate3-E11.2500000.0.bam,T12,1.0,Usher placements: T12(4/4),plate3-E11,2500000,1
+intermediates/subsamples/plate3-E11.5000000.0.bam,T12,1.0,Usher placements: T12(4/4),plate3-E11,5000000,1
+intermediates/subsamples/plate3-E12.100000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate3-E12,100000,0
+intermediates/subsamples/plate3-E12.250000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate3-E12,250000,0
+intermediates/subsamples/plate3-E12.500000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate3-E12,500000,0
+intermediates/subsamples/plate3-E12.1000000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate3-E12,1000000,0
+intermediates/subsamples/plate3-E12.2500000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate3-E12,2500000,0
+intermediates/subsamples/plate3-E12.5000000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate3-E12,5000000,0
+intermediates/subsamples/plate3-E7.100000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate3-E7,100000,0
+intermediates/subsamples/plate3-E7.250000.0.bam,T12,1.0,Usher placements: T12(44/44),plate3-E7,250000,1
+intermediates/subsamples/plate3-E7.500000.0.bam,T12,1.0,Usher placements: T12(28/28),plate3-E7,500000,1
+intermediates/subsamples/plate3-E7.1000000.0.bam,T12,1.0,Usher placements: T12(5/5),plate3-E7,1000000,1
+intermediates/subsamples/plate3-E7.2500000.0.bam,T12,1.0,Usher placements: T12(4/4),plate3-E7,2500000,1
+intermediates/subsamples/plate3-E7.5000000.0.bam,T12,1.0,Usher placements: T12(4/4),plate3-E7,5000000,1
+intermediates/subsamples/plate3-E9.100000.0.bam,T12,1.0,Usher placements: T12(38/38),plate3-E9,100000,1
+intermediates/subsamples/plate3-E9.250000.0.bam,T12,1.0,Usher placements: T12(22/22),plate3-E9,250000,1
+intermediates/subsamples/plate3-E9.500000.0.bam,T12,1.0,Usher placements: T12(2/2),plate3-E9,500000,1
+intermediates/subsamples/plate3-E9.1000000.0.bam,T12,1.0,Usher placements: T12(4/4),plate3-E9,1000000,1
+intermediates/subsamples/plate3-E9.2500000.0.bam,T12,1.0,Usher placements: T12(2/2),plate3-E9,2500000,1
+intermediates/subsamples/plate3-E9.5000000.0.bam,T12,1.0,Usher placements: T12(2/2),plate3-E9,5000000,1
+intermediates/subsamples/plate3-F10.100000.0.bam,UNDEFINED,0.505565362263455,Usher placements: T12(58/101) UNDEFINED(43/101),plate3-F10,100000,0
+intermediates/subsamples/plate3-F10.250000.0.bam,T12,1.0,Usher placements: T12(41/41),plate3-F10,250000,1
+intermediates/subsamples/plate3-F10.500000.0.bam,T12,1.0,Usher placements: T12(28/28),plate3-F10,500000,1
+intermediates/subsamples/plate3-F10.1000000.0.bam,T12,1.0,Usher placements: T12(5/5),plate3-F10,1000000,1
+intermediates/subsamples/plate3-F10.2500000.0.bam,T12,1.0,Usher placements: T12(4/4),plate3-F10,2500000,1
+intermediates/subsamples/plate3-F10.5000000.0.bam,T12,1.0,Usher placements: T12(4/4),plate3-F10,5000000,1
+intermediates/subsamples/plate3-F11.100000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate3-F11,100000,0
+intermediates/subsamples/plate3-F11.250000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate3-F11,250000,0
+intermediates/subsamples/plate3-F11.500000.0.bam,T12,1.0,Usher placements: T12(27/27),plate3-F11,500000,1
+intermediates/subsamples/plate3-F11.1000000.0.bam,T12,1.0,Usher placements: T12(6/6),plate3-F11,1000000,1
+intermediates/subsamples/plate3-F11.2500000.0.bam,T12,1.0,Usher placements: T12(4/4),plate3-F11,2500000,1
+intermediates/subsamples/plate3-F11.5000000.0.bam,T12,1.0,Usher placements: T12(4/4),plate3-F11,5000000,1
+intermediates/subsamples/plate3-F12.100000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate3-F12,100000,0
+intermediates/subsamples/plate3-F12.250000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate3-F12,250000,0
+intermediates/subsamples/plate3-F12.500000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate3-F12,500000,0
+intermediates/subsamples/plate3-F12.1000000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate3-F12,1000000,0
+intermediates/subsamples/plate3-F12.2500000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate3-F12,2500000,0
+intermediates/subsamples/plate3-F12.5000000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate3-F12,5000000,0
+intermediates/subsamples/plate3-F7.100000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate3-F7,100000,0
+intermediates/subsamples/plate3-F7.250000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate3-F7,250000,0
+intermediates/subsamples/plate3-F7.500000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate3-F7,500000,0
+intermediates/subsamples/plate3-F7.1000000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate3-F7,1000000,0
+intermediates/subsamples/plate3-F7.2500000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate3-F7,2500000,0
+intermediates/subsamples/plate3-F7.5000000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate3-F7,5000000,0
+intermediates/subsamples/plate3-F9.100000.0.bam,T12,1.0,Usher placements: T12(40/40),plate3-F9,100000,1
+intermediates/subsamples/plate3-F9.250000.0.bam,T12,1.0,Usher placements: T12(4/4),plate3-F9,250000,1
+intermediates/subsamples/plate3-F9.500000.0.bam,T12,1.0,Usher placements: T12(4/4),plate3-F9,500000,1
+intermediates/subsamples/plate3-F9.1000000.0.bam,T12,1.0,Usher placements: T12(2/2),plate3-F9,1000000,1
+intermediates/subsamples/plate3-F9.2500000.0.bam,T12,1.0,Usher placements: T12(2/2),plate3-F9,2500000,1
+intermediates/subsamples/plate3-F9.5000000.0.bam,T12,1.0,Usher placements: T12(2/2),plate3-F9,5000000,1
+intermediates/subsamples/plate3-G10.100000.0.bam,UNDEFINED,0.6911951200392232,Usher placements: T12(58/66) UNDEFINED(8/66),plate3-G10,100000,0
+intermediates/subsamples/plate3-G10.250000.0.bam,T12,1.0,Usher placements: T12(1/1),plate3-G10,250000,1
+intermediates/subsamples/plate3-G10.500000.0.bam,T12,1.0,Usher placements: T12(4/4),plate3-G10,500000,1
+intermediates/subsamples/plate3-G10.1000000.0.bam,T12,1.0,Usher placements: T12(1/1),plate3-G10,1000000,1
+intermediates/subsamples/plate3-G10.2500000.0.bam,T12,1.0,Usher placements: T12(1/1),plate3-G10,2500000,1
+intermediates/subsamples/plate3-G10.5000000.0.bam,T12,1.0,Usher placements: T12(1/1),plate3-G10,5000000,1
+intermediates/subsamples/plate3-G11.100000.0.bam,T12,1.0,Usher placements: T12(41/41),plate3-G11,100000,1
+intermediates/subsamples/plate3-G11.250000.0.bam,T12,1.0,Usher placements: T12(7/7),plate3-G11,250000,1
+intermediates/subsamples/plate3-G11.500000.0.bam,T12,1.0,Usher placements: T12(1/1),plate3-G11,500000,1
+intermediates/subsamples/plate3-G11.1000000.0.bam,T12,1.0,Usher placements: T12(1/1),plate3-G11,1000000,1
+intermediates/subsamples/plate3-G11.2500000.0.bam,T12,1.0,Usher placements: T12(3/3),plate3-G11,2500000,1
+intermediates/subsamples/plate3-G11.5000000.0.bam,T12,1.0,Usher placements: T12(4/4),plate3-G11,5000000,1
+intermediates/subsamples/plate3-G12.100000.0.bam,T12,1.0,Usher placements: T12(7/7),plate3-G12,100000,1
+intermediates/subsamples/plate3-G12.250000.0.bam,T12,1.0,Usher placements: T12(4/4),plate3-G12,250000,1
+intermediates/subsamples/plate3-G12.500000.0.bam,T12,1.0,Usher placements: T12(4/4),plate3-G12,500000,1
+intermediates/subsamples/plate3-G12.1000000.0.bam,T12,1.0,Usher placements: T12(4/4),plate3-G12,1000000,1
+intermediates/subsamples/plate3-G12.2500000.0.bam,T12,1.0,Usher placements: T12(2/2),plate3-G12,2500000,1
+intermediates/subsamples/plate3-G12.5000000.0.bam,T12,1.0,Usher placements: T12(2/2),plate3-G12,5000000,1
+intermediates/subsamples/plate3-G7.100000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate3-G7,100000,0
+intermediates/subsamples/plate3-G7.250000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate3-G7,250000,0
+intermediates/subsamples/plate3-G7.500000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate3-G7,500000,0
+intermediates/subsamples/plate3-G7.1000000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate3-G7,1000000,0
+intermediates/subsamples/plate3-G7.2500000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate3-G7,2500000,0
+intermediates/subsamples/plate3-G7.5000000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate3-G7,5000000,0
+intermediates/subsamples/plate3-G9.100000.0.bam,T12,1.0,Usher placements: T12(37/37),plate3-G9,100000,1
+intermediates/subsamples/plate3-G9.250000.0.bam,T12,1.0,Usher placements: T12(1/1),plate3-G9,250000,1
+intermediates/subsamples/plate3-G9.500000.0.bam,T12,1.0,Usher placements: T12(1/1),plate3-G9,500000,1
+intermediates/subsamples/plate3-G9.1000000.0.bam,T12,1.0,Usher placements: T12(3/3),plate3-G9,1000000,1
+intermediates/subsamples/plate3-G9.2500000.0.bam,T12,1.0,Usher placements: T12(3/3),plate3-G9,2500000,1
+intermediates/subsamples/plate3-G9.5000000.0.bam,T12,1.0,Usher placements: T12(3/3),plate3-G9,5000000,1
+intermediates/subsamples/plate3-H10.100000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate3-H10,100000,0
+intermediates/subsamples/plate3-H10.250000.0.bam,UNDEFINED,0.5124705274288021,Usher placements: T12(58/95) UNDEFINED(37/95),plate3-H10,250000,0
+intermediates/subsamples/plate3-H10.500000.0.bam,T12,1.0,Usher placements: T12(41/41),plate3-H10,500000,1
+intermediates/subsamples/plate3-H10.1000000.0.bam,T12,1.0,Usher placements: T12(7/7),plate3-H10,1000000,1
+intermediates/subsamples/plate3-H10.2500000.0.bam,T12,1.0,Usher placements: T12(4/4),plate3-H10,2500000,1
+intermediates/subsamples/plate3-H10.5000000.0.bam,T12,1.0,Usher placements: T12(4/4),plate3-H10,5000000,1
+intermediates/subsamples/plate3-H11.100000.0.bam,UNDEFINED,0.5750486284295696,Usher placements: T12(47/62) UNDEFINED(15/62),plate3-H11,100000,0
+intermediates/subsamples/plate3-H11.250000.0.bam,T12,1.0,Usher placements: T12(7/7),plate3-H11,250000,1
+intermediates/subsamples/plate3-H11.500000.0.bam,T12,1.0,Usher placements: T12(4/4),plate3-H11,500000,1
+intermediates/subsamples/plate3-H11.1000000.0.bam,T12,1.0,Usher placements: T12(2/2),plate3-H11,1000000,1
+intermediates/subsamples/plate3-H11.2500000.0.bam,T12,1.0,Usher placements: T12(2/2),plate3-H11,2500000,1
+intermediates/subsamples/plate3-H11.5000000.0.bam,T12,1.0,Usher placements: T12(2/2),plate3-H11,5000000,1
+intermediates/subsamples/plate3-H7.100000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate3-H7,100000,0
+intermediates/subsamples/plate3-H7.250000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate3-H7,250000,0
+intermediates/subsamples/plate3-H7.500000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate3-H7,500000,0
+intermediates/subsamples/plate3-H7.1000000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate3-H7,1000000,0
+intermediates/subsamples/plate3-H7.2500000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate3-H7,2500000,0
+intermediates/subsamples/plate3-H7.5000000.0.bam,UNDEFINED,0.501773944369225,Usher placements: T12(58/107) UNDEFINED(49/107),plate3-H7,5000000,0
+intermediates/subsamples/plate3-H9.100000.0.bam,T12,1.0,Usher placements: T12(42/42),plate3-H9,100000,1
+intermediates/subsamples/plate3-H9.250000.0.bam,T12,1.0,Usher placements: T12(4/4),plate3-H9,250000,1
+intermediates/subsamples/plate3-H9.500000.0.bam,T12,1.0,Usher placements: T12(4/4),plate3-H9,500000,1
+intermediates/subsamples/plate3-H9.1000000.0.bam,T12,1.0,Usher placements: T12(2/2),plate3-H9,1000000,1
+intermediates/subsamples/plate3-H9.2500000.0.bam,T12,1.0,Usher placements: T12(2/2),plate3-H9,2500000,1
+intermediates/subsamples/plate3-H9.5000000.0.bam,T12,1.0,Usher placements: T12(2/2),plate3-H9,5000000,1
