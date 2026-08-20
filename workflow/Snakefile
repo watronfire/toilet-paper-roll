@@ -28,7 +28,7 @@ rule all:
         kraken_report = "results/reports/kraken2_reports.csv",
         bracken_report = "results/reports/bracken2_reports.csv",
         variant_report = "results/variants_subsample.csv",
-        vibecheck_results = "intermediates/vibecheck/clades.txt",
+        vibecheck_results = "results/lineage_subsample.csv",
         depths = expand( "intermediates/depth/{sample}.depth", sample=SAMPLES )    
     output:
         final = touch( "filter.complete" )

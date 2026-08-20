@@ -167,6 +167,58 @@ rule classify_usher:
         """
 
 
+rule summarize_usher:
+    input:
+        clades = rules.classify_usher.output.clades
+    output:
+        results = "results/lineage_subsample.csv"
+    run:
+        import pandas as pd
+        import re       
+        import numpy as np
+
+        vibe = { "sequence_file" : [], "lineage" : [], "confidence" : [], "classification_notes" : []}
+        with open( input.clades, "rt" ) as f:
+            for line in f:
+                name, lineage_histogram = line.rstrip("\n").split("\t")
+                if "*|" in lineage_histogram:
+                    # example: A.28*|A.28(1/10),B.1(6/10),B.1.511(1/10),B.1.518(2/10)
+                    lineage, histogram = lineage_histogram.split("*|")
+                    histo_list = [i for i in histogram.split(",") if i]
+                    confidence = 0.0
+                    if len(histo_list) > 1:
+                        for lin_counts in histo_list:
+                            m = re.match(
+                                r"([A-Z0-9.]+)\(([0-9]+)\/([0-9]+)\)", lin_counts
+                            )
+                            if m:
+                                place_count, total = [
+                                    int(m.group(2)),
+                                    int(m.group(3)),
+                                ]
+                                confidence += (place_count / total) * np.log(
+                                    place_count / total
+                                )
+                    confidence = np.exp(confidence)
+                    histogram_note = "Usher placements: " + " ".join(histo_list)
+                else:
+                    lineage = lineage_histogram
+                    confidence = 1.0
+                    histogram_note = ""
+
+                vibe["sequence_file"].append( name )
+                vibe["lineage"].append( lineage )
+                vibe["confidence"].append( confidence )
+                vibe["classification_notes"].append( histogram_note)
+        vibe = pd.DataFrame( vibe )
+        vibe["cell"] = vibe["sequence_file"].str.extract( r"(plate\d-\w\d{1,2})" )
+        vibe["reads"] = vibe["sequence_file"].str.extract( r".(\d+).0.bam")
+        vibe = vibe.dropna( subset="reads")
+        vibe["reads"] = vibe["reads"].astype(int)
+        vibe["correct"] = ((vibe["lineage"]=="T12") & (vibe["confidence"]>0.5)).astype( int )
+        vibe.to_csv( output.results, index=False )
+
+
 rule summarize_variants_and_counts:
     input:
         alignment = rules.subsample_reads.output.subsampled_bam,
