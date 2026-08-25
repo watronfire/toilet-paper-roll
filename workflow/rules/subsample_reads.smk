@@ -14,7 +14,7 @@ rule subsample_reads:
         if wildcards.reads != "all":
             reads = int( wildcards.reads )
             shell( """
-                zcat {input.read1} | awk 'NR%4==1 {sub(/^@/, ""); print $1}' | shuf -n {wildcards.reads} > {output.subsampled_names} &&\
+                zcat {input.read1} | awk 'NR%4==1 {{sub(/^@/, ""); print $1}}' | shuf -n {wildcards.reads} > {output.subsampled_names} &&\
                 samtools view -b -h -N {output.subsampled_names} {input.bam} > {output.subsampled_bam} &&\
                 samtools index {output.subsampled_bam}
         """ )
