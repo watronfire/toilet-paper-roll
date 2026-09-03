@@ -1,5 +1,6 @@
 READS = [100_000, 250_000, 500_000, 1_000_000, 2_500_000, 5_000_000, "all"]
 PBTREE = "~/scripts/vibecheck/vibecheck/resources/o1_cholera.no_missing.pb"
+HYPERVARIANTS = "resources/hyper.csv"
 
 
 rule subsample_reads:
@@ -174,7 +175,7 @@ rule summarize_usher:
         results = "results/lineage_subsample.csv"
     run:
         import pandas as pd
-        import re       
+        import re
         import numpy as np
 
         vibe = { "sequence_file" : [], "lineage" : [], "confidence" : [], "classification_notes" : []}
@@ -223,7 +224,10 @@ rule summarize_variants_and_counts:
     input:
         alignment = rules.subsample_reads.output.subsampled_bam,
         counts = rules.get_variants_and_counts.output.counts,
-        variants = rules.get_variants_and_counts.output.variants
+        variants = rules.get_variants_and_counts.output.variants,
+        hyper_variants = HYPERVARIANTS,
+    params:
+        minimum_allele_frequency = 0.03
     output:
         summary = "intermediates/subsampled_variants/{sample}.{reads}.{trial}.summary.txt"
     group: "variants"
@@ -242,14 +246,17 @@ rule summarize_variants_and_counts:
             pi = counts["diversity"].mean()
             pi_median = counts["diversity"].median()
 
+        hv = pd.read_csv( input.hyper_variants, index_col=["chrom","pos"] )
+        problems = hv.any(axis=1).index
 
-        vcf = pd.read_csv( input.variants, sep="\t", header=None, names=["chrom", "pos", "id", "ref", "alt", "qual", "filter", "info", "format", "sample"],  comment="#", compression="gzip" )
+        vcf = pd.read_csv( input.variants, sep="\t", header=None, names=["chrom", "pos", "id", "ref", "alt", "qual", "filter", "info", "format", "sample"],  comment="#", compression="gzip", index_col=["chrom", "pos"] )
+        vcf = vcf.loc[~vcf.index.isin(problems)]
         vcf = vcf.loc[vcf["ref"].str.len()==vcf["alt"].str.len()]
         vcf["AD"] = vcf["info"].str.extract( r"AD=([0-9,]+);" )
         vcf["AD"] = vcf["AD"].str.split( "," )
         assert (vcf["AD"].str.len() == 2).all()
         vcf["AF"] = vcf["AD"].apply( lambda x: int( x[1] ) / (sum( map( int, x ) ) ) )
-        vcf = vcf.loc[(vcf["AF"] > 0.03)&(vcf["AF"]<1)]
+        vcf = vcf.loc[(vcf["AF"] > params.minimum_allele_frequency)&(vcf["AF"] < (1 - minimum_allele_frequency))]
         vcf.loc[vcf["AF"] > 0.5, "AF"] = 1 - vcf["AF"]
         af = vcf["AF"].mean()
         af_median = vcf["AF"].median()
