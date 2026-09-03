@@ -247,7 +247,7 @@ rule summarize_variants_and_counts:
             pi_median = counts["diversity"].median()
 
         hv = pd.read_csv( input.hyper_variants, index_col=["chrom","pos"] )
-        problems = hv.any(axis=1).index
+        problems = hv.loc[hv.any(axis=1)].index
 
         vcf = pd.read_csv( input.variants, sep="\t", header=None, names=["chrom", "pos", "id", "ref", "alt", "qual", "filter", "info", "format", "sample"],  comment="#", compression="gzip", index_col=["chrom", "pos"] )
         vcf = vcf.loc[~vcf.index.isin(problems)]
