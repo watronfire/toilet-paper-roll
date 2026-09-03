@@ -11,6 +11,7 @@ def _():
     import matplotlib.pyplot as plt
     from matplotlib.lines import Line2D
     import matplotlib.ticker as mticker
+    import matplotlib.colors as mcolors
     from utils import setup_plotting_standards, basic_formatting, get_sample_types
     import numpy as np
     from scipy.special import logit, expit
@@ -44,6 +45,8 @@ def _():
     return (
         az,
         basic_formatting,
+        mcolors,
+        mo,
         mticker,
         np,
         pd,
@@ -54,6 +57,19 @@ def _():
         samples,
         st_numeric,
     )
+
+
+@app.cell(hide_code=True)
+def _(mo):
+    mo.md(r"""
+    # 1 - Data
+    """)
+    return
+
+
+@app.cell
+def _():
+    return
 
 
 @app.cell
@@ -74,6 +90,14 @@ def _(ct, np, pd, samples, st_numeric):
     rare["log_reads"] = np.log( rare["reads"] )
     rare
     return (rare,)
+
+
+@app.cell(hide_code=True)
+def _(mo):
+    mo.md(r"""
+    # 2 - Coverage model
+    """)
+    return
 
 
 @app.cell
@@ -129,9 +153,59 @@ def _(pm, rare, sample_type_order):
     return (rarefaction_trace,)
 
 
+@app.cell(hide_code=True)
+def _(mo):
+    mo.md(r"""
+    # 3 - Quality control
+    """)
+    return
+
+
 @app.cell
 def _(az, rarefaction_trace):
     az.summary( rarefaction_trace ).sort_values( "r_hat", ascending=False )
+    return
+
+
+@app.cell
+def _(basic_formatting, np, plt, rare, rarefaction_trace):
+    # Posterior mean prediction for each observation
+    mu_samples = (1 / (1 + np.exp(
+        -rarefaction_trace.posterior["kr"].values[:, :, rare["sample_type_numeric"].values] *
+        (rare["log_reads"].values -
+         rarefaction_trace.posterior["alpha"].values[:, :, rare["sample_type_numeric"].values] -
+         rarefaction_trace.posterior["beta"].values[:, :, rare["sample_type_numeric"].values] *
+         rare["O1"].values)
+    ))).mean(axis=(0, 1))  # average over chains and draws
+
+    residuals = rare["coverage"].values.clip(1e-6, 1 - 1e-6) - mu_samples
+
+    fig, axes = plt.subplots(1, 3, figsize=(12, 4))
+    axes[0].scatter(rare["O1"],  residuals, alpha=0.4, linewidth=0, zorder=100)
+    axes[1].scatter(rare["log_reads"], residuals, alpha=0.4, linewidth=0, zorder=100)
+    axes[2].scatter(mu_samples, residuals, alpha=0.4, linewidth=0, zorder=100)
+    for ax, _label in zip( axes, ["O1 Ct value", "log Reads", "Fitted value"] ):
+        ax.axhline(0, color="red", linestyle="--", zorder=150)
+        ax.label_outer()
+        basic_formatting( ax, spines=[], which="both", xlabel=_label, ylabel="Residual")
+
+    plt.tight_layout()
+    plt.savefig( "analysis/plots/figureSX-coverage-vs-ct-residuals.pdf" )
+    plt.show()
+    return
+
+
+@app.cell
+def _(az, rarefaction_trace):
+    az.residual_r2( data=rarefaction_trace, pred_mean="mu" )
+    return
+
+
+@app.cell(hide_code=True)
+def _(mo):
+    mo.md(r"""
+    # 4 - Coverage and success plots
+    """)
     return
 
 
@@ -278,23 +352,23 @@ def _(
     for _mod in [1, 5]:
         _fig, _axes = plt.subplots( dpi=200, figsize=(11,4.5), nrows=2, ncols=5, sharex=True, sharey=True )
         _reads = 1_000_000 * _mod
-    
+
         for _ax, _st_name in zip( _axes.flatten(), sample_type_order ):
             _alpha_post = rarefaction_trace.posterior["alpha"].sel(sample_type=_st_name).stack(sample=("chain", "draw")).values   # (chain, draw)
             _beta_post  = rarefaction_trace.posterior["beta"].sel(sample_type=_st_name).stack(sample=("chain", "draw")).values 
             _kr_post    = rarefaction_trace.posterior["kr"].sel(sample_type=_st_name).stack(sample=("chain", "draw")).values 
-    
+
             # midpoint[draw, ct]: shape (draws, n_ct)
             _midpoint = _alpha_post[:, None] + _beta_post[:, None] * ct_grid[None, :]
-    
+
             # pred: (n_reads, n_samples, n_ct)
             _pred = 1 / (1 + np.exp(-_kr_post[None, :, None] * (np.log(_reads) - _midpoint[None, :, :])))
             _pred_mean = _pred.mean(axis=1)[0]
             _pred_hdi = az.hdi(_pred[0].T, prob=0.95 )
-    
+
             _ax.plot( ct_grid, _pred_mean, color='black', linewidth=1, linestyle='dashed', zorder=10 )
             _ax.fill_between( ct_grid, _pred_hdi[:,0], _pred_hdi[:,1], color='black', linewidth=0, alpha=0.1, zorder=5 )
-    
+
             _points = _ax.scatter( "O1", "coverage", data=rare.loc[(rare["sample_type"]==_st_name)&(rare["reads"]==_reads)], zorder=20, alpha=0.4, linewidth=0)
             _points.set_clip_on( False )
             _ax.set_title( sample_type_display_dict[_st_name], fontsize=8, fontweight="bold", loc="left" )
@@ -305,7 +379,7 @@ def _(
             _ax.set_xticks( np.arange(0,40,2), minor=True)
             _ax.set_ylim(-0.01,1.01)
             _ax.set_xlim(-0.1,40.1)
-    
+
             [_ax.spines[j].set_visible( False ) for j in _ax.spines]
             _ax.yaxis.set_major_formatter( mticker.PercentFormatter(1) )
             _ax.set_xlabel( "O1 Ct value", fontsize=10)
@@ -313,44 +387,157 @@ def _(
             _ax.grid( which="major", color="#efefef", linewidth=1 )
             _ax.grid( which="minor", color="#efefef", linewidth=0.5 )
             _ax.label_outer()
-    
+
         plt.tight_layout()
         plt.savefig( f"analysis/plots/figureSX-coverage-vs-ct-{_mod}mil.pdf")
         plt.show()
     return
 
 
-@app.cell
-def _(az, rarefaction_trace):
-    az.residual_r2( data=rarefaction_trace, pred_mean="mu" )
+@app.cell(hide_code=True)
+def _(mo):
+    mo.md(r"""
+    # 5 - Pricing
+    """)
     return
 
 
 @app.cell
-def _(basic_formatting, np, plt, rare, rarefaction_trace):
-    # Posterior mean prediction for each observation
-    mu_samples = (1 / (1 + np.exp(
-        -rarefaction_trace.posterior["kr"].values[:, :, rare["sample_type_numeric"].values] *
-        (rare["log_reads"].values -
-         rarefaction_trace.posterior["alpha"].values[:, :, rare["sample_type_numeric"].values] -
-         rarefaction_trace.posterior["beta"].values[:, :, rare["sample_type_numeric"].values] *
-         rare["O1"].values)
-    ))).mean(axis=(0, 1))  # average over chains and draws
+def _(np, pd, rare, rarefaction_trace, sample_type_order):
+    reads_required = dict()
 
-    residuals = rare["coverage"].values.clip(1e-6, 1 - 1e-6) - mu_samples
+    _prob_wanted = 0.9
+    _prob_value = _prob_wanted / (1 - _prob_wanted)
 
-    fig, axes = plt.subplots(1, 3, figsize=(12, 4))
-    axes[0].scatter(rare["O1"],  residuals, alpha=0.4, linewidth=0, zorder=100)
-    axes[1].scatter(rare["log_reads"], residuals, alpha=0.4, linewidth=0, zorder=100)
-    axes[2].scatter(mu_samples, residuals, alpha=0.4, linewidth=0, zorder=100)
-    for ax, _label in zip( axes, ["O1 Ct value", "log Reads", "Fitted value"] ):
-        ax.axhline(0, color="red", linestyle="--", zorder=150)
-        ax.label_outer()
-        basic_formatting( ax, spines=[], which="both", xlabel=_label, ylabel="Residual")
+    for _st_name in sample_type_order:
+        #_st_data = ct.loc[ct["sample_type"]==_st_name].dropna( subset="toxR" )
+        _st_data = rare.loc[(rare["reads"]==5_000_000)&(rare["coverage"]>0.9)&(rare["sample_type"]==_st_name)]
+
+        _alpha_post = rarefaction_trace.posterior["alpha"].sel(sample_type=_st_name).stack(sample=("chain", "draw")).values   # (chain, draw)
+        _beta_post  = rarefaction_trace.posterior["beta"].sel(sample_type=_st_name).stack(sample=("chain", "draw")).values 
+        _kr_post    = rarefaction_trace.posterior["kr"].sel(sample_type=_st_name).stack(sample=("chain", "draw")).values 
+
+        _random_ct = _st_data["toxR"].mean()
+        _midpoint = _alpha_post + (_beta_post * _random_ct)
+        _reads = np.exp( _midpoint ) * np.power( _prob_value, 1 / _kr_post )
+        reads_required[_st_name] = _reads
+
+    reads_required = pd.DataFrame( reads_required )
+    reads_summary = reads_required.describe(percentiles=[0.025,0.5,0.975]).T
+    reads_summary[["2.5%", "50%", "97.5%"]]
+    return (reads_required,)
+
+
+@app.cell
+def _(np, pd, reads_required, sample_type_order):
+    genome_pooling = dict()
+    genome_pricing = dict()
+    genome_pooling_raw = dict() 
+    flowcell_labels = ["NovaSeq X+ 1.5B", "NovaSeq X+ 10B", "NovaSeq X+ 25B", "NovaSeq 6000 SP", "NovaSeq 6000 S1", "NovaSeq 6000 S2", "NovaSeq 6000 S4", "NextSeq 2000 P1", "NextSeq 2000 P2", "NextSeq 2000 P3","NextSeq 2000 P4", "NextSeq 550 High-output", "NextSeq 550 Mid-output", "MiSeq v2", "MiSeq v3"]
+    _prices = [3900, 11500, 22000, 3000, 6600, 15200, 19000, 1600, 3750, 5000, 6400, 6300, 2800, 1400, 2000]
+    _reads_values = [1_600, 10_000, 25_000, 800, 1_600, 4_100, 10_000, 100, 400, 1_200, 1_800, 400, 130, 25, 50]
+    for _reads, _price in zip( _reads_values, _prices ):
+        _actual_reads = _reads * 1_000_000
+        _read_results = dict()
+        _price_results = dict()
+        _read_results_raw = dict()
+        for _st_name in sample_type_order:
+            _data = np.clip( np.floor( _actual_reads / reads_required[_st_name] ), a_min=0, a_max=384 )
+            #_price_string = f"${np.median( _price / _data):,.0f} ({np.quantile(_price / _data, 0.025):,.0f}-{np.quantile(_price / _data, 0.975):,.0f})"
+            #_price_string = f"${np.median( _price / _data):,.0f}"
+            _price_string = np.median( _price / _data)
+            _st_string = f"{np.median( _data):,.0f} ({np.quantile(_data, 0.025):,.0f}-{np.quantile(_data, 0.975):,.0f})"
+            _read_results[_st_name] = _st_string
+            _read_results_raw[_st_name] = np.median( _data )
+            _price_results[_st_name] = _price_string
+        genome_pooling[_reads] = _read_results
+        genome_pooling_raw[_reads] = _read_results_raw
+        genome_pricing[_reads] = _price_results
+
+    used_flowcells = ["NovaSeq X+ 10B", "NovaSeq 6000 S2", "NextSeq 2000 P3", "NextSeq 550 High-output", "NextSeq 550 Mid-output","MiSeq v3", "MiSeq v2", ]
+
+    genome_pricing = pd.DataFrame( genome_pricing).reindex( columns=_reads_values)
+    genome_pooling = pd.DataFrame( genome_pooling).reindex( columns=_reads_values)
+    genome_pooling_raw = pd.DataFrame( genome_pooling_raw).reindex( columns=_reads_values)
+    #genome_pooling_raw = np.round(genome_pooling_raw / 8, 0 ) * 8
+
+    genome_pricing = genome_pricing.drop( index=["WS_RDT"] ) - 1
+    genome_pricing.columns = flowcell_labels
+    genome_pooling_raw = genome_pooling_raw.drop( index=["WS_RDT"] )
+    genome_pooling_raw.columns = flowcell_labels
+    genome_pricing = genome_pricing[used_flowcells]
+    genome_pooling_raw = genome_pooling_raw[used_flowcells]
+
+    genome_pooling.T
+    return genome_pooling_raw, genome_pricing
+
+
+@app.cell
+def _(
+    genome_pooling_raw,
+    genome_pricing,
+    mcolors,
+    np,
+    pd,
+    plt,
+    sample_type_display_dict,
+):
+    def round_to_8( num ):
+        if num == 0:
+            return ""
+        if num < 5:
+            return "<8" 
+        return f"{np.round( num / 8 ) * 8:.0f}"
+
+    _fig, _ax = plt.subplots( dpi=200, figsize=(10,5) )
+    bounds = [5, 10, 50, 100, 500, 1000, 2000]
+    _cmap = plt.get_cmap('summer', len(bounds) - 1)
+    _cmap.set_bad( "gainsboro" )
+    _cmap.set_over( "gainsboro" )
+    _norm = mcolors.BoundaryNorm(bounds, _cmap.N)
+
+    _im = _ax.imshow( genome_pricing.T, aspect="auto", cmap=_cmap, norm=_norm )
+
+    for _i in range( genome_pooling_raw.shape[0] ):
+        for _j in range( genome_pooling_raw.shape[1] ):
+            _value = genome_pooling_raw.iloc[_i,_j]
+            _value_price = genome_pricing.iloc[_i,_j]
+            if pd.isna( _value_price ):
+                continue 
+            _ax.text( _i, _j, f"{round_to_8( _value )}", color="black" if _value_price > 100 else "white" , size=10, ha="center", va="center" )
+
+    _ax.set_yticks( range(genome_pricing.shape[1]), genome_pricing.columns )
+    _ax.set_yticks( np.arange(genome_pricing.shape[1])-0.5, minor=True )
+    _ax.set_xticks( np.arange( genome_pricing.shape[0] ), [sample_type_display_dict[i].replace( " - ", "\n" ) for i in genome_pricing.index] )
+    _ax.set_xticks( np.arange( genome_pricing.shape[0] )-0.5, minor=True )
+
+    _ax.grid( axis="both", which="minor", color="white", linewidth=0.75)
+
+    [_ax.spines[j].set_visible( False ) for j in _ax.spines]
+
+    _ax.tick_params( axis="x", which="both", direction="inout", length=0, labelsize=12  )
+    _ax.tick_params( axis="y", which="both", direction="inout", length=0, labelsize=12 )
+
+    _cbar = _fig.colorbar(_im, ax=_ax, ticks=bounds, shrink=0.75, extend="max" )
+    _cbar.set_label('Per sample price for whole genome ($)', rotation=270, labelpad=10, size=10 )
+    _cbar.ax.tick_params( labelsize=10, direction="in", left=True, right=True, color="white", size=2 )
+    _cbar.outline.set_visible( False )
 
     plt.tight_layout()
-    plt.savefig( "analysis/plots/figureSX-coverage-vs-ct-residuals.pdf" )
+    #plt.savefig("figures/price-per-sample.pdf" )
+    #plt.savefig("figures/price-per-sample.png" )
     plt.show()
+    return
+
+
+@app.cell
+def _(genome_pricing):
+    genome_pricing
+    return
+
+
+@app.cell
+def _():
     return
 
 
