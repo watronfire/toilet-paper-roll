@@ -256,7 +256,7 @@ rule summarize_variants_and_counts:
         vcf["AD"] = vcf["AD"].str.split( "," )
         assert (vcf["AD"].str.len() == 2).all()
         vcf["AF"] = vcf["AD"].apply( lambda x: int( x[1] ) / (sum( map( int, x ) ) ) )
-        vcf = vcf.loc[(vcf["AF"] > params.minimum_allele_frequency)&(vcf["AF"] < (1 - minimum_allele_frequency))]
+        vcf = vcf.loc[(vcf["AF"] > params.minimum_allele_frequency)&(vcf["AF"] < (1 - params.minimum_allele_frequency))]
         vcf.loc[vcf["AF"] > 0.5, "AF"] = 1 - vcf["AF"]
         af = vcf["AF"].mean()
         af_median = vcf["AF"].median()
