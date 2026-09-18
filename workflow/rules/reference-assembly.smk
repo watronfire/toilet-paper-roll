@@ -1,3 +1,5 @@
+MASK_BED = "resources/mappability_mask.bed"
+
 rule fastq:
     message: "Calculate quality control metrics for raw sequencing reads of {wildcards.sample}."
     input:
@@ -109,7 +111,7 @@ rule extract_vibrio_reads_from_contigs:
             echo -n "" | gzip > {output.filtered_reads2}
         else
             python {params.script} -k {input.kraken_results} -s {input.contigs} -t {params.taxid} -o {output.vibrio_contigs} --include-children -r {input.kraken_report} --noappend
-        
+
         if [ -s "{output.vibrio_contigs}" ]; then
                 fgrep ">" {output.vibrio_contigs} | sed "s/>//g" | awk '{{print $1"\t0\t1000000000"}}' > {output.vibrio_bed}
                 samtools view -hb -L {output.vibrio_bed} {input.alignment} | samtools sort -m 4G -n - | samtools fastq -1 {output.filtered_reads1} -2 {output.filtered_reads2}
@@ -314,14 +316,19 @@ def get_consensus_for_sample( wildcards ):
 
 rule calculate_consensus_distance:
     input:
-        consensus_sequences = lambda wildcards: expand( "results/consensus/{sample}.consensus.fasta", sample=ORIGINAL_SAMPLES[wildcards.og] )
+        consensus_sequences = lambda wildcards: expand( "results/consensus/{sample}.consensus.fasta", sample=ORIGINAL_SAMPLES[wildcards.og] ),
+        mask = MASK_BED
     output:
         alignment = temp( "intermediates/tmp/{og}.alignment.fasta" ),
+        masked_alignment = temp( "intermediates/tmp/{og}.masked-alignment.fasta" ),
         distance = "intermediates/distances/{og}.distance.csv"
+    params:
+        script = "workflow/scripts/mask_fasta.py"
     shell:
         """
         cat {input.consensus_sequences} > {output.alignment} &&\
-        pairsnp -sc {output.alignment} > {output.distance}
+        python {params.script} {output.alignment} {input.mask} {output.masked_alignment} &&\
+        pairsnp -sc {output.masked_alignment} > {output.distance}
         """
 
 
